@@ -4,13 +4,12 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-@Table(name = "track", schema = "InformationPoolSystem", catalog = "mainDB")
-public class TrackEntity {
+public class Track {
     private int trackId;
     private float length;
     private int poolId;
-    private PoolEntity pool;
-    private Collection<TrackAndSessionEntity> trackAndSessionList;
+    private Pool pool;
+    private Collection<TrackAndSession> trackSessionList;
 
     @Id
     @Column(name = "track_id", nullable = false)
@@ -47,11 +46,11 @@ public class TrackEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TrackEntity that = (TrackEntity) o;
+        Track track = (Track) o;
 
-        if (trackId != that.trackId) return false;
-        if (Float.compare(that.length, length) != 0) return false;
-        if (poolId != that.poolId) return false;
+        if (trackId != track.trackId) return false;
+        if (Float.compare(track.length, length) != 0) return false;
+        if (poolId != track.poolId) return false;
 
         return true;
     }
@@ -66,20 +65,20 @@ public class TrackEntity {
 
     @ManyToOne
     @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
-    public PoolEntity getPool() {
+    public Pool getPool() {
         return pool;
     }
 
-    public void setPool(PoolEntity pool) {
+    public void setPool(Pool pool) {
         this.pool = pool;
     }
 
     @OneToMany(mappedBy = "track")
-    public Collection<TrackAndSessionEntity> getTrackAndSessionList() {
-        return trackAndSessionList;
+    public Collection<TrackAndSession> getTrackSessionList() {
+        return trackSessionList;
     }
 
-    public void setTrackAndSessionList(Collection<TrackAndSessionEntity> trackAndSessionList) {
-        this.trackAndSessionList = trackAndSessionList;
+    public void setTrackSessionList(Collection<TrackAndSession> trackSessionList) {
+        this.trackSessionList = trackSessionList;
     }
 }

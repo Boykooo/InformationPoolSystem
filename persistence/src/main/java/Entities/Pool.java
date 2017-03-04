@@ -4,12 +4,11 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-@Table(name = "pool", schema = "InformationPoolSystem", catalog = "mainDB")
-public class PoolEntity {
+public class Pool {
     private int poolId;
     private String poolArea;
     private float poolDepth;
-    private Collection<TrackEntity> trackList;
+    private Collection<Track> trackList;
 
     @Id
     @Column(name = "pool_id", nullable = false)
@@ -46,11 +45,11 @@ public class PoolEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        PoolEntity that = (PoolEntity) o;
+        Pool pool = (Pool) o;
 
-        if (poolId != that.poolId) return false;
-        if (Float.compare(that.poolDepth, poolDepth) != 0) return false;
-        if (poolArea != null ? !poolArea.equals(that.poolArea) : that.poolArea != null) return false;
+        if (poolId != pool.poolId) return false;
+        if (Float.compare(pool.poolDepth, poolDepth) != 0) return false;
+        if (poolArea != null ? !poolArea.equals(pool.poolArea) : pool.poolArea != null) return false;
 
         return true;
     }
@@ -64,11 +63,11 @@ public class PoolEntity {
     }
 
     @OneToMany(mappedBy = "pool")
-    public Collection<TrackEntity> getTrackList() {
+    public Collection<Track> getTrackList() {
         return trackList;
     }
 
-    public void setTrackList(Collection<TrackEntity> trackList) {
+    public void setTrackList(Collection<Track> trackList) {
         this.trackList = trackList;
     }
 }

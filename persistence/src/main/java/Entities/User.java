@@ -4,14 +4,13 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-@Table(name = "user", schema = "InformationPoolSystem", catalog = "mainDB")
-public class UserEntity {
+public class User {
     private int userId;
     private String firstName;
     private String lastName;
     private String phoneNumber;
     private String email;
-    private Collection<SessionEntity> sessionsByUserId;
+    private Collection<Session> sessionList;
 
     @Id
     @Column(name = "user_id", nullable = false)
@@ -68,13 +67,13 @@ public class UserEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UserEntity that = (UserEntity) o;
+        User user = (User) o;
 
-        if (userId != that.userId) return false;
-        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
-        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
-        if (phoneNumber != null ? !phoneNumber.equals(that.phoneNumber) : that.phoneNumber != null) return false;
-        if (email != null ? !email.equals(that.email) : that.email != null) return false;
+        if (userId != user.userId) return false;
+        if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
+        if (lastName != null ? !lastName.equals(user.lastName) : user.lastName != null) return false;
+        if (phoneNumber != null ? !phoneNumber.equals(user.phoneNumber) : user.phoneNumber != null) return false;
+        if (email != null ? !email.equals(user.email) : user.email != null) return false;
 
         return true;
     }
@@ -90,11 +89,11 @@ public class UserEntity {
     }
 
     @OneToMany(mappedBy = "user")
-    public Collection<SessionEntity> getSessionsByUserId() {
-        return sessionsByUserId;
+    public Collection<Session> getSessionList() {
+        return sessionList;
     }
 
-    public void setSessionsByUserId(Collection<SessionEntity> sessionsByUserId) {
-        this.sessionsByUserId = sessionsByUserId;
+    public void setSessionList(Collection<Session> sessionList) {
+        this.sessionList = sessionList;
     }
 }

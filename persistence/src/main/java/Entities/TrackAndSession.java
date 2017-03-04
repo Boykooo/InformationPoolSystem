@@ -1,16 +1,16 @@
 package Entities;
 
 import javax.persistence.*;
-import java.sql.Time;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "track_and_session", schema = "InformationPoolSystem", catalog = "mainDB")
-@IdClass(TrackAndSessionEntityPK.class)
-public class TrackAndSessionEntity {
+@IdClass(TrackAndSessionPK.class)
+public class TrackAndSession {
     private int trackId;
-    private Time sessionTime;
-    private TrackEntity track;
-    private SessionEntity session;
+    private Timestamp sessionId;
+    private Track track;
+    private Session session;
 
     @Id
     @Column(name = "track_id", nullable = false)
@@ -23,13 +23,13 @@ public class TrackAndSessionEntity {
     }
 
     @Id
-    @Column(name = "session_time", nullable = false)
-    public Time getSessionTime() {
-        return sessionTime;
+    @Column(name = "session_id", nullable = false)
+    public Timestamp getSessionId() {
+        return sessionId;
     }
 
-    public void setSessionTime(Time sessionTime) {
-        this.sessionTime = sessionTime;
+    public void setSessionId(Timestamp sessionId) {
+        this.sessionId = sessionId;
     }
 
     @Override
@@ -37,10 +37,10 @@ public class TrackAndSessionEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TrackAndSessionEntity that = (TrackAndSessionEntity) o;
+        TrackAndSession that = (TrackAndSession) o;
 
         if (trackId != that.trackId) return false;
-        if (sessionTime != null ? !sessionTime.equals(that.sessionTime) : that.sessionTime != null) return false;
+        if (sessionId != null ? !sessionId.equals(that.sessionId) : that.sessionId != null) return false;
 
         return true;
     }
@@ -48,27 +48,27 @@ public class TrackAndSessionEntity {
     @Override
     public int hashCode() {
         int result = trackId;
-        result = 31 * result + (sessionTime != null ? sessionTime.hashCode() : 0);
+        result = 31 * result + (sessionId != null ? sessionId.hashCode() : 0);
         return result;
     }
 
     @ManyToOne
     @JoinColumn(name = "track_id", referencedColumnName = "track_id", nullable = false)
-    public TrackEntity getTrack() {
+    public Track getTrack() {
         return track;
     }
 
-    public void setTrack(TrackEntity track) {
+    public void setTrack(Track track) {
         this.track = track;
     }
 
     @ManyToOne
-    @JoinColumn(name = "session_time", referencedColumnName = "session_time", nullable = false)
-    public SessionEntity getSession() {
+    @JoinColumn(name = "session_id", referencedColumnName = "session_time", nullable = false)
+    public Session getSession() {
         return session;
     }
 
-    public void setSession(SessionEntity session) {
+    public void setSession(Session session) {
         this.session = session;
     }
 }

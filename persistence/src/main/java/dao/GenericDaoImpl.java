@@ -6,9 +6,11 @@ import java.util.List;
 public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     protected EntityManager manager;
+    private Class<?> entityClass;
 
-    public GenericDaoImpl(EntityManager manager) {
+    public GenericDaoImpl(EntityManager manager, Class<T> type) {
         this.manager = manager;
+        this.entityClass = type;
     }
 
     @Override
@@ -18,7 +20,9 @@ public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     @Override
     public List<T> findAll() {
-        return null;
+        javax.persistence.criteria.CriteriaQuery cq = manager.getCriteriaBuilder().createQuery();
+        cq.select(cq.from(entityClass));
+        return manager.createQuery(cq).getResultList();
     }
 
     @Override

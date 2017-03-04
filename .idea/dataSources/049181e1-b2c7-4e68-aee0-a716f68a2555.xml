@@ -9,7 +9,7 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-03-04.18:45:47.783</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-03-04.22:13:56.676</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -30,8 +30,8 @@
     </schema>
     <schema id="9" parent="2" name="InformationPoolSystem">
       <ObjectId>16414</ObjectId>
-      <IntrospectionTimestamp>2017-03-04.18:45:47.783</IntrospectionTimestamp>
-      <IntrospectionStateNumber>601</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-03-04.22:13:56.676</IntrospectionTimestamp>
+      <IntrospectionStateNumber>609</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <table id="10" parent="9" name="pool">
@@ -40,7 +40,7 @@
     </table>
     <table id="11" parent="9" name="session">
       <ObjectId>16440</ObjectId>
-      <StateNumber>597</StateNumber>
+      <StateNumber>609</StateNumber>
     </table>
     <table id="12" parent="9" name="track">
       <ObjectId>16420</ObjectId>
@@ -48,7 +48,7 @@
     </table>
     <table id="13" parent="9" name="track_and_session">
       <ObjectId>16465</ObjectId>
-      <StateNumber>591</StateNumber>
+      <StateNumber>609</StateNumber>
     </table>
     <table id="14" parent="9" name="user">
       <ObjectId>16480</ObjectId>
@@ -83,31 +83,31 @@
       <UnderlyingIndexName>pool_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="20" parent="11" name="session_time">
-      <Position>1</Position>
-      <DataType>time(6)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>588</StateNumber>
-    </column>
-    <column id="21" parent="11" name="cost">
+    <column id="20" parent="11" name="cost">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>588</StateNumber>
     </column>
-    <column id="22" parent="11" name="user_id">
+    <column id="21" parent="11" name="user_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>597</StateNumber>
     </column>
+    <column id="22" parent="11" name="session_time">
+      <Position>4</Position>
+      <DataType>timestamp(6)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>606</StateNumber>
+    </column>
     <index id="23" parent="11" name="session_pkey">
-      <ObjectId>16443</ObjectId>
+      <ObjectId>16533</ObjectId>
       <ColNames>session_time</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="24" parent="11" name="session_pkey">
-      <ObjectId>16444</ObjectId>
+      <ObjectId>16534</ObjectId>
       <ColNames>session_time</ColNames>
       <UnderlyingIndexName>session_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -161,22 +161,22 @@
       <NotNull>1</NotNull>
       <StateNumber>591</StateNumber>
     </column>
-    <column id="33" parent="13" name="session_time">
-      <Position>2</Position>
-      <DataType>time(6)|0</DataType>
+    <column id="33" parent="13" name="session_id">
+      <Position>3</Position>
+      <DataType>timestamp(6)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>591</StateNumber>
+      <StateNumber>608</StateNumber>
     </column>
     <index id="34" parent="13" name="track_and_session_pkey">
-      <ObjectId>16468</ObjectId>
+      <ObjectId>16535</ObjectId>
       <ColNames>track_id
-session_time</ColNames>
+session_id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="35" parent="13" name="track_and_session_pkey">
-      <ObjectId>16469</ObjectId>
+      <ObjectId>16536</ObjectId>
       <ColNames>track_id
-session_time</ColNames>
+session_id</ColNames>
       <UnderlyingIndexName>track_and_session_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
@@ -188,8 +188,8 @@ session_time</ColNames>
       <RefColNames>track_id</RefColNames>
     </foreign-key>
     <foreign-key id="37" parent="13" name="session_time">
-      <ObjectId>16475</ObjectId>
-      <ColNames>session_time</ColNames>
+      <ObjectId>16537</ObjectId>
+      <ColNames>session_id</ColNames>
       <RefTableName>session</RefTableName>
       <RefKeyName>session_pkey</RefKeyName>
       <RefColNames>session_time</RefColNames>

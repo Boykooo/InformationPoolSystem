@@ -3,11 +3,16 @@
 
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>Entities.PoolEntity</class>
-        <class>Entities.SessionEntity</class>
-        <class>Entities.TrackEntity</class>
-        <class>Entities.TrackAndSessionEntity</class>
-        <class>Entities.UserEntity</class>
+        <class>Entities.Pool</class>
+        <class>Entities.Session</class>
+        <class>Entities.Track</class>
+        <class>Entities.TrackAndSession</class>
+        <class>Entities.User</class>
+        <class>Entities.Pool</class>
+        <class>Entities.Session</class>
+        <class>Entities.Track</class>
+        <class>Entities.TrackAndSession</class>
+        <class>Entities.User</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://91.202.27.32:5432/mainDB"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>

@@ -3,11 +3,11 @@ package Entities;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.sql.Time;
+import java.sql.Timestamp;
 
-public class TrackAndSessionEntityPK implements Serializable {
+public class TrackAndSessionPK implements Serializable {
     private int trackId;
-    private Time sessionTime;
+    private Timestamp sessionId;
 
     @Column(name = "track_id", nullable = false)
     @Id
@@ -19,14 +19,14 @@ public class TrackAndSessionEntityPK implements Serializable {
         this.trackId = trackId;
     }
 
-    @Column(name = "session_time", nullable = false)
+    @Column(name = "session_id", nullable = false)
     @Id
-    public Time getSessionTime() {
-        return sessionTime;
+    public Timestamp getSessionId() {
+        return sessionId;
     }
 
-    public void setSessionTime(Time sessionTime) {
-        this.sessionTime = sessionTime;
+    public void setSessionId(Timestamp sessionId) {
+        this.sessionId = sessionId;
     }
 
     @Override
@@ -34,10 +34,10 @@ public class TrackAndSessionEntityPK implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TrackAndSessionEntityPK that = (TrackAndSessionEntityPK) o;
+        TrackAndSessionPK that = (TrackAndSessionPK) o;
 
         if (trackId != that.trackId) return false;
-        if (sessionTime != null ? !sessionTime.equals(that.sessionTime) : that.sessionTime != null) return false;
+        if (sessionId != null ? !sessionId.equals(that.sessionId) : that.sessionId != null) return false;
 
         return true;
     }
@@ -45,7 +45,7 @@ public class TrackAndSessionEntityPK implements Serializable {
     @Override
     public int hashCode() {
         int result = trackId;
-        result = 31 * result + (sessionTime != null ? sessionTime.hashCode() : 0);
+        result = 31 * result + (sessionId != null ? sessionId.hashCode() : 0);
         return result;
     }
 }

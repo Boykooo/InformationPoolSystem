@@ -12,6 +12,7 @@
 
     <modules>
         <module>persistence</module>
+        <module>web</module>
     </modules>
 
 </project>

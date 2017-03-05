@@ -4,13 +4,13 @@ import java.util.List;
 
 public interface GenericDao<T, PK> {
 
-    T findById(PK id);
+    T findById(PK o);
 
     List<T> findAll();
 
-    void insert(T entity);
+    void insert(T o);
 
-    void update(T entity);
+    void update(T o);
 
-    boolean delete(PK key);
+    boolean delete(PK o);
 }

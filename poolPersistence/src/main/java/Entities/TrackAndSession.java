@@ -53,7 +53,7 @@ public class TrackAndSession {
     }
 
     @ManyToOne
-    @JoinColumn(name = "track_id", referencedColumnName = "track_id", nullable = false)
+    //@JoinColumn(name = "track_id", referencedColumnName = "track_id", nullable = false)
     public Track getTrack() {
         return track;
     }
@@ -63,7 +63,7 @@ public class TrackAndSession {
     }
 
     @ManyToOne
-    @JoinColumn(name = "session_id", referencedColumnName = "session_time", nullable = false)
+    //@JoinColumn(name = "session_id", referencedColumnName = "session_time", nullable = false)
     public Session getSession() {
         return session;
     }

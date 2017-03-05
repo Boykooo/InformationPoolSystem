@@ -1,3 +1,6 @@
+import Entities.User;
+import dao.UserDao;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,8 +12,11 @@ public class MainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.setAttribute("name", "attribute");
+       UserDao userDao = new UserDao();
+       User user = userDao.findById(1);
 
-        req.getRequestDispatcher("startPage.jsp").forward(req, resp);
+       req.setAttribute("name", user.getFirstName());
+
+       req.getRequestDispatcher("startPage.jsp").forward(req, resp);
     }
 }

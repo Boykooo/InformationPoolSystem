@@ -32,7 +32,7 @@ public class Track {
     }
 
     @Basic
-    @Column(name = "pool_id", nullable = false)
+    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
     public int getPoolId() {
         return poolId;
     }
@@ -64,7 +64,6 @@ public class Track {
     }
 
     @ManyToOne
-    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
     public Pool getPool() {
         return pool;
     }

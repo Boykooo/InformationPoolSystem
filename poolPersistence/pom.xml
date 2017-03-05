@@ -22,20 +22,20 @@
     </build>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>persistence</artifactId>
+    <artifactId>poolPersistence</artifactId>
 
 
     <properties>
-        <hibernate-core.version>5.2.8.Final</hibernate-core.version>
         <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
     </properties>
 
 
     <dependencies>
+
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate-core.version}</version>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.8.Final</version>
         </dependency>
 
         <dependency>

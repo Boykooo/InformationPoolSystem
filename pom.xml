@@ -11,7 +11,7 @@
 
 
     <modules>
-        <module>persistence</module>
+        <module>poolPersistence</module>
         <module>web</module>
     </modules>
 

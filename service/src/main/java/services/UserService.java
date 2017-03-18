@@ -20,7 +20,7 @@ public class UserService extends AbstractService<User, Integer> {
 
     @Override
     public List<User> findAll() {
-        return null;
+
     }
 
     @Override

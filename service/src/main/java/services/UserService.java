@@ -3,56 +3,85 @@ package services;
 import Entities.User;
 import dao.GenericDao;
 import dao.UserDao;
-import dto.UserDto;
 import services.Abstract.AbstractService;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class UserService extends AbstractService<UserDto, Integer> {
+public class UserService extends AbstractService<User, Integer> {
 
-    private GenericDao<User, Integer> dao;
+    protected GenericDao<User, Integer> dao;
 
     public UserService() {
         dao = new UserDao();
     }
 
     @Override
-    public UserDto findById(Integer o) {
-        User user = dao.findById(o);
-
+    public User findById(Integer o) {
+        return dao.findById(o);
+        //return convertToDto(dao.findById(o));
     }
 
     @Override
-    public List<UserDto> findAll() {
-        List<User> users = dao.findAll();
-        List<UserDto> userDtoList = new ArrayList<UserDto>();
+    public List<User> findAll() {
 
-        for (int i = 0; i < users.size(); i++) {
-            UserDto userDto = new UserDto();
+        return dao.findAll();
+//        List<User> users = dao.findAll();
+//        List<UserDto> userDtoList = new ArrayList<UserDto>();
+//
+//        for (int i = 0; i < users.size(); i++) {
+//            userDtoList.add(convertToDto(users.get(i)));
+//        }
+//
+//        return userDtoList;
+    }
 
-            userDto.setFirstName(users.get(i).getFirstName());
-            userDto.setLastName(users.get(i).getLastName());
-            userDto.setPhoneNumber(users.get(i).getPhoneNumber());
-            userDto.setEmail(users.get(i).getEmail());
-            userDto.setSessions(users.get(i).getSessionsByUserId());
+    @Override
+    public void insert(User o) {
+        List<User> users = this.findAll();
+
+        boolean found = false;
+        for (int i = 0; i < users.size() && !found; i++) {
+            found = users.get(i).getEmail().equals(o.getEmail());
         }
 
-        return userDtoList;
+        if (!found){
+            dao.insert(o);
+        }
+        else {
+            //TODO: ВЫБРОСИТЬ ИСКЛЮЧЕНИЕ
+        }
     }
 
     @Override
-    public void insert(UserDto o) {
-
-    }
-
-    @Override
-    public void update(UserDto o) {
-
+    public void update(User o) {
+        dao.update(o);
     }
 
     @Override
     public boolean delete(Integer o) {
+        User user = this.findById(o);
+        if (user != null){
+            dao.delete(o);
+            return true;
+        }
+
         return false;
     }
+
+//    @Override
+//    protected UserDto convertToDto(User entity) {
+//        UserDto userDto = new UserDto();
+//        userDto.setFirstName(entity.getFirstName());
+//        userDto.setLastName(entity.getLastName());
+//        userDto.setPhoneNumber(entity.getPhoneNumber());
+//        userDto.setEmail(entity.getEmail());
+//        userDto.setSessions(entity.getSessionsByUserId());
+//
+//        return userDto;
+//    }
+//
+//    @Override
+//    protected User convertToEntity(UserDto dto) {
+//        User user = new User();
+//    }
 }

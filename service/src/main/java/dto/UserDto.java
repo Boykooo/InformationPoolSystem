@@ -4,7 +4,7 @@ import Entities.Session;
 
 import java.util.List;
 
-public class UserDto {
+public class UserDto implements IBaseDto {
     private String firstName;
     private String lastName;
     private String phoneNumber;

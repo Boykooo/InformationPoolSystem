@@ -1,18 +1,24 @@
 package services.Abstract;
 
+import Entities.IBaseEntity;
+import dao.GenericDao;
+
 import java.util.List;
 
-public abstract class AbstractService<Dto, PK> {
+public abstract class AbstractService<Entity extends IBaseEntity, PK> {
 
-    public abstract Dto findById(PK o);
+    protected GenericDao<Entity, PK> dao;
 
-    public abstract List<Dto> findAll();
+    public abstract Entity findById(PK o);
 
-    public abstract void insert(Dto o);
+    public abstract List<Entity> findAll();
 
-    public abstract void update(Dto o);
+    public abstract void insert(Entity o);
+
+    public abstract void update(Entity o);
 
     public abstract boolean  delete(PK o);
 
-    protected abstract Dto convertToDto();
+//    protected abstract Dto convertToDto(Entity entity);
+//    protected abstract Entity convertToEntity(Dto dto);
 }

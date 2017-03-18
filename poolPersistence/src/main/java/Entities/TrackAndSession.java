@@ -4,9 +4,9 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "track_and_session", schema = "InformationPoolSystem", catalog = "mainDB")
+@Table(name = "track_and_session", schema = "ips", catalog = "mainDB")
 @IdClass(TrackAndSessionPK.class)
-public class TrackAndSession {
+public class TrackAndSession implements IBaseEntity{
     private int trackId;
     private Timestamp sessionId;
     private Track track;

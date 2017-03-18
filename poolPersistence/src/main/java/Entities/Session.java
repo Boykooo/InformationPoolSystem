@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 import java.util.Collection;
 
 @Entity
-public class Session {
+public class Session implements IBaseEntity{
 
     @Id
     @Column(name = "session_time", nullable = false)

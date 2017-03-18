@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-public class Track {
+public class Track implements IBaseEntity{
     private int trackId;
     private float length;
     private int poolId;

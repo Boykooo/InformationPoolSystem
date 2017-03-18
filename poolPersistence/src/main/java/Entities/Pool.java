@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-public class Pool {
+public class Pool implements IBaseEntity {
     private int poolId;
     private String poolArea;
     private float poolDepth;

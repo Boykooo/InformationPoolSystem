@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/MainServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/MainServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -124,27 +126,36 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="218">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#618#627#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
+      <file leaf-file-name="AbstractService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-              <folding>
-                <element signature="method#equals#0;class#User#0" expanded="false" />
-                <element signature="method#hashCode#0;class#User#0" expanded="false" />
-                <element signature="e#1979#1997#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IBaseEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/IBaseEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,8 +180,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -228,9 +239,11 @@
         <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/MainServlet.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
       </list>
     </option>
   </component>
@@ -1281,7 +1294,7 @@
       <workItem from="1488747057326" duration="982000" />
       <workItem from="1489520506794" duration="4240000" />
       <workItem from="1489848470224" duration="49000" />
-      <workItem from="1489848572278" duration="12470000" />
+      <workItem from="1489848572278" duration="13669000" />
     </task>
     <task id="LOCAL-00001" summary="fix Entities">
       <created>1488654987510</created>
@@ -1325,11 +1338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489871741814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add UserDto">
+      <created>1489872200951</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489872200951</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68007000" />
+    <option name="totallyTimeSpent" value="69206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1386,7 +1406,8 @@
     <MESSAGE value="fix persistence.xml" />
     <MESSAGE value="add service module" />
     <MESSAGE value="Fix GenericDaoImpl. Add transactional operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix GenericDaoImpl. Add transactional operations" />
+    <MESSAGE value="Add UserDto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UserDto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1399,7 +1420,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/MyServlet.java" />
     <entry file="jar://$PROJECT_DIR$/persistence/lib/javax.persistence.jar!/javax/persistence/PersistenceContext.class" />
     <entry file="file://$PROJECT_DIR$/persistence/src/main/java/Entities/sqlQuery.sql" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/org/jboss/logging/Logger.class">
@@ -1653,14 +1673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/IBaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1689,16 +1701,6 @@
             <element signature="e#646#647#0" expanded="true" />
             <element signature="method#equals#0;class#Pool#0" expanded="false" />
             <element signature="method#hashCode#0;class#Pool#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1814,15 +1816,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="method#equals#0;class#User#0" expanded="false" />
-            <element signature="method#hashCode#0;class#User#0" expanded="false" />
-            <element signature="e#1979#1997#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1836,14 +1834,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/Abstract/AbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="method#equals#0;class#User#0" expanded="false" />
+            <element signature="method#hashCode#0;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/IBaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="218">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#618#627#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
           </folding>
         </state>
       </provider>

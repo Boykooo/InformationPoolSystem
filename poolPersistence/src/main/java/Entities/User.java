@@ -3,7 +3,7 @@ package Entities;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -27,7 +27,7 @@ public class User implements IBaseEntity {
     @Column(name = "email", length = 50)
     private String email;
     @OneToMany(mappedBy = "user")
-    private Collection<Session> sessionsByUserId;
+    private List<Session> sessionsByUserId;
     @Basic
     @Column(name = "password", length = 50)
     private String password;
@@ -112,11 +112,11 @@ public class User implements IBaseEntity {
         this.password = password;
     }
 
-    public Collection<Session> getSessionsByUserId() {
+    public List<Session> getSessionsByUserId() {
         return sessionsByUserId;
     }
 
-    public void setSessionsByUserId(Collection<Session> sessionsByUserId) {
+    public void setSessionsByUserId(List<Session> sessionsByUserId) {
         this.sessionsByUserId = sessionsByUserId;
     }
 

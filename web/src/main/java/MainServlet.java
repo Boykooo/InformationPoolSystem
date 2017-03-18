@@ -14,12 +14,12 @@ public class MainServlet extends HttpServlet {
 
         UserService service = new UserService();
 
-       User user = service.findById(18);
+        User user = service.findById(18);
 
-       if (user != null){
-           req.setAttribute("name", user.getFirstName());
-       }
+        if (user != null) {
+            req.setAttribute("name", user.getFirstName());
+        }
 
-       req.getRequestDispatcher("startPage.jsp").forward(req, resp);
+        req.getRequestDispatcher("startPage.jsp").forward(req, resp);
     }
 }

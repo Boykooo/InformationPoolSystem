@@ -12,6 +12,7 @@ public class UserService extends AbstractService<User, Integer> {
     protected GenericDao<User, Integer> dao;
 
     public UserService() {
+        super();
         dao = new UserDao();
     }
 

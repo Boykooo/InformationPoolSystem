@@ -1,16 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Andrey
-  Date: 19.03.2017
-  Time: 1:36
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Users</title>
 </head>
 <body>
 <h2>This page is for displaying users</h2>
+
+<h3>List of users:</h3>
+
+<table border="1">
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Почта</th>
+        <th>Номер телефона</th>
+    </tr>
+
+    <c:forEach var="num" items="${users}">
+        <tr>
+            <td>${num.getFirstName()}</td>
+            <td>${num.getLastName()}</td>
+            <td>${num.getEmail()}</td>
+            <td>${num.getPhoneNumber()}</td>
+        </tr>
+    </c:forEach>
+</table>
+
 </body>
 </html>

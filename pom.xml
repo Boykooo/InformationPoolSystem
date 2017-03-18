@@ -12,8 +12,8 @@
 
     <modules>
         <module>poolPersistence</module>
-        <module>web</module>
         <module>service</module>
+        <module>web</module>
     </modules>
 
 </project>

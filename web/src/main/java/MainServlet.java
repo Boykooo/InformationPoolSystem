@@ -19,4 +19,6 @@ public class MainServlet extends HttpServlet {
 
        req.getRequestDispatcher("startPage.jsp").forward(req, resp);
     }
+
+
 }

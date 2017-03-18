@@ -1,15 +1,13 @@
 package dao;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
+import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
+    //@PersistenceContext
     protected EntityManager manager;
     private Class<T> entityClass;
 
@@ -41,12 +39,16 @@ public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     @Override
     public void insert(T o) {
+        manager.getTransaction().begin();
         manager.persist(o);
+        manager.getTransaction().commit();
     }
 
     @Override
     public void update(T o) {
+        manager.getTransaction().begin();
         manager.merge(o);
+        manager.getTransaction().commit();
     }
 
     @Override

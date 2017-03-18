@@ -7,7 +7,7 @@ import java.util.Collection;
 
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements IBaseEntity {
 
     @Id
     @Column(name = "user_id")
@@ -28,6 +28,9 @@ public class User {
     private String email;
     @OneToMany(mappedBy = "user")
     private Collection<Session> sessionsByUserId;
+    @Basic
+    @Column(name = "password", length = 50)
+    private String password;
 
     @Override
     public boolean equals(Object o) {
@@ -101,7 +104,13 @@ public class User {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public Collection<Session> getSessionsByUserId() {
         return sessionsByUserId;

@@ -12,5 +12,5 @@ public interface GenericDao<T, PK> {
 
     void update(T o);
 
-    boolean delete(PK o);
+    boolean  delete(PK o);
 }

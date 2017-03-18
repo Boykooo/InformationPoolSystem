@@ -33,7 +33,7 @@ public class Track {
 
     @Basic
     @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
-    public int getPoolId() {
+        public int getPoolId() {
         return poolId;
     }
 

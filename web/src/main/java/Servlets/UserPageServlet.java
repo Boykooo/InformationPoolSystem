@@ -16,13 +16,12 @@ public class UserPageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         UserService userService = new UserService();
-
         List<User> usersList = userService.findAll();
-//        for (int i = 0; i < usersList.size(); i++) {
-            req.setAttribute("users", usersList);
-//        }
 
-
+        req.setAttribute("users", usersList);
         req.getRequestDispatcher("pages/usersPage.jsp").forward(req, resp);
+
     }
+
+
 }

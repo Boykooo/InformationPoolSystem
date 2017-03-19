@@ -12,4 +12,15 @@ public class MainServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("startPage.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getParameter("userButton") != null){
+            resp.sendRedirect("/web/users");
+        }
+
+        if (req.getParameter("poolButton") != null){
+            resp.sendRedirect("/web/pool");
+        }
+    }
 }

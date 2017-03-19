@@ -12,10 +12,10 @@
 
 <table border="1">
     <tr>
-        <th>Имя</th>
-        <th>Фамилия</th>
-        <th>Почта</th>
-        <th>Номер телефона</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Phone number</th>
     </tr>
 
     <c:forEach var="num" items="${users}">

@@ -1,17 +1,28 @@
 package Entities;
 
+import com.sun.istack.internal.NotNull;
+
 import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
 public class Pool implements IBaseEntity {
-    private int poolId;
-    private String poolArea;
-    private float poolDepth;
-    private Collection<Track> trackList;
 
     @Id
-    @Column(name = "pool_id", nullable = false)
+    @Column(name = "pool_id")
+    @NotNull
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int poolId;
+    @Basic
+    @Column(name = "pool_area", nullable = false, length = 20)
+    private String poolArea;
+    @Basic
+    @Column(name = "pool_depth", nullable = false, precision = 0)
+    private float poolDepth;
+    @OneToMany(mappedBy = "pool")
+    private Collection<Track> trackList;
+
+
     public int getPoolId() {
         return poolId;
     }
@@ -20,8 +31,7 @@ public class Pool implements IBaseEntity {
         this.poolId = poolId;
     }
 
-    @Basic
-    @Column(name = "pool_area", nullable = false, length = 20)
+
     public String getPoolArea() {
         return poolArea;
     }
@@ -30,8 +40,7 @@ public class Pool implements IBaseEntity {
         this.poolArea = poolArea;
     }
 
-    @Basic
-    @Column(name = "pool_depth", nullable = false, precision = 0)
+
     public float getPoolDepth() {
         return poolDepth;
     }
@@ -62,7 +71,6 @@ public class Pool implements IBaseEntity {
         return result;
     }
 
-    @OneToMany(mappedBy = "pool")
     public Collection<Track> getTrackList() {
         return trackList;
     }

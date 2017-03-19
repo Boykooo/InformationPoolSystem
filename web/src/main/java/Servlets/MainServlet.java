@@ -22,7 +22,7 @@ public class MainServlet extends HttpServlet {
         }
 
         if (req.getParameter("poolButton") != null){
-            resp.sendRedirect("/web/pool");
+            resp.sendRedirect("/web/pools");
         }
     }
 }

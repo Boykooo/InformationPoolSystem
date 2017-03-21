@@ -14,9 +14,11 @@
     <properties>
         <jstl.version>1.2</jstl.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <jsr311-api.version>1.1.1</jsr311-api.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -36,6 +38,11 @@
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+            <version>${jsr311-api.version}</version>
         </dependency>
 
     </dependencies>

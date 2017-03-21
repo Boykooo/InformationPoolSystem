@@ -1,14 +1,17 @@
 package Entities;
 
+import com.sun.istack.internal.NotNull;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class Session implements IBaseEntity{
 
     @Id
-    @Column(name = "session_time", nullable = false)
+    @NotNull
+    @Column(name = "session_time")
     private Timestamp sessionTime;
     @Basic
     @Column(name = "cost", nullable = false)
@@ -17,7 +20,7 @@ public class Session implements IBaseEntity{
     @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = false)
     private User user;
     @OneToMany(mappedBy = "session")
-    private Collection<TrackAndSession> trackSessionList;
+    private List<TrackAndSession> trackSessionList;
 
     @Override
     public boolean equals(Object o) {
@@ -41,43 +44,31 @@ public class Session implements IBaseEntity{
 
     //region getAndSet
 
-    public int getCost() {
-        return cost;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
-
-//    public int getUserId() {
-//        return userId;
-//    }
-//
-//    public void setUserId(int userId) {
-//        this.userId = userId;
-//    }
-
     public Timestamp getSessionTime() {
         return sessionTime;
     }
-
     public void setSessionTime(Timestamp sessionTime) {
         this.sessionTime = sessionTime;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
     public User getUser() {
         return user;
     }
-
     public void setUser(User user) {
         this.user = user;
     }
 
-    public Collection<TrackAndSession> getTrackSessionList() {
+    public List<TrackAndSession> getTrackSessionList() {
         return trackSessionList;
     }
-
-    public void setTrackSessionList(Collection<TrackAndSession> trackSessionList) {
+    public void setTrackSessionList(List<TrackAndSession> trackSessionList) {
         this.trackSessionList = trackSessionList;
     }
 

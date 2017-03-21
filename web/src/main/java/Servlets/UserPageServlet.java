@@ -24,6 +24,4 @@ public class UserPageServlet extends HttpServlet {
         req.getRequestDispatcher("pages/usersPage.jsp").forward(req, resp);
 
     }
-
-
 }

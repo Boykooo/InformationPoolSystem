@@ -3,7 +3,7 @@ package Entities;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class Pool implements IBaseEntity {
@@ -20,34 +20,7 @@ public class Pool implements IBaseEntity {
     @Column(name = "pool_depth", nullable = false, precision = 0)
     private float poolDepth;
     @OneToMany(mappedBy = "pool")
-    private Collection<Track> trackList;
-
-
-    public int getPoolId() {
-        return poolId;
-    }
-
-    public void setPoolId(int poolId) {
-        this.poolId = poolId;
-    }
-
-
-    public String getPoolArea() {
-        return poolArea;
-    }
-
-    public void setPoolArea(String poolArea) {
-        this.poolArea = poolArea;
-    }
-
-
-    public float getPoolDepth() {
-        return poolDepth;
-    }
-
-    public void setPoolDepth(float poolDepth) {
-        this.poolDepth = poolDepth;
-    }
+    private List<Track> trackList;
 
     @Override
     public boolean equals(Object o) {
@@ -71,11 +44,35 @@ public class Pool implements IBaseEntity {
         return result;
     }
 
-    public Collection<Track> getTrackList() {
-        return trackList;
+    //region GetSet
+
+    public int getPoolId() {
+        return poolId;
+    }
+    public void setPoolId(int poolId) {
+        this.poolId = poolId;
     }
 
-    public void setTrackList(Collection<Track> trackList) {
+    public String getPoolArea() {
+        return poolArea;
+    }
+    public void setPoolArea(String poolArea) {
+        this.poolArea = poolArea;
+    }
+
+    public float getPoolDepth() {
+        return poolDepth;
+    }
+    public void setPoolDepth(float poolDepth) {
+        this.poolDepth = poolDepth;
+    }
+
+    public List<Track> getTrackList() {
+        return trackList;
+    }
+    public void setTrackList(List<Track> trackList) {
         this.trackList = trackList;
     }
+
+    //endregion
 }

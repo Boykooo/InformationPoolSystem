@@ -1,18 +1,33 @@
 package Entities;
 
+import com.sun.istack.internal.NotNull;
+
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class Track implements IBaseEntity{
-    private int trackId;
-    private float length;
-    private int poolId;
-    private Pool pool;
-    private Collection<TrackAndSession> trackSessionList;
 
     @Id
-    @Column(name = "track_id", nullable = false)
+    @NotNull
+    @Column(name = "track_id")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int trackId;
+    @Basic
+    @NotNull
+    @Column(name = "length")
+    private float length;
+    @Basic
+    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
+    private int poolId;
+    @ManyToOne
+    @NotNull
+    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id")
+    private Pool pool;
+    @OneToMany(mappedBy = "track")
+    private List<TrackAndSession> trackSessionList;
+
+
     public int getTrackId() {
         return trackId;
     }
@@ -21,8 +36,7 @@ public class Track implements IBaseEntity{
         this.trackId = trackId;
     }
 
-    @Basic
-    @Column(name = "length", nullable = false, precision = 0)
+
     public float getLength() {
         return length;
     }
@@ -31,9 +45,8 @@ public class Track implements IBaseEntity{
         this.length = length;
     }
 
-    @Basic
-    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
-        public int getPoolId() {
+
+    public int getPoolId() {
         return poolId;
     }
 
@@ -63,21 +76,18 @@ public class Track implements IBaseEntity{
         return result;
     }
 
-    @ManyToOne
     public Pool getPool() {
         return pool;
     }
-
     public void setPool(Pool pool) {
         this.pool = pool;
     }
 
-    @OneToMany(mappedBy = "track")
-    public Collection<TrackAndSession> getTrackSessionList() {
+    public List<TrackAndSession> getTrackSessionList() {
         return trackSessionList;
     }
 
-    public void setTrackSessionList(Collection<TrackAndSession> trackSessionList) {
+    public void setTrackSessionList(List<TrackAndSession> trackSessionList) {
         this.trackSessionList = trackSessionList;
     }
 }

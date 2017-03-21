@@ -27,9 +27,9 @@ public class User implements IBaseEntity {
     @Column(name = "email", length = 50)
     private String email;
     @OneToMany(mappedBy = "user")
-    private List<Session> sessionsByUserId;
+    private List<Session> sessionsList;
     @Basic
-    @Column(name = "password", length = 50)
+    @Column(name = "password"   )
     private String password;
 
     @Override
@@ -106,11 +106,11 @@ public class User implements IBaseEntity {
         this.password = password;
     }
 
-    public List<Session> getSessionsByUserId() {
-        return sessionsByUserId;
+    public List<Session> getSessionsList() {
+        return sessionsList;
     }
-    public void setSessionsByUserId(List<Session> sessionsByUserId) {
-        this.sessionsByUserId = sessionsByUserId;
+    public void setSessionsList(List<Session> sessionsList) {
+        this.sessionsList = sessionsList;
     }
 
     //endregion

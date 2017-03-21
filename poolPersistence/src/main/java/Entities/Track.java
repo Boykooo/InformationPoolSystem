@@ -17,9 +17,10 @@ public class Track implements IBaseEntity{
     @NotNull
     @Column(name = "length")
     private float length;
-    @Basic
-    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id", nullable = false)
-    private int poolId;
+//    @Basic
+//    @NotNull
+//    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id")
+//    private int poolId;
     @ManyToOne
     @NotNull
     @JoinColumn(name = "pool_id", referencedColumnName = "pool_id")
@@ -46,13 +47,13 @@ public class Track implements IBaseEntity{
     }
 
 
-    public int getPoolId() {
-        return poolId;
-    }
-
-    public void setPoolId(int poolId) {
-        this.poolId = poolId;
-    }
+//    public int getPoolId() {
+//        return poolId;
+//    }
+//
+//    public void setPoolId(int poolId) {
+//        this.poolId = poolId;
+//    }
 
     @Override
     public boolean equals(Object o) {
@@ -63,7 +64,7 @@ public class Track implements IBaseEntity{
 
         if (trackId != track.trackId) return false;
         if (Float.compare(track.length, length) != 0) return false;
-        if (poolId != track.poolId) return false;
+        //if (poolId != track.poolId) return false;
 
         return true;
     }
@@ -72,7 +73,7 @@ public class Track implements IBaseEntity{
     public int hashCode() {
         int result = trackId;
         result = 31 * result + (length != +0.0f ? Float.floatToIntBits(length) : 0);
-        result = 31 * result + poolId;
+        //result = 31 * result + poolId;
         return result;
     }
 

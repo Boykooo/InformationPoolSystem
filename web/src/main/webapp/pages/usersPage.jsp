@@ -23,7 +23,7 @@
             <td>${num.getFirstName()}</td>
             <td>${num.getLastName()}</td>
             <td>${num.getEmail()}</td>
-            <td>${num.getPhoneNumber()}</td>ы
+            <td>${num.getPhoneNumber()}</td>
         </tr>
     </c:forEach>
 </table>

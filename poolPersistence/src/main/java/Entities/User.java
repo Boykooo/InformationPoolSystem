@@ -29,7 +29,7 @@ public class User implements IBaseEntity {
     @OneToMany(mappedBy = "user")
     private List<Session> sessionsList;
     @Basic
-    @Column(name = "password"   )
+    @Column(name = "password")
     private String password;
 
     @Override

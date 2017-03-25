@@ -27,9 +27,10 @@ CREATE TABLE ips.track(
 
 CREATE TABLE ips.user(
   email VARCHAR(100) PRIMARY KEY ,
-  firstname VARCHAR(100) NOT NULL ,
-  lastname VARCHAR(100) NOT NULL ,
-  phonenumber VARCHAR(100) NOT NULL
+  first_name VARCHAR(100) NOT NULL ,
+  last_name VARCHAR(100) NOT NULL ,
+  phone_number VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE ips.session(

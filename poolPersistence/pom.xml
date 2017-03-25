@@ -24,18 +24,17 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>poolPersistence</artifactId>
 
-
     <properties>
         <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+        <hibernate-entitymanager.version>5.2.8.Final</hibernate-entitymanager.version>
     </properties>
-
 
     <dependencies>
 
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.2.8.Final</version>
+            <version>${hibernate-entitymanager.version}</version>
         </dependency>
 
         <dependency>
@@ -44,6 +43,5 @@
             <version>${postgresql.version}</version>
         </dependency>
     </dependencies>
-
 
 </project>

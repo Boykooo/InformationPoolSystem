@@ -2,11 +2,14 @@ package Entities;
 
 import com.sun.istack.internal.NotNull;
 
+import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
+@Table(name = "session")
+@Stateless
 public class Session implements IBaseEntity{
 
     @Id
@@ -73,6 +76,4 @@ public class Session implements IBaseEntity{
     }
 
     //endregion
-
-
 }

@@ -2,10 +2,13 @@ package Entities;
 
 import com.sun.istack.internal.NotNull;
 
+import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "pool")
+@Stateless
 public class Pool implements IBaseEntity {
 
     @Id

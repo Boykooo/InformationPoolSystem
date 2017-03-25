@@ -12,25 +12,29 @@ public class User implements IBaseEntity {
     @Id
     @Column(name = "email", length = 100)
     private String email;
+
     @Basic
     @NotNull
     @Column(name = "first_name", length = 100)
     private String firstName;
+
     @Basic
     @NotNull
     @Column(name = "last_name", length = 100)
     private String lastName;
+
     @Basic
     @NotNull
     @Column(name = "phone_number", length = 100)
     private String phoneNumber;
 
-    @OneToMany(mappedBy = "user")
-    private List<Session> sessionsList;
     @Basic
     @NotNull
     @Column(name = "password")
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Session> sessionsList;
 
     //region getAndSet
 

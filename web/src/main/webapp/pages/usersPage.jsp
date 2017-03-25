@@ -12,17 +12,17 @@
 
 <table border="1">
     <tr>
+        <th>Email</th>
         <th>First name</th>
         <th>Last name</th>
-        <th>Email</th>
         <th>Phone number</th>
     </tr>
 
     <c:forEach var="num" items="${users}">
         <tr>
+            <td>${num.getEmail()}</td>
             <td>${num.getFirstName()}</td>
             <td>${num.getLastName()}</td>
-            <td>${num.getEmail()}</td>
             <td>${num.getPhoneNumber()}</td>
         </tr>
     </c:forEach>

@@ -34,10 +34,11 @@ CREATE TABLE ips.user(
 );
 
 CREATE TABLE ips.session(
-  time TIMESTAMP  PRIMARY KEY,
+  time TIMESTAMP ,
   cost INTEGER  NOT NULL,
   user_email VARCHAR(100),
   track_id INTEGER NOT NULL,
+  PRIMARY KEY (time, track_id),
   CONSTRAINT fk_email FOREIGN KEY (user_email) REFERENCES ips.user(email) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT fk_track_id FOREIGN KEY (track_id) REFERENCES ips.track(id) ON DELETE CASCADE ON UPDATE CASCADE
 );

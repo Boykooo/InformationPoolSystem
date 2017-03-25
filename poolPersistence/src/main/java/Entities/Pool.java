@@ -12,62 +12,51 @@ import java.util.List;
 public class Pool implements IBaseEntity {
 
     @Id
-    @Column(name = "pool_id")
+    @Column(name = "id")
     @NotNull
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int poolId;
+    private int id;
+
     @Basic
-    @Column(name = "pool_area", nullable = false, length = 20)
-    private String poolArea;
+    @NotNull
+    @Column(name = "name")
+    private String name;
+
     @Basic
-    @Column(name = "pool_depth", nullable = false, precision = 0)
-    private float poolDepth;
+    @NotNull
+    @Column(name = "length")
+    private String length;
+
+    @Basic
+    @NotNull
+    @Column(name = "width")
+    private String width;
+
+    @Basic
+    @NotNull
+    @Column(name = "depth")
+    private String depth;
+
+    @Basic
+    @NotNull
+    @Column(name = "type")
+    private String type;
+
+    @Basic
+    @NotNull
+    @Column(name = "isworking")
+    private boolean isWorking;
+
     @OneToMany(mappedBy = "pool")
     private List<Track> trackList;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Pool pool = (Pool) o;
-
-        if (poolId != pool.poolId) return false;
-        if (Float.compare(pool.poolDepth, poolDepth) != 0) return false;
-        if (poolArea != null ? !poolArea.equals(pool.poolArea) : pool.poolArea != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = poolId;
-        result = 31 * result + (poolArea != null ? poolArea.hashCode() : 0);
-        result = 31 * result + (poolDepth != +0.0f ? Float.floatToIntBits(poolDepth) : 0);
-        return result;
-    }
-
     //region GetSet
 
-    public int getPoolId() {
-        return poolId;
+    public int getId() {
+        return id;
     }
-    public void setPoolId(int poolId) {
-        this.poolId = poolId;
-    }
-
-    public String getPoolArea() {
-        return poolArea;
-    }
-    public void setPoolArea(String poolArea) {
-        this.poolArea = poolArea;
-    }
-
-    public float getPoolDepth() {
-        return poolDepth;
-    }
-    public void setPoolDepth(float poolDepth) {
-        this.poolDepth = poolDepth;
+    public void setId(int poolId) {
+        this.id = poolId;
     }
 
     public List<Track> getTrackList() {
@@ -75,6 +64,48 @@ public class Pool implements IBaseEntity {
     }
     public void setTrackList(List<Track> trackList) {
         this.trackList = trackList;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLength() {
+        return length;
+    }
+    public void setLength(String length) {
+        this.length = length;
+    }
+
+    public String getWidth() {
+        return width;
+    }
+    public void setWidth(String width) {
+        this.width = width;
+    }
+
+    public String getDepth() {
+        return depth;
+    }
+    public void setDepth(String depth) {
+        this.depth = depth;
+    }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public boolean isWorking() {
+        return isWorking;
+    }
+    public void setWorking(boolean working) {
+        isWorking = working;
     }
 
     //endregion

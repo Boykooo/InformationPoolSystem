@@ -11,54 +11,29 @@ public class Track implements IBaseEntity{
 
     @Id
     @NotNull
-    @Column(name = "track_id")
+    @Column(name = "id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int trackId;
+    private int id;
     @Basic
     @NotNull
-    @Column(name = "length")
-    private float length;
+    @Column(name = "number")
+    private Integer number;
+
     @ManyToOne
     @NotNull
-    @JoinColumn(name = "pool_id", referencedColumnName = "pool_id")
+    @JoinColumn(name = "pool_id", referencedColumnName = "id")
     private Pool pool;
+
     @OneToMany(mappedBy = "track")
-    private List<TrackAndSession> trackSessionList;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Track track = (Track) o;
-
-        if (trackId != track.trackId) return false;
-        if (Float.compare(track.length, length) != 0) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = trackId;
-        result = 31 * result + (length != +0.0f ? Float.floatToIntBits(length) : 0);
-        return result;
-    }
+    private List<Session> sessionsList;
 
     //region GetSet
 
-    public int getTrackId() {
-        return trackId;
+    public int getId() {
+        return id;
     }
-    public void setTrackId(int trackId) {
-        this.trackId = trackId;
-    }
-
-    public float getLength() {
-        return length;
-    }
-    public void setLength(float length) {
-        this.length = length;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Pool getPool() {
@@ -68,11 +43,18 @@ public class Track implements IBaseEntity{
         this.pool = pool;
     }
 
-    public List<TrackAndSession> getTrackSessionList() {
-        return trackSessionList;
+    public Integer getNumber() {
+        return number;
     }
-    public void setTrackSessionList(List<TrackAndSession> trackSessionList) {
-        this.trackSessionList = trackSessionList;
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public List<Session> getSessionsList() {
+        return sessionsList;
+    }
+    public void setSessionsList(List<Session> sessionsList) {
+        this.sessionsList = sessionsList;
     }
 
     //endregion

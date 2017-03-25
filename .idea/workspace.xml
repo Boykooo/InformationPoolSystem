@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/TrackAndSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/TrackAndSessionPK.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" afterPath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,28 +62,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="user" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="mainDB@91.202.27.32" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="ips" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -106,26 +84,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="391">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
-                <element signature="method#equals#0;class#User#0" expanded="false" />
-                <element signature="method#hashCode#0;class#User#0" expanded="false" />
-                <element signature="e#1950#1968#0" expanded="false" />
+                <element signature="e#735#753#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgreScript.pgsql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql">
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="323">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#528#546#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,7 +156,6 @@
         <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/Abstract/IService.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
@@ -202,13 +179,14 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
         <option value="$PROJECT_DIR$/poolPersistence/pom.xml" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/TrackAndSessionPK.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Track.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
       </list>
     </option>
   </component>
@@ -1049,7 +1027,7 @@
       <workItem from="1490288467922" duration="2053000" />
       <workItem from="1490292673874" duration="1412000" />
       <workItem from="1490448845225" duration="10806000" />
-      <workItem from="1490477050953" duration="1889000" />
+      <workItem from="1490477050953" duration="2863000" />
     </task>
     <task id="LOCAL-00001" summary="fix Entities">
       <created>1488654987510</created>
@@ -1198,11 +1176,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490476018071</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added password field to user. Change postgreSQL script">
+      <created>1490479453814</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1490479453814</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125443000" />
+    <option name="totallyTimeSpent" value="126417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1215,7 +1200,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1225,7 +1210,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18337408" sideWeight="0.4959631" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18337408" sideWeight="0.4959631" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1239,7 +1224,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23960881" sideWeight="0.21337947" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20645906" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20645906" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24572127" sideWeight="0.78662056" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1322,11 +1307,12 @@
     <MESSAGE value="Impl @Get all and specific pools for PoolRest" />
     <MESSAGE value="Create postgreSQL script for create database." />
     <MESSAGE value="Create postgreSQL script for create database. Change DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create postgreSQL script for create database. Change DB" />
+    <MESSAGE value="Added password field to user. Change postgreSQL script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added password field to user. Change postgreSQL script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="52" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1501,14 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1572,34 +1550,6 @@
           <folding>
             <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
             <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#equals#0;class#Session#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Session#0" expanded="false" />
-            <element signature="e#1219#1237#0" expanded="false" />
-            <element signature="e#1277#1278#0" expanded="false" />
-            <element signature="e#1311#1312#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-            <element signature="e#1413#1414#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1468#1469#0" expanded="false" />
-            <element signature="e#1504#1505#0" expanded="false" />
-            <element signature="e#1536#1537#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-            <element signature="e#1592#1593#0" expanded="false" />
-            <element signature="e#1629#1630#0" expanded="false" />
-            <element signature="e#1661#1662#0" expanded="false" />
-            <element signature="e#1719#1720#0" expanded="false" />
-            <element signature="e#1758#1759#0" expanded="false" />
-            <element signature="method#setTrackSessionList#0;class#Session#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1746,6 +1696,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#528#546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="40" column="45" lean-forward="false" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1756,21 +1732,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="391">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
-            <element signature="method#equals#0;class#User#0" expanded="false" />
-            <element signature="method#hashCode#0;class#User#0" expanded="false" />
-            <element signature="e#1950#1968#0" expanded="false" />
+            <element signature="e#735#753#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>

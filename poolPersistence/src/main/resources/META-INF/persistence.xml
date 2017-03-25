@@ -6,11 +6,9 @@
         <class>Entities.Pool</class>
         <class>Entities.Session</class>
         <class>Entities.Track</class>
-        <class>Entities.TrackAndSession</class>
         <class>Entities.Pool</class>
         <class>Entities.Session</class>
         <class>Entities.Track</class>
-        <class>Entities.TrackAndSession</class>
         <class>Entities.User</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://91.202.27.32:5432/mainDB"/>

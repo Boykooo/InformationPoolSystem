@@ -2,11 +2,10 @@ package dao;
 
 import Entities.User;
 
-import javax.transaction.Transactional;
+import javax.ejb.Stateless;
 
-@Transactional
-    public class UserDao extends GenericDaoImpl<User, Integer> {
-
+@Stateless
+public class UserDao extends GenericDaoImpl<User, String> {
     public UserDao() {
         super(User.class);
     }

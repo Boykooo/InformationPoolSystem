@@ -1,30 +1,31 @@
 package services;
 
 import Entities.User;
-import dao.GenericDao;
 import dao.UserDao;
 import services.Abstract.AbstractService;
 
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import java.util.List;
 
-public class UserService extends AbstractService<User, Integer> {
+@Stateless
+public class UserService extends AbstractService<User, String> {
 
-    protected GenericDao<User, Integer> dao;
+    @EJB
+    protected UserDao dao;
 
     public UserService() {
         super();
-        dao = new UserDao();
     }
 
     @Override
-    public User findById(Integer o) {
+    public User findById(String o) {
         return dao.findById(o);
         //return convertToDto(dao.findById(o));
     }
 
     @Override
     public List<User> findAll() {
-
         return dao.findAll();
 //        List<User> users = dao.findAll();
 //        List<UserDto> userDtoList = new ArrayList<UserDto>();
@@ -59,7 +60,7 @@ public class UserService extends AbstractService<User, Integer> {
     }
 
     @Override
-    public boolean delete(Integer o) {
+    public boolean delete(String o) {
         User user = this.findById(o);
         if (user != null){
             dao.delete(o);

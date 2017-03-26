@@ -29,7 +29,7 @@ public class UserRest {
     @GET
     @Produces("text/json")
     @Path("/{userId}")
-    public Response getSpecificUsers(@PathParam("userId") int userId){
+    public Response getSpecificUsers(@PathParam("userId") String userId){
         User user = service.findById(userId);
 
         return (user == null) ? Response.status(Response.Status.NOT_FOUND).build()

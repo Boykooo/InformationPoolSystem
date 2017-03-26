@@ -9,7 +9,6 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "session")
 @IdClass(SessionPK.class)
-@Stateless
 public class Session implements IBaseEntity{
 
     @Id

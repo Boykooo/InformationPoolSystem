@@ -1,7 +1,9 @@
 package dao;
 
+import javax.ejb.Local;
 import java.util.List;
 
+@Local
 public interface GenericDao<T, PK> {
 
     T findById(PK o);

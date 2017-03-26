@@ -2,13 +2,11 @@ package Entities;
 
 import com.sun.istack.internal.NotNull;
 
-import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Table(name = "pool")
-@Stateless
 public class Pool implements IBaseEntity {
 
     @Id
@@ -101,10 +99,10 @@ public class Pool implements IBaseEntity {
         this.type = type;
     }
 
-    public boolean isWorking() {
+    public boolean getIsWorking() {
         return isWorking;
     }
-    public void setWorking(boolean working) {
+    public void setIsWorking(boolean working) {
         isWorking = working;
     }
 

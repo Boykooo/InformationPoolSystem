@@ -3,6 +3,7 @@ package Servlets;
 import Entities.User;
 import services.UserService;
 
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,10 +15,14 @@ import java.util.List;
 @WebServlet("/users")
 public class UserPageServlet extends HttpServlet {
 
+
+    @EJB
+    private UserService userService;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserService userService = new UserService();
+        //UserService userService = new UserService();
         List<User> usersList = userService.findAll();
 
         req.setAttribute("users", usersList);

@@ -2,8 +2,10 @@ package dao;
 
 import Entities.Pool;
 
-public class PoolDao extends GenericDaoImpl<Pool, Integer>{
+import javax.ejb.Stateless;
 
+@Stateless
+public class PoolDao extends GenericDaoImpl<Pool, Integer>{
     public PoolDao() {
         super(Pool.class);
     }

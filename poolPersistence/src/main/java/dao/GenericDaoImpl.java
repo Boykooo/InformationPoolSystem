@@ -1,10 +1,15 @@
 package dao;
 
-import javax.persistence.*;
+import javax.ejb.Local;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
+@Local
 public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     //@PersistenceContext
@@ -24,9 +29,6 @@ public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     @Override
     public List<T> findAll() {
-//        javax.persistence.criteria.CriteriaQuery cq = manager.getCriteriaBuilder().createQuery();
-//        cq.select(cq.from(entityClass.getClass()));
-//        return manager.createQuery(cq).getResultList();
 
         CriteriaBuilder cb = manager.getCriteriaBuilder();
         CriteriaQuery<T> cq = cb.createQuery(entityClass);

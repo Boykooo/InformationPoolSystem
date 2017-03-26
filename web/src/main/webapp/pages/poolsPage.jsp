@@ -12,18 +12,23 @@
 <table border="1">
     <tr>
         <th>ID</th>
-        <th>Area</th>
+        <th>Name</th>
+        <th>Length</th>
+        <th>Width</th>
         <th>Depth</th>
         <th>Type</th>
+        <th>isWorking</th>
     </tr>
 
     <c:forEach var="pool" items="${pools}">
         <tr>
-            <td>${pool.getPoolId()}</td>
-            <td>${pool.getPoolArea()}</td>
-            <td>${pool.getPoolDepth()}</td>
-            <%--TODO: ДОБАВИТЬ ТИП--%>
-            <td></td>
+            <td>${pool.getId()}</td>
+            <td>${pool.getName()}</td>
+            <td>${pool.getLength()}</td>
+            <td>${pool.getWidth()}</td>
+            <td>${pool.getDepth()}</td>
+            <td>${pool.getType()}</td>
+            <td>${pool.getIsWorking()}</td>
         </tr>
     </c:forEach>
 </table>

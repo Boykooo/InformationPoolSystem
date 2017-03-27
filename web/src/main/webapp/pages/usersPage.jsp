@@ -16,6 +16,7 @@
             <th>First name</th>
             <th>Last name</th>
             <th>Phone number</th>
+            <th>Password</th>
         </tr>
 
         <c:forEach var="num" items="${users}">
@@ -24,6 +25,7 @@
                 <td>${num.getFirstName()}</td>
                 <td>${num.getLastName()}</td>
                 <td>${num.getPhoneNumber()}</td>
+                <td>${num.getPassword()}</td>
             </tr>
         </c:forEach>
     </table>
@@ -59,7 +61,7 @@
     </table>
 </form>
 
-<form method="put" action="/web/users" >
+<form method="post" action="/web/users" >
     <table>
         <tr>
             <td> Email </td>
@@ -83,13 +85,13 @@
         </tr>
         <tr>
             <td>
-                <input type="submit" name="refreshButton" value="Update" />
+                <input type="submit" name="updateButton" value="Update" />
             </td>
         </tr>
     </table>
 </form>
 
-<form method="delete" action="/web/users" >
+<form method="post" action="/web/users">
     <table>
         <tr>
             <td> Email </td>
@@ -98,7 +100,7 @@
 
         <tr>
             <td>
-                <input type="submit" name="deleteButton" value="Delete" />
+                <input type="submit" name="deleteButton" value="Delete"/>
             </td>
         </tr>
     </table>

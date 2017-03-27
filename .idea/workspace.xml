@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp" />
     </list>
@@ -112,11 +114,13 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,22 +136,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserPageServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserPageServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <element signature="method#refreshPage#0;class#UserPageServlet#0" expanded="false" />
+                <element signature="method#createUser#0;class#UserPageServlet#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="87" column="49" lean-forward="false" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usersPage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#191#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+              <folding>
+                <element signature="method#findAll#0;class#GenericDaoImpl#0" expanded="false" />
+                <element signature="method#insert#0;class#GenericDaoImpl#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,7 +251,6 @@
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/PoolDao.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java" />
@@ -229,8 +260,9 @@
         <option value="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/pages/poolsPage.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" />
       </list>
     </option>
   </component>
@@ -1322,7 +1354,7 @@
       <workItem from="1490448845225" duration="10806000" />
       <workItem from="1490477050953" duration="7024000" />
       <workItem from="1490515623127" duration="13851000" />
-      <workItem from="1490643763561" duration="4134000" />
+      <workItem from="1490643763561" duration="8065000" />
     </task>
     <task id="LOCAL-00001" summary="fix Entities">
       <created>1488654987510</created>
@@ -1499,11 +1531,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490531676423</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added form of add new user to usersPage.jsp and impl doPost method">
+      <created>1490648861027</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1490648861027</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148563000" />
+    <option name="totallyTimeSpent" value="152494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1532,7 +1571,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2687428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29181084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1566,7 +1605,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Dao. Add web module" />
     <MESSAGE value="Fix entities. Fix Dao. Add test servlet" />
     <MESSAGE value="fix persistence.xml" />
     <MESSAGE value="add service module" />
@@ -1591,11 +1629,12 @@
     <MESSAGE value="Fix postgreSQL script" />
     <MESSAGE value="Fixed entities according new database" />
     <MESSAGE value="Transition to EJB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transition to EJB" />
+    <MESSAGE value="Added form of add new user to usersPage.jsp and impl doPost method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form of add new user to usersPage.jsp and impl doPost method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="70" />
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1975,19 +2014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="method#findAll#0;class#GenericDaoImpl#0" expanded="false" />
-            <element signature="method#insert#0;class#GenericDaoImpl#0" expanded="false" />
-            <element signature="method#update#0;class#GenericDaoImpl#0" expanded="false" />
-            <element signature="method#delete#0;class#GenericDaoImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/PoolDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -2070,17 +2096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#158#159#0" expanded="false" />
-            <element signature="e#191#192#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/PoolPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -2101,11 +2116,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="e#317#318#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2118,27 +2153,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/MainServlet.java">
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="592">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <element signature="method#findAll#0;class#GenericDaoImpl#0" expanded="false" />
+            <element signature="method#insert#0;class#GenericDaoImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="87" column="49" lean-forward="false" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/usersPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="method#refreshPage#0;class#UserPageServlet#0" expanded="false" />
+            <element signature="method#createUser#0;class#UserPageServlet#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

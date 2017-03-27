@@ -55,7 +55,13 @@ public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
 
     @Override
     public boolean delete(PK o) {
-        manager.remove(o);
+
+        T entity = findById(o);
+
+        manager.getTransaction().begin();
+        manager.remove(entity);
+        manager.getTransaction().commit();
+
         return true;
     }
 }

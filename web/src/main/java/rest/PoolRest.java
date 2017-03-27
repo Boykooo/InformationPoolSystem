@@ -4,6 +4,7 @@ package rest;
 import Entities.Pool;
 import services.PoolService;
 
+import javax.ejb.EJB;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -15,6 +16,7 @@ import java.util.List;
 @Produces("text/json")
 public class PoolRest {
 
+    @EJB
     private PoolService service;
 
     public PoolRest() {

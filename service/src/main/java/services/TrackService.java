@@ -1,5 +1,6 @@
 package services;
 
+import Entities.Track;
 import dao.TrackDao;
 import dto.TrackDto;
 
@@ -29,5 +30,17 @@ public class TrackService implements IService<TrackDto,Integer> {
 
     public boolean delete(Integer key) {
         return false;
+    }
+
+    public Track convertToEntity(TrackDto dto){
+        Track track = new Track();
+        track.setId(dto.getId());
+        track.setNumber(dto.getNumber());
+        track.setSessionsList();
+        track.setPool();
+    }
+
+    public TrackDto convertToDto(Track dto){
+
     }
 }

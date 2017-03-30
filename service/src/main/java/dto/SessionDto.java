@@ -5,7 +5,6 @@ import java.sql.Timestamp;
 public class SessionDto implements IBaseDto {
     private Timestamp sessionTime;
     private Integer trackId;
-    private Integer trackiD;
     private String userEmail;
     private Integer cost;
 
@@ -23,13 +22,6 @@ public class SessionDto implements IBaseDto {
     }
     public void setTrackId(Integer trackId) {
         this.trackId = trackId;
-    }
-
-    public Integer getTrackiD() {
-        return trackiD;
-    }
-    public void setTrackiD(Integer trackiD) {
-        this.trackiD = trackiD;
     }
 
     public String getUserEmail() {

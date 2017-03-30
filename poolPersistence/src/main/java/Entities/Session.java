@@ -2,13 +2,12 @@ package Entities;
 
 import com.sun.istack.internal.NotNull;
 
-import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
 @Table(name = "session")
-@IdClass(SessionPK.class)
+//@IdClass(SessionPK.class)
 public class Session implements IBaseEntity{
 
     @Id
@@ -16,13 +15,14 @@ public class Session implements IBaseEntity{
     @Column(name = "time")
     private Timestamp sessionTime;
 
-    @Id
-    @NotNull
-    @JoinColumn(name = "track_id", referencedColumnName = "id")
-    private int trackId;
+//    @Id
+//    @NotNull
+//    @Column(name = "track_id")
+//    private int trackId;
 
     @NotNull
     @ManyToOne
+    @PrimaryKeyJoinColumn(name = "track_id", referencedColumnName = "id")
     private Track track;
 
     @ManyToOne
@@ -57,12 +57,12 @@ public class Session implements IBaseEntity{
         this.user = user;
     }
 
-    public int getTrackId() {
-        return trackId;
-    }
-    public void setTrackId(int trackId) {
-        this.trackId = trackId;
-    }
+//    public int getTrackId() {
+//        return trackId;
+//    }
+//    public void setTrackId(int trackId) {
+//        this.trackId = trackId;
+//    }
 
     public Track getTrack() {
         return track;

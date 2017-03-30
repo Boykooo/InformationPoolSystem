@@ -11,4 +11,5 @@ public interface IService<Entity extends IBaseDto, PK> {
     void insert(Entity entity);
     void update(Entity entity);
     boolean  delete(PK key);
+
 }

@@ -1,6 +1,5 @@
 package Entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
@@ -40,7 +39,6 @@ public class Pool implements IBaseEntity {
     @Column(name = "isworking")
     private boolean isWorking;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "pool")
     private List<Track> trackList;
 

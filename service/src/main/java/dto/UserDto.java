@@ -7,6 +7,7 @@ public class UserDto implements IBaseDto {
     private String lastName;
     private String phoneNumber;
     private String email;
+    private String password;
     private List<SessionDto> sessions;
 
     //region GetSet
@@ -39,10 +40,17 @@ public class UserDto implements IBaseDto {
         this.email = email;
     }
 
-    public List<SessionDto> getSessions() {
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<SessionDto> getSessionsList() {
         return sessions;
     }
-    public void setSessions(List<SessionDto> sessions) {
+    public void setSessionsList(List<SessionDto> sessions) {
         this.sessions = sessions;
     }
 

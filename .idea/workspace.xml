@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poolPersistence/src/test/java/UserTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/Exceptions/EmailException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/services/IConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/services/ListConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/test/java/TestSession.java" afterPath="$PROJECT_DIR$/poolPersistence/src/test/java/SessionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/SessionPK.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/SessionPK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/SessionDao.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/SessionDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/test/java/TestSession.java" afterPath="$PROJECT_DIR$/poolPersistence/src/test/java/TestSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/IService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/IService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,56 +98,35 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/services/SessionService.java">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="425">
+              <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#findAll#0;class#SessionService#0" expanded="false" />
-                <element signature="e#730#742#0" expanded="true" />
-                <element signature="method#convertToEntity#0;class#SessionService#0" expanded="false" />
-                <element signature="method#convertToDto#0;class#SessionService#0" expanded="false" />
-                <element signature="method#convertToSessionPK#0;class#SessionService#0" expanded="false" />
+                <element signature="method#findAll#0;class#UserService#0" expanded="false" />
+                <element signature="method#insert#0;class#UserService#0" expanded="false" />
+                <element signature="method#delete#0;class#UserService#0" expanded="false" />
+                <element signature="method#convertToDto#0;class#UserService#0" expanded="false" />
+                <element signature="method#convertToEntity#0;class#UserService#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java">
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
-                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#619#637#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,8 +137,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -179,12 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/untitled/src/App.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/049181e1-b2c7-4e68-aee0-a716f68a2555/console.sql" />
-        <option value="$PROJECT_DIR$/service/src/main/java/java/classwe.java" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/services/Abstract/IService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/TrackAndSession.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/MainServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/pages/users.jsp" />
@@ -209,11 +184,9 @@
         <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Track.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/AbstractService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/PoolDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/IService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" />
@@ -221,7 +194,6 @@
         <option value="$PROJECT_DIR$/poolPersistence/pom.xml" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/test/java/TestSession.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" />
@@ -229,7 +201,16 @@
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/SessionDao.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java" />
         <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/test/java/SessionTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/test/java/UserTest.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/services/IConverter.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/services/ListConverter.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/Exceptions/UserAlreadyExistException.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/Exceptions/EmailException.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
       </list>
     </option>
   </component>
@@ -617,10 +598,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -648,7 +625,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
+              <option name="myItemId" value="Exceptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -739,6 +716,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -804,14 +785,14 @@
       <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\persistence\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSession.testInsertWithoutField">
-    <configuration default="false" name="TestSession.testInsertSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserTest.testPrintUser">
+    <configuration default="false" name="SessionTest.testInsertSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="poolPersistence" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSession" />
+      <option name="MAIN_CLASS_NAME" value="SessionTest" />
       <option name="METHOD_NAME" value="testInsertSession" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -826,14 +807,56 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestSession.testInsertWithoutField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SessionTest.testInsertWithoutField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="poolPersistence" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSession" />
+      <option name="MAIN_CLASS_NAME" value="SessionTest" />
       <option name="METHOD_NAME" value="testInsertWithoutField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserTest.testPrintUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="poolPersistence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="testPrintUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserTest.testEmptySessionList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="poolPersistence" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="testEmptySessionList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1334,15 +1357,19 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JBoss Server.JBoss9" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestSession.testInsertSession" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestSession.testInsertWithoutField" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SessionTest.testInsertSession" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SessionTest.testInsertWithoutField" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserTest.testPrintUser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest.testEmptySessionList" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestSession.testInsertWithoutField" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSession.testInsertSession" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.testPrintUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest.testEmptySessionList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SessionTest.testInsertWithoutField" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SessionTest.testInsertSession" />
       </list>
     </recent_temporary>
   </component>
@@ -1379,7 +1406,7 @@
       <workItem from="1490643763561" duration="8872000" />
       <workItem from="1490709561864" duration="12922000" />
       <workItem from="1490797224129" duration="599000" />
-      <workItem from="1490869128919" duration="11061000" />
+      <workItem from="1490869128919" duration="17922000" />
     </task>
     <task id="LOCAL-00001" summary="fix Entities">
       <created>1488654987510</created>
@@ -1605,19 +1632,17 @@
       <option name="project" value="LOCAL" />
       <updated>1490878693894</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Impl SessionService">
+      <created>1490882267157</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1490882267157</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSession_testInsertSession - 2017.03.30 at 15h 04m 40s.xml">
-      <configuration name="TestSession.testInsertSession" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSession_testInsertSession - 2017.03.30 at 15h 05m 41s.xml">
-      <configuration name="TestSession.testInsertSession" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSession_testInsertSession - 2017.03.30 at 15h 07m 30s.xml">
-      <configuration name="TestSession.testInsertSession" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSession_testInsertSession - 2017.03.30 at 15h 08m 58s.xml">
       <configuration name="TestSession.testInsertSession" configurationId="JUnit" />
     </history-entry>
@@ -1639,9 +1664,18 @@
     <history-entry file="TestSession_testInsertWithoutField - 2017.03.30 at 16h 06m 05s.xml">
       <configuration name="TestSession.testInsertWithoutField" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest_testEmptySessionList - 2017.03.30 at 17h 12m 35s.xml">
+      <configuration name="UserTest.testEmptySessionList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testPrintUser - 2017.03.30 at 17h 11m 26s.xml">
+      <configuration name="UserTest.testPrintUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testPrintUser - 2017.03.30 at 17h 12m 41s.xml">
+      <configuration name="UserTest.testPrintUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177883000" />
+    <option name="totallyTimeSpent" value="184744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1681,7 +1715,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2603912" sideWeight="0.2272203" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20645906" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20645906" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2603912" sideWeight="0.7727797" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28239608" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1745,7 +1779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UserService implementation" />
     <MESSAGE value="Inheritance of all Entities from IBaseEntity" />
     <MESSAGE value="Refactoring. Add PoolService" />
     <MESSAGE value="Changed startPage.jsp" />
@@ -1770,11 +1803,12 @@
     <MESSAGE value="Created dto and services without impl" />
     <MESSAGE value="Impl DTO" />
     <MESSAGE value="Fixed Session entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Session entity" />
+    <MESSAGE value="Impl SessionService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl SessionService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="96" />
+      <option name="time" value="98" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1783,66 +1817,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2075,24 +2049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="e#242#257#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poolPersistence/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -2141,41 +2097,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#619#637#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/test/java/TestSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/services/PoolService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2184,16 +2112,8 @@
         <state relative-caret-position="447">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2227,6 +2147,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -2237,45 +2165,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java">
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/test/java/SessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding>
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="method#delete#0;class#GenericDaoImpl#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/test/java/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/IConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#619#637#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/services/SessionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="442">
+          <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#findAll#0;class#SessionService#0" expanded="false" />
-            <element signature="e#730#742#0" expanded="true" />
             <element signature="method#convertToEntity#0;class#SessionService#0" expanded="false" />
             <element signature="method#convertToDto#0;class#SessionService#0" expanded="false" />
             <element signature="method#convertToSessionPK#0;class#SessionService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/ListConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ListConverter#0;class#ListConverter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="method#delete#0;class#GenericDaoImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/Exceptions/EmailException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+          <folding>
+            <element signature="method#findAll#0;class#UserService#0" expanded="false" />
+            <element signature="method#insert#0;class#UserService#0" expanded="false" />
+            <element signature="method#delete#0;class#UserService#0" expanded="false" />
+            <element signature="method#convertToDto#0;class#UserService#0" expanded="false" />
+            <element signature="method#convertToEntity#0;class#UserService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2334,11 +2358,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>poolPersistence</last-edited>
+          <last-edited>service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.34827587" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

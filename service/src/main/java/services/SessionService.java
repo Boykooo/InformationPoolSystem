@@ -64,7 +64,7 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         return session;
     }
 
-    private SessionDto convertToDto(Session entity){
+    public SessionDto convertToDto(Session entity){
         SessionDto dto = new SessionDto();
         dto.setCost(entity.getCost());
         dto.setSessionTime(entity.getSessionTime());
@@ -74,7 +74,7 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         return dto;
     }
 
-    private SessionPK convertToSessionPK(SessionPkDto dto){
+    public SessionPK convertToSessionPK(SessionPkDto dto){
         SessionPK pk = new SessionPK();
         pk.setSessionTime(dto.getSessionTime());
         pk.setTrack(trackService.convertToEntity(dto.getTrack()));

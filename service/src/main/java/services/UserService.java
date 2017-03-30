@@ -1,10 +1,15 @@
 package services;
 
+import Entities.Session;
+import Entities.User;
+import Exceptions.EmailException;
 import dao.UserDao;
+import dto.SessionDto;
 import dto.UserDto;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
@@ -12,71 +17,83 @@ public class UserService implements IService<UserDto, String> {
 
     @EJB
     protected UserDao dao;
+    @EJB
+    private SessionService sessionService;
 
     public UserService() {
         super();
     }
 
-    public UserDto findById(String o) {
-        return null;
-        //return dao.findById(o);
-        //return convertToDto(dao.findById(o));
+    public UserDto findById(String key) {
+        return convertToDto(dao.findById(key));
     }
 
     public List<UserDto> findAll() {
 
-        return null;
+        List<UserDto> userDtoList = new ArrayList<>();
+        dao.findAll().forEach(
+                (User user) -> userDtoList.add(convertToDto(user))
+        );
 
-        //return dao.findAll();
-//        List<User> users = dao.findAll();
-//        List<UserDto> userDtoList = new ArrayList<UserDto>();
-//
-//        for (int i = 0; i < users.size(); i++) {
-//            userDtoList.add(convertToDto(users.get(i)));
-//        }
-//
-//        return userDtoList;
+        return userDtoList;
     }
 
-    public void insert(UserDto o) {
-        List<UserDto> users = this.findAll();
+    public void insert(UserDto dto) throws EmailException {
+        List<User> users = dao.findAll();
 
-        boolean found = false;
-        for (int i = 0; i < users.size() && !found; i++) {
-            found = users.get(i).getEmail().equals(o.getEmail());
-        }
+        User foundUser = users.stream()
+                .filter(user -> user.getEmail().equals(dto.getEmail()))
+                .findFirst()
+                .get();
 
-        if (!found) {
-            //dao.insert(o);
+
+        if (foundUser == null) {
+            dao.insert(convertToEntity(dto));
         } else {
-            //TODO: ВЫБРОСИТЬ ИСКЛЮЧЕНИЕ
+            throw new EmailException();
         }
     }
 
-    public void update(UserDto o) {
-        //dao.update(o);
+    public void update(UserDto dto) {
+        dao.update(convertToEntity(dto));
     }
 
-    public boolean delete(String o) {
-//        User user = this.findById(o);
-//        if (user != null){
-//            dao.delete(o);
-//            return true;
-//        }
-
+    public boolean delete(String key) {
+        User user = dao.findById(key);
+        if (user != null){
+            dao.delete(key);
+            return true;
+        }
         return false;
     }
 
-//    protected UserDto convertToDto(User entity) {
-//        UserDto userDto = new UserDto();
-//        userDto.setFirstName(entity.getFirstName());
-//        userDto.setLastName(entity.getLastName());
-//        userDto.setPhoneNumber(entity.getPhoneNumber());
-//        userDto.setEmail(entity.getEmail());
-//
-//        return userDto;
-//    }
-//
-//    protected User convertToEntity(UserDto dto) {
-//        User user = new User();
+
+    public UserDto convertToDto(User entity) {
+        UserDto userDto = new UserDto();
+        userDto.setFirstName(entity.getFirstName());
+        userDto.setLastName(entity.getLastName());
+        userDto.setPhoneNumber(entity.getPhoneNumber());
+        userDto.setEmail(entity.getEmail());
+
+        List<SessionDto> sessionDtoList = new ArrayList<>();
+        entity.getSessionsList().forEach(
+                (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
+        );
+
+        userDto.setSessionsList(sessionDtoList);
+
+        return userDto;
+    }
+
+    public User convertToEntity(UserDto dto) {
+        User user = new User();
+        user.setEmail(dto.getEmail());
+        user.setPhoneNumber(dto.getPhoneNumber());
+        user.setFirstName(dto.getFirstName());
+        user.setPassword(dto.getPassword());
+        user.setLastName(dto.getLastName());
+        //user.setSessionsList(.....);
+
+        return user;
+    }
 }

@@ -8,7 +8,7 @@ import junit.framework.TestCase;
 
 import java.sql.Timestamp;
 
-public class TestSession extends TestCase {
+public class SessionTest extends TestCase {
 
     public void testInsertSession(){
         SessionDao sessionDao = new SessionDao();

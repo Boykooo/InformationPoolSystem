@@ -1,7 +1,8 @@
 package Servlets;
 
-import Entities.Session;
-import Entities.User;
+import Exceptions.EmailException;
+import Exceptions.UpdateObjectNotExistException;
+import dto.UserDto;
 import services.UserService;
 
 import javax.ejb.EJB;
@@ -11,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/users")
@@ -37,13 +37,21 @@ public class UserPageServlet extends HttpServlet {
             doPut(req, resp);
             return;
         }
-        service.insert(createUser(req));
+        try {
+            service.insert(createUser(req));
+        } catch (EmailException e) {
+            e.printStackTrace();
+        }
         doGet(req, resp);
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        service.update(createUser(req));
+        try {
+            service.update(createUser(req));
+        } catch (UpdateObjectNotExistException e) {
+            e.printStackTrace();
+        }
         refreshPage(req, resp);
     }
 
@@ -55,25 +63,25 @@ public class UserPageServlet extends HttpServlet {
     }
 
     private void refreshPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<User> usersList = service.findAll();
+        List<UserDto> usersList = service.findAll();
         req.setAttribute("users", usersList);
         req.getRequestDispatcher("pages/usersPage.jsp").forward(req, resp);
     }
 
-    private User createUser(HttpServletRequest req){
+    private UserDto createUser(HttpServletRequest req){
         String email = req.getParameter("email");
         String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");
         String phoneNumber = req.getParameter("phoneNumber");
         String password = req.getParameter("password");
 
-        User newUser = new User();
+        UserDto newUser = new UserDto();
         newUser.setEmail(email);
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);
         newUser.setPhoneNumber(phoneNumber);
         newUser.setPassword(password);
-        newUser.setSessionsList(new ArrayList<Session>());
+        //newUser.setSessiosList(new ArrayList<SessionDto>());
 
         return newUser;
     }

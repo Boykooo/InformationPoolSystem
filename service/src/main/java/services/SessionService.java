@@ -11,11 +11,13 @@ import dto.SessionDto;
 import dto.SessionPkDto;
 
 import javax.ejb.EJB;
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
+@LocalBean
 public class SessionService implements IService<SessionDto, SessionPkDto> {
 
     @EJB

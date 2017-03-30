@@ -1,7 +1,7 @@
 package rest;
 
 
-import Entities.Pool;
+import dto.PoolDto;
 import services.PoolService;
 
 import javax.ejb.EJB;
@@ -24,18 +24,16 @@ public class PoolRest {
     }
 
     @GET
-    public List<Pool> getAllPools(){
+    public List<PoolDto> getAllPools(){
         return service.findAll();
     }
 
     @GET
-    @Path("/{poolId}")
-    public Response getSpecificPool(@PathParam("poolId") int poolId){
-        Pool user = service.findById(poolId);
+    @Path("/{poolName}")
+    public Response getSpecificPool(@PathParam("poolName") String poolName){
+        PoolDto poolDto = service.findById(poolName);
 
-        return (user == null) ? Response.status(Response.Status.NOT_FOUND).build()
-                : Response.ok(user).build();
+        return (poolDto == null) ? Response.status(Response.Status.NOT_FOUND).build()
+                : Response.ok(poolDto).build();
     }
-
-
 }

@@ -47,6 +47,8 @@
 
     </dependencies>
 
+
+
     <build>
         <finalName>web</finalName>
     </build>

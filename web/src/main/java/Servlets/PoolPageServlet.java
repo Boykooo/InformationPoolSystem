@@ -1,6 +1,6 @@
 package Servlets;
 
-import Entities.Pool;
+import dto.PoolDto;
 import services.PoolService;
 
 import javax.ejb.EJB;
@@ -16,11 +16,11 @@ import java.util.List;
 public class PoolPageServlet extends HttpServlet {
 
     @EJB
-    PoolService poolService;
+    private PoolService poolService;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Pool> pools = poolService.findAll();
+        List<PoolDto> pools = poolService.findAll();
 
         req.setAttribute("pools", pools);
         req.getRequestDispatcher("pages/poolsPage.jsp").forward(req, resp);

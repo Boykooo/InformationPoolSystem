@@ -3,21 +3,23 @@ package services;
 import Entities.Session;
 import Entities.User;
 import Exceptions.EmailException;
+import Exceptions.UpdateObjectNotExistException;
 import dao.UserDao;
 import dto.SessionDto;
 import dto.UserDto;
 
 import javax.ejb.EJB;
-import javax.ejb.ObjectNotFoundException;
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
+@LocalBean
 public class UserService implements IService<UserDto, String> {
 
     @EJB
-    protected UserDao dao;
+    private UserDao dao;
     @EJB
     private SessionService sessionService;
 
@@ -47,11 +49,11 @@ public class UserService implements IService<UserDto, String> {
         }
     }
 
-    public void update(UserDto dto) throws ObjectNotFoundException {
+    public void update(UserDto dto) throws UpdateObjectNotExistException {
         if (dao.findById(dto.getEmail()) != null) {
             dao.update(convertToEntity(dto));
         } else {
-            throw new ObjectNotFoundException();
+            throw new UpdateObjectNotExistException();
         }
     }
 

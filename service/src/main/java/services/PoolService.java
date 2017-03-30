@@ -9,11 +9,13 @@ import dto.PoolDto;
 import dto.TrackDto;
 
 import javax.ejb.EJB;
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
+@LocalBean
 public class PoolService implements IService<PoolDto,String> {
 
     @EJB

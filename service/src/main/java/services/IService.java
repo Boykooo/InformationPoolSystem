@@ -6,9 +6,11 @@ import Exceptions.SessionAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dto.IBaseDto;
 
+import javax.ejb.Local;
 import javax.ejb.ObjectNotFoundException;
 import java.util.List;
 
+@Local
 public interface IService<Entity extends IBaseDto, PK> {
 
     Entity findById(PK key);

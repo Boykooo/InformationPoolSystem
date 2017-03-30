@@ -1,7 +1,7 @@
 package rest;
 
 
-import Entities.User;
+import dto.UserDto;
 import services.UserService;
 
 import javax.ejb.EJB;
@@ -17,28 +17,24 @@ import java.util.List;
 public class UserRest {
 
     @EJB
-    UserService service;
+    private UserService service;
 
     public UserRest() {
     }
 
     @GET
-    public List<User> getAllUsers(){
+    public List<UserDto> getAllUsers(){
         return service.findAll();
     }
 
     @GET
     @Path("/{userEmail}")
     public Response getSpecificUsers(@PathParam("userEmail") String userEmail){
-        User user = service.findById(userEmail);
+        UserDto userDto = service.findById(userEmail);
 
-        return (user == null) ? Response.status(Response.Status.NOT_FOUND).build()
-                              : Response.ok(user).build();
+        return (userDto == null) ? Response.status(Response.Status.NOT_FOUND).build()
+                              : Response.ok(userDto).build();
     }
 
-    @GET
-    @Path("/test")
-    public String test(){
-        return "Hello";
-    }
+
 }

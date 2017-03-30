@@ -21,7 +21,7 @@ public class Track implements IBaseEntity{
 
     @ManyToOne
     @NotNull
-    @JoinColumn(name = "pool_id", referencedColumnName = "id")
+    @JoinColumn(name = "pool_name", referencedColumnName = "name")
     private Pool pool;
 
     @OneToMany(mappedBy = "track")

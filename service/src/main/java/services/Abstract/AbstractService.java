@@ -1,13 +1,12 @@
 package services.Abstract;
 
 import Entities.IBaseEntity;
-import dao.GenericDao;
 
 import java.util.List;
 
 public abstract class AbstractService<Entity extends IBaseEntity, PK> {
 
-    protected GenericDao<Entity, PK> dao;
+    //  protected GenericDao<Entity, PK> dao;
 
     public abstract Entity findById(PK o);
 

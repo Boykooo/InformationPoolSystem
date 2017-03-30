@@ -1,5 +1,6 @@
 package Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
@@ -10,12 +11,6 @@ import java.util.List;
 public class Pool implements IBaseEntity {
 
     @Id
-    @Column(name = "id")
-    @NotNull
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
-
-    @Basic
     @NotNull
     @Column(name = "name")
     private String name;
@@ -45,17 +40,11 @@ public class Pool implements IBaseEntity {
     @Column(name = "isworking")
     private boolean isWorking;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "pool")
     private List<Track> trackList;
 
     //region GetSet
-
-    public int getId() {
-        return id;
-    }
-    public void setId(int poolId) {
-        this.id = poolId;
-    }
 
     public List<Track> getTrackList() {
         return trackList;

@@ -1,5 +1,6 @@
 package Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;

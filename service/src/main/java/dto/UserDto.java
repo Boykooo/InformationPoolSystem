@@ -1,7 +1,5 @@
 package dto;
 
-import Entities.Session;
-
 import java.util.List;
 
 public class UserDto implements IBaseDto {
@@ -9,14 +7,13 @@ public class UserDto implements IBaseDto {
     private String lastName;
     private String phoneNumber;
     private String email;
-    private List<Session> sessions;
+    private List<SessionDto> sessions;
 
     //region GetSet
 
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -24,7 +21,6 @@ public class UserDto implements IBaseDto {
     public String getLastName() {
         return lastName;
     }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
@@ -32,7 +28,6 @@ public class UserDto implements IBaseDto {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
@@ -40,16 +35,14 @@ public class UserDto implements IBaseDto {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public List<Session> getSessions() {
+    public List<SessionDto> getSessions() {
         return sessions;
     }
-
-    public void setSessions(List<Session> sessions) {
+    public void setSessions(List<SessionDto> sessions) {
         this.sessions = sessions;
     }
 

@@ -16,7 +16,6 @@ public class TestSession extends TestCase {
         Session session = new Session();
         session.setSessionTime(Timestamp.valueOf("2004-10-19 10:23:54"));
         session.setCost(250);
-        //session.setTrackId(1);
 
         TrackDao trackDao = new TrackDao();
         Track track = trackDao.findById(1);
@@ -29,8 +28,28 @@ public class TestSession extends TestCase {
 
         sessionDao.insert(session);
 
-//        INSERT INTO ips.session(
-//                "time","cost", "user_email", "track_id")
-//        VALUES ('2004-10-19 10:23:54', 250, 'test@test.com', '1');
+    }
+
+
+    public void testInsertWithoutField(){
+        SessionDao sessionDao = new SessionDao();
+
+        Session session = new Session();
+        session.setSessionTime(Timestamp.valueOf("2004-10-19 10:23:54"));
+        session.setCost(250);
+
+        TrackDao trackDao = new TrackDao();
+        //Track track = trackDao.findById(1);
+        Track track = new Track();
+        track.setId(1);
+        session.setTrack(track);
+
+        UserDao userDao = new UserDao();
+        //User user = userDao.findById("test@test.com");
+        User user = new User();
+        user.setEmail("test@test.com");
+        session.setUser(user);
+
+        sessionDao.insert(session);
     }
 }

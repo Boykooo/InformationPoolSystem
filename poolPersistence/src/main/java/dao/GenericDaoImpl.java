@@ -10,58 +10,59 @@ import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 @Local
-public abstract class GenericDaoImpl<T, PK> implements GenericDao<T, PK> {
+public abstract class GenericDaoImpl<Entity, PK> implements GenericDao<Entity, PK> {
 
     //@PersistenceContext
     protected EntityManager manager;
-    private Class<T> entityClass;
+    private Class<Entity> entityClass;
 
-    public GenericDaoImpl(Class<T> entityClass) {
+    public GenericDaoImpl(Class<Entity> entityClass) {
         this.entityClass = entityClass;
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistenceUnit");
         manager = emf.createEntityManager();
     }
 
     @Override
-    public T findById(PK o) {
+    public Entity findById(PK o) {
         return manager.find(entityClass, o);
     }
 
     @Override
-    public List<T> findAll() {
+    public List<Entity> findAll() {
 
         CriteriaBuilder cb = manager.getCriteriaBuilder();
-        CriteriaQuery<T> cq = cb.createQuery(entityClass);
+        CriteriaQuery<Entity> cq = cb.createQuery(entityClass);
 
-        CriteriaQuery<T> all = cq.select(cq.from(entityClass));
-        TypedQuery<T> allQuery = manager.createQuery(all);
+        CriteriaQuery<Entity> all = cq.select(cq.from(entityClass));
+        TypedQuery<Entity> allQuery = manager.createQuery(all);
 
         return allQuery.getResultList();
     }
 
     @Override
-    public void insert(T o) {
+    public void insert(Entity entity) {
         manager.getTransaction().begin();
-        manager.persist(o);
+        manager.persist(entity);
         manager.getTransaction().commit();
     }
 
     @Override
-    public void update(T o) {
+    public void update(Entity entity) {
         manager.getTransaction().begin();
-        manager.merge(o);
+        manager.merge(entity);
         manager.getTransaction().commit();
     }
 
     @Override
-    public boolean delete(PK o) {
+    public boolean delete(PK key) {
+        Entity entity = findById(key);
+        if (entity != null) {
+            manager.getTransaction().begin();
+            manager.remove(entity);
+            manager.getTransaction().commit();
+            return true;
+        }
 
-        T entity = findById(o);
-
-        manager.getTransaction().begin();
-        manager.remove(entity);
-        manager.getTransaction().commit();
-
-        return true;
+        return false;
     }
 }

@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 public class SessionPkDto {
     private Timestamp sessionTime;
-    private Integer trackId;
+    private TrackDto track;
 
     //region GetSet
 
@@ -15,11 +15,11 @@ public class SessionPkDto {
         this.sessionTime = sessionTime;
     }
 
-    public Integer getTrackId() {
-        return trackId;
+    public TrackDto getTrack() {
+        return track;
     }
-    public void setTrackId(Integer trackId) {
-        this.trackId = trackId;
+    public void setTrack(TrackDto track) {
+        this.track = track;
     }
 
     //endregion

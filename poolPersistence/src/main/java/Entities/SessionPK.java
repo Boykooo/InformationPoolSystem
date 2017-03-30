@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 
 public class SessionPK implements Serializable {
     private Timestamp sessionTime;
-    private int trackId;
+    private Track track;
 
     //region GetSet
 
@@ -16,11 +16,11 @@ public class SessionPK implements Serializable {
         this.sessionTime = sessionTime;
     }
 
-    public int getTrackId() {
-        return trackId;
+    public Track getTrack() {
+        return track;
     }
-    public void setTrackId(int trackId) {
-        this.trackId = trackId;
+    public void setTrack(Track track) {
+        this.track = track;
     }
 
     //endregion

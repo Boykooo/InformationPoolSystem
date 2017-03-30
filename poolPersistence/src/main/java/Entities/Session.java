@@ -7,18 +7,13 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "session")
-//@IdClass(SessionPK.class)
+@IdClass(SessionPK.class)
 public class Session implements IBaseEntity{
 
     @Id
     @NotNull
     @Column(name = "time")
     private Timestamp sessionTime;
-
-//    @Id
-//    @NotNull
-//    @Column(name = "track_id")
-//    private int trackId;
 
     @NotNull
     @ManyToOne
@@ -56,13 +51,6 @@ public class Session implements IBaseEntity{
     public void setUser(User user) {
         this.user = user;
     }
-
-//    public int getTrackId() {
-//        return trackId;
-//    }
-//    public void setTrackId(int trackId) {
-//        this.trackId = trackId;
-//    }
 
     public Track getTrack() {
         return track;

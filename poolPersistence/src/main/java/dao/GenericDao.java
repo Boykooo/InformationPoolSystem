@@ -4,15 +4,15 @@ import javax.ejb.Local;
 import java.util.List;
 
 @Local
-public interface GenericDao<T, PK> {
+public interface GenericDao<Entity, PK> {
 
-    T findById(PK o);
+    Entity findById(PK key);
 
-    List<T> findAll();
+    List<Entity> findAll();
 
-    void insert(T o);
+    void insert(Entity entity);
 
-    void update(T o);
+    void update(Entity entity);
 
-    boolean  delete(PK o);
+    boolean  delete(PK key);
 }

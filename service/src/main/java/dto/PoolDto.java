@@ -49,10 +49,10 @@ public class PoolDto implements IBaseDto {
         this.type = type;
     }
 
-    public boolean isWorking() {
+    public boolean getIsWorking() {
         return isWorking;
     }
-    public void setWorking(boolean working) {
+    public void setIsWorking(boolean working) {
         isWorking = working;
     }
 

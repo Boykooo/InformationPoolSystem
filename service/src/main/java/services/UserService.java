@@ -8,6 +8,7 @@ import dto.SessionDto;
 import dto.UserDto;
 
 import javax.ejb.EJB;
+import javax.ejb.ObjectNotFoundException;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,23 +40,19 @@ public class UserService implements IService<UserDto, String> {
     }
 
     public void insert(UserDto dto) throws EmailException {
-        List<User> users = dao.findAll();
-
-        User foundUser = users.stream()
-                .filter(user -> user.getEmail().equals(dto.getEmail()))
-                .findFirst()
-                .get();
-
-
-        if (foundUser == null) {
+        if (dao.findById(dto.getEmail()) == null) {
             dao.insert(convertToEntity(dto));
         } else {
             throw new EmailException();
         }
     }
 
-    public void update(UserDto dto) {
-        dao.update(convertToEntity(dto));
+    public void update(UserDto dto) throws ObjectNotFoundException {
+        if (dao.findById(dto.getEmail()) == null) {
+            dao.update(convertToEntity(dto));
+        } else {
+            throw new ObjectNotFoundException();
+        }
     }
 
     public boolean delete(String key) {
@@ -66,7 +63,6 @@ public class UserService implements IService<UserDto, String> {
         }
         return false;
     }
-
 
     public UserDto convertToDto(User entity) {
         UserDto userDto = new UserDto();

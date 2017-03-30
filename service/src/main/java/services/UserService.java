@@ -48,7 +48,7 @@ public class UserService implements IService<UserDto, String> {
     }
 
     public void update(UserDto dto) throws ObjectNotFoundException {
-        if (dao.findById(dto.getEmail()) == null) {
+        if (dao.findById(dto.getEmail()) != null) {
             dao.update(convertToEntity(dto));
         } else {
             throw new ObjectNotFoundException();

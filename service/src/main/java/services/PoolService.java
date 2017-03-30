@@ -3,12 +3,12 @@ package services;
 import Entities.Pool;
 import Entities.Track;
 import Exceptions.PoolNameException;
+import Exceptions.UpdateObjectNotExistException;
 import dao.PoolDao;
 import dto.PoolDto;
 import dto.TrackDto;
 
 import javax.ejb.EJB;
-import javax.ejb.ObjectNotFoundException;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,17 +44,17 @@ public class PoolService implements IService<PoolDto,String> {
         }
     }
 
-    public void update(PoolDto poolDto) throws ObjectNotFoundException {
-        if (dao.findById(poolDto.getName()) == null){
+    public void update(PoolDto poolDto) throws UpdateObjectNotExistException {
+        if (dao.findById(poolDto.getName()) != null){
             dao.update(convertToEntity(poolDto));
         }
         else {
-            throw new ObjectNotFoundException();
+            throw new UpdateObjectNotExistException();
         }
     }
 
     public boolean delete(String key) {
-        if (dao.findById(key) == null){
+        if (dao.findById(key) != null){
             dao.delete(key);
             return true;
         }

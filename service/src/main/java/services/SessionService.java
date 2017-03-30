@@ -4,6 +4,8 @@ import Entities.Session;
 import Entities.SessionPK;
 import Entities.Track;
 import Entities.User;
+import Exceptions.SessionAlreadyExistsException;
+import Exceptions.UpdateObjectNotExistException;
 import dao.SessionDao;
 import dto.SessionDto;
 import dto.SessionPkDto;
@@ -35,16 +37,32 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         return sessionsDto;
     }
 
-    public void insert(SessionDto sessionDto) {
-        dao.insert(convertToEntity(sessionDto));
+    public void insert(SessionDto dto) throws SessionAlreadyExistsException {
+        if (dao.findById(createSessionPkFromDto(dto)) == null){
+            dao.insert(convertToEntity(dto));
+        }
+        else {
+            throw new SessionAlreadyExistsException();
+        }
+
     }
 
-    public void update(SessionDto sessionDto) {
-        dao.update(convertToEntity(sessionDto));
+    public void update(SessionDto dto) throws UpdateObjectNotExistException {
+        if (dao.findById(createSessionPkFromDto(dto)) != null){
+            dao.update(convertToEntity(dto));
+        }
+        else {
+            throw new UpdateObjectNotExistException();
+        }
+
     }
 
     public boolean delete(SessionPkDto key) {
-        return dao.delete(convertToSessionPK(key));
+        if (dao.findById(convertToSessionPK(key)) != null){
+            dao.delete(convertToSessionPK(key));
+        }
+
+        return false;
     }
 
     private Session convertToEntity(SessionDto dto){
@@ -78,6 +96,16 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         SessionPK pk = new SessionPK();
         pk.setSessionTime(dto.getSessionTime());
         pk.setTrack(trackService.convertToEntity(dto.getTrack()));
+
+        return pk;
+    }
+
+    public SessionPK createSessionPkFromDto(SessionDto dto){
+        SessionPK pk = new SessionPK();
+        pk.setSessionTime(dto.getSessionTime());
+        Track track = new Track();
+        track.setId(dto.getTrackId());
+        pk.setTrack(track);
 
         return pk;
     }

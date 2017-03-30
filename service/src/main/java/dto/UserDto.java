@@ -3,10 +3,10 @@ package dto;
 import java.util.List;
 
 public class UserDto implements IBaseDto {
+    private String email;
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private String email;
     private String password;
     private List<SessionDto> sessions;
 

@@ -1,51 +1,36 @@
 package services;
 
-import Entities.Pool;
 import dao.PoolDao;
-import services.Abstract.AbstractService;
+import dto.PoolDto;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import java.util.List;
 
 @Stateless
-public class PoolService extends AbstractService<Pool, Integer> {
+public class PoolService implements IService<PoolDto,String> {
 
     @EJB
     private PoolDao dao;
 
-    public PoolService() {
-        super();
+
+    public PoolDto findById(String key) {
+        return null;
     }
 
-    @Override
-    public Pool findById(Integer o) {
-        return dao.findById(o);
+    public List<PoolDto> findAll() {
+        return null;
     }
 
-    @Override
-    public List<Pool> findAll() {
-        return dao.findAll();
+    public void insert(PoolDto poolDto) {
+
     }
 
-    @Override
-    public void insert(Pool o) {
-        dao.insert(o);
+    public void update(PoolDto poolDto) {
+
     }
 
-    @Override
-    public void update(Pool o) {
-        dao.update(o);
-    }
-
-    @Override
-    public boolean delete(Integer o) {
-        Pool pool = this.findById(o);
-        if (pool != null){
-            dao.delete(o);
-            return true;
-        }
-
+    public boolean delete(String key) {
         return false;
     }
 }

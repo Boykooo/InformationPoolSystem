@@ -95,5 +95,4 @@ public class UserRest {
 
         return dto;
     }
-
 }

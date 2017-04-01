@@ -1,13 +1,13 @@
 package jsf;
 
 import javax.annotation.ManagedBean;
-import javax.enterprise.context.SessionScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 
 @Named("loginBean")
 @ManagedBean
-@SessionScoped
+@RequestScoped
 public class LoginBean implements Serializable{
     private String username;
     private String password;

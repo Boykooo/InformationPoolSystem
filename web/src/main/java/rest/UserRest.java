@@ -87,7 +87,10 @@ public class UserRest {
     @DELETE
     @Path("/{userEmail}")
     public Response deleteUser(@PathParam("userEmail") String email) {
-        service.delete(email);
+        AbstractResponse response;
+        if (email != null){
+            service.delete(email);
+        }
         return Response.ok(new SuccessfulResponse()).build();
     }
 

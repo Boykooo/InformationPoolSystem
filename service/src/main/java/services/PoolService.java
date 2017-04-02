@@ -2,7 +2,7 @@ package services;
 
 import Entities.Pool;
 import Entities.Track;
-import Exceptions.PoolNameException;
+import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dao.PoolDao;
 import dto.PoolDto;
@@ -37,12 +37,12 @@ public class PoolService implements IService<PoolDto,String> {
         return poolDtoList;
     }
 
-    public void insert(PoolDto poolDto) throws PoolNameException {
+    public void insert(PoolDto poolDto) throws ObjectAlreadyExistsException {
         if (dao.findById(poolDto.getName()) == null){
             dao.insert(convertToEntity(poolDto));
         }
         else {
-            throw new PoolNameException();
+            throw new ObjectAlreadyExistsException();
         }
     }
 

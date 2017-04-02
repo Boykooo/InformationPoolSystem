@@ -1,10 +1,10 @@
 package rest;
 
 
-import Exceptions.EmailException;
+import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dto.UserDto;
-import rest.Responses.AbstractResponse;
+import rest.Responses.CommonResponse;
 import rest.Responses.ErrorResponse;
 import rest.Responses.SuccessfulResponse;
 import services.UserService;
@@ -48,11 +48,11 @@ public class UserRest {
             @FormParam("phoneNumber") String phoneNumber,
             @FormParam("password") String password) {
 
-        AbstractResponse response;
+        CommonResponse response;
         try {
             service.insert(buildUserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
-        } catch (EmailException e) {
+        } catch (ObjectAlreadyExistsException e) {
             response = new ErrorResponse(e.getMessage());
         }
 
@@ -67,7 +67,7 @@ public class UserRest {
             @FormParam("phoneNumber") String phoneNumber,
             @FormParam("password") String password) {
 
-        AbstractResponse response;
+        CommonResponse response;
         if (email != null) {
             try {
                 service.update(buildUserDto(email, firstName, lastName, phoneNumber, password));

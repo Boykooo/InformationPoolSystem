@@ -2,7 +2,7 @@ package services;
 
 import Entities.Session;
 import Entities.User;
-import Exceptions.EmailException;
+import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dao.UserDao;
 import dto.SessionDto;
@@ -41,11 +41,11 @@ public class UserService implements IService<UserDto, String> {
         return userDtoList;
     }
 
-    public void insert(UserDto dto) throws EmailException {
+    public void insert(UserDto dto) throws ObjectAlreadyExistsException {
         if (dao.findById(dto.getEmail()) == null) {
             dao.insert(convertToEntity(dto));
         } else {
-            throw new EmailException();
+            throw new ObjectAlreadyExistsException();
         }
     }
 

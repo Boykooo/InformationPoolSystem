@@ -1,9 +1,9 @@
 package rest.Responses;
 
-public class AbstractResponse {
+public class CommonResponse {
     private String status;
 
-    public AbstractResponse(String status) {
+    public CommonResponse(String status) {
         this.status = status;
     }
 

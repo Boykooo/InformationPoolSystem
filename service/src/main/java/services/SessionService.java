@@ -4,7 +4,7 @@ import Entities.Session;
 import Entities.SessionPK;
 import Entities.Track;
 import Entities.User;
-import Exceptions.SessionAlreadyExistsException;
+import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dao.SessionDao;
 import dto.SessionDto;
@@ -39,12 +39,12 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         return sessionsDto;
     }
 
-    public void insert(SessionDto dto) throws SessionAlreadyExistsException {
+    public void insert(SessionDto dto) throws ObjectAlreadyExistsException {
         if (dao.findById(createSessionPkFromDto(dto)) == null){
             dao.insert(convertToEntity(dto));
         }
         else {
-            throw new SessionAlreadyExistsException();
+            throw new ObjectAlreadyExistsException();
         }
 
     }

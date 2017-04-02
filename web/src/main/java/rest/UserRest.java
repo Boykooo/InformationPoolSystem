@@ -68,11 +68,16 @@ public class UserRest {
             @FormParam("password") String password) {
 
         AbstractResponse response;
-        try {
-            service.update(buildUserDto(email, firstName, lastName, phoneNumber, password));
-            response = new SuccessfulResponse();
-        } catch (UpdateObjectNotExistException e) {
-            response = new ErrorResponse(e.getMessage());
+        if (email != null) {
+            try {
+                service.update(buildUserDto(email, firstName, lastName, phoneNumber, password));
+                response = new SuccessfulResponse();
+            } catch (UpdateObjectNotExistException e) {
+                response = new ErrorResponse(e.getMessage());
+            }
+        }
+        else {
+            response = new ErrorResponse("Required field email cannot be null");
         }
 
         return Response.ok(response).build();

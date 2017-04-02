@@ -37,3 +37,9 @@ CREATE TABLE ips.session(
   CONSTRAINT fk_email FOREIGN KEY (user_email) REFERENCES ips.user(email) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT fk_track_id FOREIGN KEY (track_id) REFERENCES ips.track(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+CREATE TABLE ips.admin(
+  username VARCHAR(100) PRIMARY KEY,
+  password VARCHAR(100) NOT NULL
+);
+

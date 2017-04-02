@@ -10,10 +10,7 @@
         <class>Entities.Session</class>
         <class>Entities.Track</class>
         <class>Entities.User</class>
-        <class>dto.temp.Pool</class>
-        <class>dto.temp.Session</class>
-        <class>dto.temp.Track</class>
-        <class>dto.temp.User</class>
+        <class>Entities.Admin</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://91.202.27.32:5432/mainDB"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>

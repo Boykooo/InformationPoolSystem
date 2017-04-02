@@ -4,6 +4,14 @@ public class AdminDto implements IBaseDto {
     private String username;
     private String password;
 
+    public AdminDto() {
+    }
+
+    public AdminDto(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public String getUsername() {
         return username;
     }

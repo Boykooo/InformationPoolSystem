@@ -8,6 +8,16 @@ public class SessionDto implements IBaseDto {
     private String userEmail;
     private Integer cost;
 
+    public SessionDto() {
+    }
+
+    public SessionDto(Timestamp sessionTime, Integer trackId, String userEmail, Integer cost) {
+        this.sessionTime = sessionTime;
+        this.trackId = trackId;
+        this.userEmail = userEmail;
+        this.cost = cost;
+    }
+
     //region GetSet
 
     public Timestamp getSessionTime() {

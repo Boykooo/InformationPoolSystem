@@ -1,7 +1,7 @@
 package rest.Responses;
 
-public class ErrorResponse extends CommonResponse {
-    public ErrorResponse(String status) {
-        super("ERROR : " + status);
+public class ErrorResponse extends AbstractResponse {
+    public ErrorResponse(String message) {
+        super("ERROR : " + message);
     }
 }

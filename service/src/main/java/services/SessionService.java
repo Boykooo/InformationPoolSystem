@@ -85,13 +85,17 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
     }
 
     public SessionDto convertToDto(Session entity){
-        SessionDto dto = new SessionDto();
-        dto.setCost(entity.getCost());
-        dto.setSessionTime(entity.getSessionTime());
-        dto.setTrackId(entity.getTrack().getId());
-        dto.setUserEmail(entity.getUser().getEmail());
+        if (entity != null) {
+            SessionDto dto = new SessionDto();
+            dto.setCost(entity.getCost());
+            dto.setSessionTime(entity.getSessionTime());
+            dto.setTrackId(entity.getTrack().getId());
+            dto.setUserEmail(entity.getUser().getEmail());
 
-        return dto;
+            return dto;
+        }
+
+        return null;
     }
 
     public SessionPK convertToSessionPK(SessionPkDto dto){

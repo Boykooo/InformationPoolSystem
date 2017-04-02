@@ -67,20 +67,24 @@ public class UserService implements IService<UserDto, String> {
     }
 
     public UserDto convertToDto(User entity) {
-        UserDto userDto = new UserDto();
-        userDto.setFirstName(entity.getFirstName());
-        userDto.setLastName(entity.getLastName());
-        userDto.setPhoneNumber(entity.getPhoneNumber());
-        userDto.setEmail(entity.getEmail());
+        if (entity != null) {
+            UserDto userDto = new UserDto();
+            userDto.setFirstName(entity.getFirstName());
+            userDto.setLastName(entity.getLastName());
+            userDto.setPhoneNumber(entity.getPhoneNumber());
+            userDto.setEmail(entity.getEmail());
 
-        List<SessionDto> sessionDtoList = new ArrayList<>();
-        entity.getSessionsList().forEach(
-                (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
-        );
+            List<SessionDto> sessionDtoList = new ArrayList<>();
+            entity.getSessionsList().forEach(
+                    (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
+            );
 
-        userDto.setSessionsList(sessionDtoList);
+            userDto.setSessionsList(sessionDtoList);
 
-        return userDto;
+            return userDto;
+        }
+
+        return null;
     }
 
     public User convertToEntity(UserDto dto) {

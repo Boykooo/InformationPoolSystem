@@ -4,8 +4,9 @@ package rest;
 import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dto.UserDto;
-import rest.Responses.CommonResponse;
+import rest.Responses.AbstractResponse;
 import rest.Responses.ErrorResponse;
+import rest.Responses.NotFoundResponse;
 import rest.Responses.SuccessfulResponse;
 import services.UserService;
 
@@ -36,7 +37,7 @@ public class UserRest {
     public Response getSpecificUsers(@PathParam("userEmail") String userEmail) {
         UserDto userDto = service.findById(userEmail);
 
-        return (userDto == null) ? Response.status(Response.Status.NOT_FOUND).build()
+        return (userDto == null) ? Response.ok(new NotFoundResponse()).build()
                 : Response.ok(userDto).build();
     }
 
@@ -48,7 +49,7 @@ public class UserRest {
             @FormParam("phoneNumber") String phoneNumber,
             @FormParam("password") String password) {
 
-        CommonResponse response;
+        AbstractResponse response;
         try {
             service.insert(buildUserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
@@ -67,7 +68,7 @@ public class UserRest {
             @FormParam("phoneNumber") String phoneNumber,
             @FormParam("password") String password) {
 
-        CommonResponse response;
+        AbstractResponse response;
         if (email != null) {
             try {
                 service.update(buildUserDto(email, firstName, lastName, phoneNumber, password));

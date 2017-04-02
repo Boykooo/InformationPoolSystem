@@ -73,17 +73,21 @@ public class TrackService implements IService<TrackDto,Integer> {
     }
 
     public TrackDto convertToDto(Track entity){
-        TrackDto dto = new TrackDto();
-        dto.setId(entity.getId());
-        dto.setNumber(entity.getNumber());
-        dto.setPoolName(entity.getPool().getName());
+        if (entity != null) {
+            TrackDto dto = new TrackDto();
+            dto.setId(entity.getId());
+            dto.setNumber(entity.getNumber());
+            dto.setPoolName(entity.getPool().getName());
 
-        List<SessionDto> sessionDtoList = new ArrayList<>();
-        entity.getSessionsList().forEach(
-                (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
-        );
-        dto.setSessionsList(sessionDtoList);
+            List<SessionDto> sessionDtoList = new ArrayList<>();
+            entity.getSessionsList().forEach(
+                    (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
+            );
+            dto.setSessionsList(sessionDtoList);
 
-        return dto;
+            return dto;
+        }
+
+        return null;
     }
 }

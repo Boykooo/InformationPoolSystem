@@ -1,6 +1,6 @@
 package Servlets;
 
-import Exceptions.EmailException;
+import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import dto.UserDto;
 import services.UserService;
@@ -38,7 +38,7 @@ public class UserPageServlet extends HttpServlet {
         }
         try {
             service.insert(createUser(req));
-        } catch (EmailException e) {
+        } catch (ObjectAlreadyExistsException e) {
             e.printStackTrace();
         }
         doGet(req, resp);

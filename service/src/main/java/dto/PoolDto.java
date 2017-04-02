@@ -9,8 +9,20 @@ public class PoolDto implements IBaseDto {
     private String width;
     private String depth;
     private String type;
-    private boolean isWorking;
+    private Boolean isWorking;
     private List<TrackDto> trackList;
+
+    public PoolDto() {
+    }
+
+    public PoolDto(String name, String length, String width, String depth, String type, Boolean isWorking) {
+        this.name = name;
+        this.length = length;
+        this.width = width;
+        this.depth = depth;
+        this.type = type;
+        this.isWorking = isWorking;
+    }
 
     //region GetSet
 
@@ -49,10 +61,10 @@ public class PoolDto implements IBaseDto {
         this.type = type;
     }
 
-    public boolean getIsWorking() {
+    public Boolean getIsWorking() {
         return isWorking;
     }
-    public void setIsWorking(boolean working) {
+    public void setIsWorking(Boolean working) {
         isWorking = working;
     }
 

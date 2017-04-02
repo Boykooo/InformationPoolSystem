@@ -8,6 +8,15 @@ public class TrackDto implements IBaseDto {
     private String poolName;
     private List<SessionDto> sessionsList;
 
+    public TrackDto() {
+    }
+
+    public TrackDto(Integer id, Integer number, String poolName) {
+        this.id = id;
+        this.number = number;
+        this.poolName = poolName;
+    }
+
     //region GetSet
 
     public Integer getId() {

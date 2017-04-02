@@ -78,20 +78,24 @@ public class PoolService implements IService<PoolDto,String> {
     }
 
     private PoolDto convertToDto(Pool entity){
-        PoolDto dto = new PoolDto();
-        dto.setWidth(entity.getWidth());
-        dto.setDepth(entity.getDepth());
-        dto.setLength(entity.getLength());
-        dto.setName(entity.getName());
-        dto.setType(entity.getType());
-        dto.setIsWorking(entity.getIsWorking());
+        if (entity != null) {
+            PoolDto dto = new PoolDto();
+            dto.setWidth(entity.getWidth());
+            dto.setDepth(entity.getDepth());
+            dto.setLength(entity.getLength());
+            dto.setName(entity.getName());
+            dto.setType(entity.getType());
+            dto.setIsWorking(entity.getIsWorking());
 
-        List<TrackDto> trackDtoList = new ArrayList<>();
-        entity.getTrackList().forEach(
-                (Track track) -> trackDtoList.add(trackService.convertToDto(track))
-        );
-        dto.setTrackList(trackDtoList);
+            List<TrackDto> trackDtoList = new ArrayList<>();
+            entity.getTrackList().forEach(
+                    (Track track) -> trackDtoList.add(trackService.convertToDto(track))
+            );
+            dto.setTrackList(trackDtoList);
 
-        return dto;
+            return dto;
+        }
+
+        return null;
     }
 }

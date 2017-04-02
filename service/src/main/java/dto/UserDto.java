@@ -10,6 +10,17 @@ public class UserDto implements IBaseDto {
     private String password;
     private List<SessionDto> sessions;
 
+    public UserDto() {
+    }
+
+    public UserDto(String email, String firstName, String lastName, String phoneNumber, String password) {
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+    }
+
     //region GetSet
 
     public String getFirstName() {

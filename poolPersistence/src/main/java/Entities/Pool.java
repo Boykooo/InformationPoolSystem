@@ -17,17 +17,17 @@ public class Pool implements IBaseEntity {
     @Basic
     @NotNull
     @Column(name = "length")
-    private String length;
+    private Double length;
 
     @Basic
     @NotNull
     @Column(name = "width")
-    private String width;
+    private Double width;
 
     @Basic
     @NotNull
     @Column(name = "depth")
-    private String depth;
+    private Double depth;
 
     @Basic
     @NotNull
@@ -58,24 +58,24 @@ public class Pool implements IBaseEntity {
         this.name = name;
     }
 
-    public String getLength() {
+    public Double getLength() {
         return length;
     }
-    public void setLength(String length) {
+    public void setLength(Double length) {
         this.length = length;
     }
 
-    public String getWidth() {
+    public Double getWidth() {
         return width;
     }
-    public void setWidth(String width) {
+    public void setWidth(Double width) {
         this.width = width;
     }
 
-    public String getDepth() {
+    public Double getDepth() {
         return depth;
     }
-    public void setDepth(String depth) {
+    public void setDepth(Double depth) {
         this.depth = depth;
     }
 

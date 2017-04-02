@@ -6,24 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/rest/Responses/NotFoundResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/CommonResponse.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/Responses/AbstractResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" afterPath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/TrackService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/TrackService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/ErrorResponse.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/Responses/ErrorResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/SuccessfulResponse.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/Responses/SuccessfulResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,11 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoolRest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PoolRest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1119">
-              <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+            <state relative-caret-position="307">
+              <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
               <folding>
                 <element signature="e#553#554#0" expanded="true" />
                 <element signature="e#596#597#0" expanded="true" />
@@ -112,7 +98,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoolService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoolDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding>
+                <element signature="method#PoolDto#0;class#PoolDto#0" expanded="false" />
+                <element signature="method#PoolDto#1;class#PoolDto#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoolService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/services/PoolService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -201,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service/src/main/java/Exceptions/EmailException.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/rest/Responses/ResponseStatus.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/rest/Responses/OkResponse.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/faces-config.xml.xhtml" />
@@ -240,18 +248,19 @@
         <option value="$PROJECT_DIR$/web/src/main/java/rest/Responses/ErrorResponse.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/Servlets/UserPageServlet.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/TrackService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" />
+        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" />
       </list>
     </option>
   </component>
@@ -691,6 +700,98 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poolPersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poolPersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poolPersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poolPersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1378,7 +1479,7 @@
       <workItem from="1490978586060" duration="13775000" />
       <workItem from="1490999458045" duration="6160000" />
       <workItem from="1491033989827" duration="17995000" />
-      <workItem from="1491137965807" duration="6139000" />
+      <workItem from="1491137965807" duration="6814000" />
     </task>
     <task id="LOCAL-00001" summary="fix Entities">
       <created>1488654987510</created>
@@ -1667,7 +1768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491140364235</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Little fix services">
+      <created>1491144123949</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1491144123949</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1703,7 +1811,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251502000" />
+    <option name="totallyTimeSpent" value="252177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1807,7 +1915,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Impl @Get method for UserRest" />
     <MESSAGE value="Imlp @Get specific user" />
     <MESSAGE value="Impl @Get all and specific pools for PoolRest" />
     <MESSAGE value="Create postgreSQL script for create database." />
@@ -1832,11 +1939,12 @@
     <MESSAGE value="Created bundle.properties" />
     <MESSAGE value="Added bad authorization, without protect" />
     <MESSAGE value="Impl Admin entity, dao, dto, service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl Admin entity, dao, dto, service" />
+    <MESSAGE value="Little fix services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little fix services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="142" />
+      <option name="time" value="143" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1845,7 +1953,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/qe.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -2023,7 +2130,7 @@
         <state relative-caret-position="374">
           <caret line="30" column="5" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2118,8 +2225,8 @@
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="false" />
+            <element signature="e#144#145#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2129,8 +2236,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#163#164#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2140,8 +2247,8 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#112#113#0" expanded="false" />
+            <element signature="e#153#154#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2223,31 +2330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="method#PoolDto#0;class#PoolDto#0" expanded="false" />
-            <element signature="method#PoolDto#1;class#PoolDto#0" expanded="false" />
-            <element signature="e#605#620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1119">
-          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
-          <folding>
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/rest/UserRest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -2293,6 +2375,38 @@
           <folding>
             <element signature="e#562#563#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="method#PoolDto#0;class#PoolDto#0" expanded="false" />
+            <element signature="method#PoolDto#1;class#PoolDto#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
           </folding>
         </state>
       </provider>

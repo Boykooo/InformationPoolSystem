@@ -5,9 +5,9 @@ import java.util.List;
 public class PoolDto implements IBaseDto {
 
     private String name;
-    private String length;
-    private String width;
-    private String depth;
+    private Double length;
+    private Double width;
+    private Double depth;
     private String type;
     private Boolean isWorking;
     private List<TrackDto> trackList;
@@ -15,7 +15,7 @@ public class PoolDto implements IBaseDto {
     public PoolDto() {
     }
 
-    public PoolDto(String name, String length, String width, String depth, String type, Boolean isWorking) {
+    public PoolDto(String name, Double length, Double width, Double depth, String type, Boolean isWorking) {
         this.name = name;
         this.length = length;
         this.width = width;
@@ -33,24 +33,24 @@ public class PoolDto implements IBaseDto {
         this.name = name;
     }
 
-    public String getLength() {
+    public Double getLength() {
         return length;
     }
-    public void setLength(String length) {
+    public void setLength(Double length) {
         this.length = length;
     }
 
-    public String getWidth() {
+    public Double getWidth() {
         return width;
     }
-    public void setWidth(String width) {
+    public void setWidth(Double width) {
         this.width = width;
     }
 
-    public String getDepth() {
+    public Double getDepth() {
         return depth;
     }
-    public void setDepth(String depth) {
+    public void setDepth(Double depth) {
         this.depth = depth;
     }
 

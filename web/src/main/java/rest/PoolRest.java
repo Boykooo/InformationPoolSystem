@@ -43,9 +43,9 @@ public class PoolRest {
     @POST
     public Response addPool(
             @FormParam("name") String name,
-            @FormParam("length") String length,
-            @FormParam("width") String width,
-            @FormParam("depth") String depth,
+            @FormParam("length") Double length,
+            @FormParam("width") Double width,
+            @FormParam("depth") Double depth,
             @FormParam("type") String type,
             @FormParam("isWorking") Boolean isWorking) {
 
@@ -66,9 +66,9 @@ public class PoolRest {
 
     @PUT
     public Response updatePool(@FormParam("name") String name,
-                               @FormParam("length") String length,
-                               @FormParam("width") String width,
-                               @FormParam("depth") String depth,
+                               @FormParam("length") Double length,
+                               @FormParam("width") Double width,
+                               @FormParam("depth") Double depth,
                                @FormParam("type") String type,
                                @FormParam("isWorking") Boolean isWorking) {
         AbstractResponse response;

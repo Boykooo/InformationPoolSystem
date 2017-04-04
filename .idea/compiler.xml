@@ -16,6 +16,7 @@
       <module name="InformationPoolSystem" target="1.8" />
       <module name="poolPersistence" target="1.8" />
       <module name="service" target="1.8" />
+      <module name="SoapServiceClient" target="1.8" />
       <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>

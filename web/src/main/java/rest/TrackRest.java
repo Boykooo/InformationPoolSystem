@@ -3,6 +3,7 @@ package rest;
 import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.ReferenceNotFoundException;
 import Exceptions.UpdateObjectNotExistException;
+import com.sun.istack.internal.NotNull;
 import dto.TrackDto;
 import rest.Responses.*;
 import services.TrackService;
@@ -54,7 +55,7 @@ public class TrackRest {
     public Response updateTrack(
             @FormParam("id") Integer id,
             @FormParam("number") Integer number,
-            @FormParam("poolName") String poolName) {
+            @NotNull @FormParam("poolName") String poolName) {
 
         AbstractResponse response;
         if (id != null) {

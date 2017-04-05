@@ -3,7 +3,6 @@ package services;
 import Entities.Session;
 import Entities.User;
 import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.UpdateObjectNotExistException;
 import dao.UserDao;
 import dto.SessionDto;
 import dto.UserDto;
@@ -22,6 +21,7 @@ public class UserService implements IService<UserDto, String> {
     private UserDao dao;
     @EJB
     private SessionService sessionService;
+
 
     public UserService() {
         super();
@@ -42,28 +42,15 @@ public class UserService implements IService<UserDto, String> {
     }
 
     public void insert(UserDto dto) throws ObjectAlreadyExistsException {
-        if (dao.findById(dto.getEmail()) == null) {
-            dao.insert(convertToEntity(dto));
-        } else {
-            throw new ObjectAlreadyExistsException();
-        }
+        dao.insert(convertToEntity(dto));
     }
 
-    public void update(UserDto dto) throws UpdateObjectNotExistException {
-        if (dao.findById(dto.getEmail()) != null) {
-            dao.update(convertToEntity(dto));
-        } else {
-            throw new UpdateObjectNotExistException();
-        }
+    public void update(UserDto dto) {
+        dao.update(convertToEntity(dto));
     }
 
     public boolean delete(String key) {
-        User user = dao.findById(key);
-        if (user != null){
-            dao.delete(key);
-            return true;
-        }
-        return false;
+        return dao.delete(key);
     }
 
     public UserDto convertToDto(User entity) {

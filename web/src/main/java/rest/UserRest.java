@@ -3,12 +3,12 @@ package rest;
 
 import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
+import controllers.UserController;
 import dto.UserDto;
 import rest.Responses.AbstractResponse;
 import rest.Responses.ErrorResponse;
 import rest.Responses.NotFoundResponse;
 import rest.Responses.SuccessfulResponse;
-import services.UserService;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -22,20 +22,20 @@ import java.util.List;
 public class UserRest {
 
     @EJB
-    private UserService service;
+    private UserController service;
 
     public UserRest() {
     }
 
     @GET
     public List<UserDto> getAllUsers() {
-        return service.findAll();
+        return service.getAllUsers();
     }
 
     @GET
     @Path("/{userEmail}")
     public Response getSpecificUsers(@PathParam("userEmail") String userEmail) {
-        UserDto userDto = service.findById(userEmail);
+        UserDto userDto = service.getById(userEmail);
 
         return (userDto == null) ? Response.ok(new NotFoundResponse()).build()
                 : Response.ok(userDto).build();
@@ -51,9 +51,9 @@ public class UserRest {
 
         AbstractResponse response;
         try {
-            service.insert(buildUserDto(email, firstName, lastName, phoneNumber, password));
+            service.addUser(new UserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
-        } catch (ObjectAlreadyExistsException e) {
+        } catch (ObjectAlreadyExistsException | BadRequestException e) {
             response = new ErrorResponse(e.getMessage());
         }
 
@@ -69,16 +69,12 @@ public class UserRest {
             @FormParam("password") String password) {
 
         AbstractResponse response;
-        if (email != null) {
-            try {
-                service.update(buildUserDto(email, firstName, lastName, phoneNumber, password));
-                response = new SuccessfulResponse();
-            } catch (UpdateObjectNotExistException e) {
-                response = new ErrorResponse(e.getMessage());
-            }
-        }
-        else {
-            response = new ErrorResponse("Required field email cannot be null");
+
+        try {
+            service.updateUser(new UserDto(email, firstName, lastName, phoneNumber, password));
+            response = new SuccessfulResponse();
+        } catch (UpdateObjectNotExistException | BadRequestException e) {
+            response = new ErrorResponse(e.getMessage());
         }
 
         return Response.ok(response).build();
@@ -88,20 +84,14 @@ public class UserRest {
     @Path("/{userEmail}")
     public Response deleteUser(@PathParam("userEmail") String email) {
         AbstractResponse response;
-        if (email != null){
-            service.delete(email);
+
+        try {
+            service.deleteUser(email);
+            response = new SuccessfulResponse();
+        } catch (BadRequestException e){
+            response = new ErrorResponse(e.getMessage());
         }
-        return Response.ok(new SuccessfulResponse()).build();
-    }
 
-    private UserDto buildUserDto(String email, String firstName, String lastName, String phoneNumber, String password) {
-        UserDto dto = new UserDto();
-        dto.setEmail(email);
-        dto.setPhoneNumber(phoneNumber);
-        dto.setFirstName(firstName);
-        dto.setLastName(lastName);
-        dto.setPassword(password);
-
-        return dto;
+        return Response.ok(response).build();
     }
 }

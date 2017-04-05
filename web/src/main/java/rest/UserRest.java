@@ -1,13 +1,13 @@
 package rest;
 
 
+import Exceptions.InvalidRequestException;
 import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import controllers.UserController;
 import dto.UserDto;
 import rest.Responses.AbstractResponse;
 import rest.Responses.ErrorResponse;
-import rest.Responses.NotFoundResponse;
 import rest.Responses.SuccessfulResponse;
 
 import javax.ejb.EJB;
@@ -29,16 +29,18 @@ public class UserRest {
 
     @GET
     public List<UserDto> getAllUsers() {
-        return service.getAllUsers();
+        return service.findAll();
     }
 
     @GET
     @Path("/{userEmail}")
     public Response getSpecificUsers(@PathParam("userEmail") String userEmail) {
-        UserDto userDto = service.getById(userEmail);
-
-        return (userDto == null) ? Response.ok(new NotFoundResponse()).build()
-                : Response.ok(userDto).build();
+        AbstractResponse response;
+        try {
+            return Response.ok(service.findById(userEmail)).build();
+        } catch (InvalidRequestException e) {
+            return Response.ok(new ErrorResponse(e.getMessage())).build();
+        }
     }
 
     @POST
@@ -51,9 +53,9 @@ public class UserRest {
 
         AbstractResponse response;
         try {
-            service.addUser(new UserDto(email, firstName, lastName, phoneNumber, password));
+            service.insert(new UserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
-        } catch (ObjectAlreadyExistsException | BadRequestException e) {
+        } catch (ObjectAlreadyExistsException | InvalidRequestException e) {
             response = new ErrorResponse(e.getMessage());
         }
 
@@ -71,9 +73,9 @@ public class UserRest {
         AbstractResponse response;
 
         try {
-            service.updateUser(new UserDto(email, firstName, lastName, phoneNumber, password));
+            service.update(new UserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
-        } catch (UpdateObjectNotExistException | BadRequestException e) {
+        } catch (UpdateObjectNotExistException | InvalidRequestException e) {
             response = new ErrorResponse(e.getMessage());
         }
 
@@ -86,9 +88,9 @@ public class UserRest {
         AbstractResponse response;
 
         try {
-            service.deleteUser(email);
+            service.delete(email);
             response = new SuccessfulResponse();
-        } catch (BadRequestException e){
+        } catch (InvalidRequestException e) {
             response = new ErrorResponse(e.getMessage());
         }
 

@@ -1,9 +1,12 @@
 package dto;
 
+import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
 public class SessionPkDto {
+    @NotNull
     private Timestamp sessionTime;
+    @NotNull
     private TrackDto track;
 
     public SessionPkDto() {

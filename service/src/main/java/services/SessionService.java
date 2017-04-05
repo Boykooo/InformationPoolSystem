@@ -4,8 +4,6 @@ import Entities.Session;
 import Entities.SessionPK;
 import Entities.Track;
 import Entities.User;
-import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.UpdateObjectNotExistException;
 import dao.SessionDao;
 import dto.SessionDto;
 import dto.SessionPkDto;
@@ -29,42 +27,30 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         return convertToDto(dao.findById(convertToSessionPK(key)));
     }
 
+    public SessionDto findById(SessionDto dto) {
+        return convertToDto(dao.findById(createSessionPkFromDto(dto)));
+    }
+
     public List<SessionDto> findAll() {
-        List<Session> sessions = dao.findAll();
         List<SessionDto> sessionsDto = new ArrayList<SessionDto>();
-        for (int i = 0; i < sessionsDto.size(); i++) {
-            sessionsDto.set(i, convertToDto(sessions.get(i)));
-        }
+
+        dao.findAll().forEach(
+                (Session session) -> sessionsDto.add(convertToDto(session))
+        );
 
         return sessionsDto;
     }
 
-    public void insert(SessionDto dto) throws ObjectAlreadyExistsException {
-        if (dao.findById(createSessionPkFromDto(dto)) == null){
-            dao.insert(convertToEntity(dto));
-        }
-        else {
-            throw new ObjectAlreadyExistsException();
-        }
-
+    public void insert(SessionDto dto){
+        dao.insert(convertToEntity(dto));
     }
 
-    public void update(SessionDto dto) throws UpdateObjectNotExistException {
-        if (dao.findById(createSessionPkFromDto(dto)) != null){
-            dao.update(convertToEntity(dto));
-        }
-        else {
-            throw new UpdateObjectNotExistException();
-        }
-
+    public void update(SessionDto dto)  {
+        dao.update(convertToEntity(dto));
     }
 
     public boolean delete(SessionPkDto key) {
-        if (dao.findById(convertToSessionPK(key)) != null){
-            dao.delete(convertToSessionPK(key));
-        }
-
-        return false;
+        return dao.delete(convertToSessionPK(key));
     }
 
     private Session convertToEntity(SessionDto dto){

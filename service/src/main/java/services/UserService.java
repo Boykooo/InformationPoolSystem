@@ -2,7 +2,6 @@ package services;
 
 import Entities.Session;
 import Entities.User;
-import Exceptions.ObjectAlreadyExistsException;
 import dao.UserDao;
 import dto.SessionDto;
 import dto.UserDto;
@@ -41,7 +40,7 @@ public class UserService implements IService<UserDto, String> {
         return userDtoList;
     }
 
-    public void insert(UserDto dto) throws ObjectAlreadyExistsException {
+    public void insert(UserDto dto) {
         dao.insert(convertToEntity(dto));
     }
 

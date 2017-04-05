@@ -1,11 +1,16 @@
 package dto;
 
+import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
 public class SessionDto implements IBaseDto {
+    @NotNull
     private Timestamp sessionTime;
+    @NotNull
     private Integer trackId;
+
     private String userEmail;
+    @NotNull
     private Integer cost;
 
     public SessionDto() {

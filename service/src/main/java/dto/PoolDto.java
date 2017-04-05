@@ -1,14 +1,21 @@
 package dto;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class PoolDto implements IBaseDto {
 
+    @NotNull
     private String name;
+    @NotNull
     private Double length;
+    @NotNull
     private Double width;
+    @NotNull
     private Double depth;
+    @NotNull
     private String type;
+    @NotNull
     private Boolean isWorking;
     private List<TrackDto> trackList;
 

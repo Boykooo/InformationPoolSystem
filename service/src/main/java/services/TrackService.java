@@ -3,11 +3,7 @@ package services;
 import Entities.Pool;
 import Entities.Session;
 import Entities.Track;
-import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.ReferenceNotFoundException;
-import Exceptions.UpdateObjectNotExistException;
 import dao.TrackDao;
-import dto.PoolDto;
 import dto.SessionDto;
 import dto.TrackDto;
 
@@ -16,7 +12,6 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @Stateless
 @LocalBean
@@ -26,8 +21,6 @@ public class TrackService implements IService<TrackDto, Integer> {
     private TrackDao dao;
     @EJB
     private SessionService sessionService;
-    @EJB
-    private PoolService poolService;
 
     public TrackDto findById(Integer key) {
         return convertToDto(dao.findById(key));
@@ -42,54 +35,16 @@ public class TrackService implements IService<TrackDto, Integer> {
         return trackDtoList;
     }
 
-    public void insert(TrackDto dto) throws ObjectAlreadyExistsException, ReferenceNotFoundException {
-        PoolDto pool = poolService.findById(dto.getPoolName());
-        if (pool != null) {
-            TrackDto foundTrack = pool.getTrackList().
-                    stream().
-                    filter((TrackDto trackDto) -> Objects.equals(trackDto.getNumber(), dto.getNumber())).
-                    findFirst().
-                    orElse(null);
-            if (foundTrack == null) {
-                dao.insert(convertToEntity(dto));
-            } else {
-                throw new ObjectAlreadyExistsException();
-            }
-        } else {
-            throw new ReferenceNotFoundException(dto.getPoolName());
-        }
+    public void insert(TrackDto dto) {
+        dao.insert(convertToEntity(dto));
     }
 
-    public void update(TrackDto dto) throws UpdateObjectNotExistException, ReferenceNotFoundException, ObjectAlreadyExistsException {
-        PoolDto pool = poolService.findById(dto.getPoolName());
-        if (pool != null) {
-            if (dao.findById(dto.getId()) != null) {
-                TrackDto foundTrack = pool.getTrackList().
-                        stream().
-                        filter((TrackDto trackDto) -> Objects.equals(trackDto.getNumber(), dto.getNumber())).
-                        findFirst().
-                        orElse(null);
-                if (foundTrack == null) {
-                    dao.update(convertToEntity(dto));
-                } else {
-                    throw new ObjectAlreadyExistsException();
-                }
-            } else {
-                throw new UpdateObjectNotExistException();
-            }
-        }
-        else {
-            throw new ReferenceNotFoundException(dto.getPoolName());
-        }
+    public void update(TrackDto dto) {
+        dao.update(convertToEntity(dto));
     }
 
     public boolean delete(Integer key) {
-        if (dao.findById(key) != null) {
-            dao.delete(key);
-            return true;
-        }
-
-        return false;
+        return dao.delete(key);
     }
 
     public Track convertToEntity(TrackDto dto) {

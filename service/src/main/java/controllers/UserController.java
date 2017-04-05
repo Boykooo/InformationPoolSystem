@@ -1,5 +1,6 @@
 package controllers;
 
+import Exceptions.InvalidRequestException;
 import Exceptions.ObjectAlreadyExistsException;
 import Exceptions.UpdateObjectNotExistException;
 import Validation.DataValidator;
@@ -9,7 +10,6 @@ import services.UserService;
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.ws.rs.BadRequestException;
 import java.util.List;
 
 @Stateless
@@ -21,47 +21,46 @@ public class UserController {
     @EJB
     private DataValidator validator;
 
-    public UserDto getById(String key){
+    public UserDto findById(String key) throws InvalidRequestException {
         if (key != null) {
             return service.findById(key);
         }
 
-        throw new BadRequestException();
+        throw new InvalidRequestException();
     }
 
-    public List<UserDto> getAllUsers() {
+    public List<UserDto> findAll() {
         return service.findAll();
     }
 
-    public void addUser(UserDto dto) throws ObjectAlreadyExistsException, BadRequestException {
-        if (validator.check(dto)) {
-            if (service.findById(dto.getEmail()) == null) {
-            } else {
-                throw new ObjectAlreadyExistsException();
-            }
+    public void insert(UserDto dto) throws ObjectAlreadyExistsException, InvalidRequestException {
+        if (!validator.check(dto)) {
+            throw new InvalidRequestException();
+        }
+
+        if (service.findById(dto.getEmail()) == null) {
         } else {
-            throw new BadRequestException();
+            throw new ObjectAlreadyExistsException();
         }
     }
 
-    public void updateUser(UserDto dto) throws UpdateObjectNotExistException, BadRequestException {
+    public void update(UserDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
         if (validator.check(dto)) {
-            if (service.findById(dto.getEmail()) != null) {
-                service.update(dto);
-            } else {
-                throw new UpdateObjectNotExistException();
-            }
-        } else {
-            throw new BadRequestException();
+            throw new InvalidRequestException();
         }
 
+        if (service.findById(dto.getEmail()) != null) {
+            service.update(dto);
+        } else {
+            throw new UpdateObjectNotExistException();
+        }
     }
 
-    public boolean deleteUser(String key) throws BadRequestException {
+    public boolean delete(String key) throws InvalidRequestException {
         if (key != null) {
             return service.delete(key);
         }
 
-        throw new BadRequestException();
+        throw new InvalidRequestException();
     }
 }

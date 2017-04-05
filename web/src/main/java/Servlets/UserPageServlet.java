@@ -1,7 +1,5 @@
 package Servlets;
 
-import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.UpdateObjectNotExistException;
 import dto.UserDto;
 import services.UserService;
 
@@ -36,21 +34,13 @@ public class UserPageServlet extends HttpServlet {
             doPut(req, resp);
             return;
         }
-        try {
-            service.insert(createUser(req));
-        } catch (ObjectAlreadyExistsException e) {
-            e.printStackTrace();
-        }
+        service.insert(createUser(req));
         doGet(req, resp);
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            service.update(createUser(req));
-        } catch (UpdateObjectNotExistException e) {
-            e.printStackTrace();
-        }
+        service.update(createUser(req));
         refreshPage(req, resp);
     }
 

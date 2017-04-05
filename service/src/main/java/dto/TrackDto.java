@@ -1,10 +1,14 @@
 package dto;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class TrackDto implements IBaseDto {
+
     private Integer id;
+    @NotNull
     private Integer number;
+    @NotNull
     private String poolName;
     private List<SessionDto> sessionsList;
 

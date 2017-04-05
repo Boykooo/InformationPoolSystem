@@ -1,12 +1,15 @@
 package rest;
 
+import Exceptions.InvalidRequestException;
 import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.ReferenceNotFoundException;
 import Exceptions.UpdateObjectNotExistException;
 import com.sun.istack.internal.NotNull;
+import controllers.TrackController;
 import dto.TrackDto;
-import rest.Responses.*;
-import services.TrackService;
+import rest.Responses.AbstractResponse;
+import rest.Responses.ErrorResponse;
+import rest.Responses.NotFoundResponse;
+import rest.Responses.SuccessfulResponse;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -20,7 +23,7 @@ import java.util.List;
 public class TrackRest {
 
     @EJB
-    private TrackService service;
+    private TrackController service;
 
     @GET
     public List<TrackDto> getAll() {
@@ -29,10 +32,13 @@ public class TrackRest {
 
     @GET
     @Path("/{trackId}")
-    public Response getAll(@PathParam("trackId") Integer trackId) {
-        TrackDto dto = service.findById(trackId);
-        return (dto == null) ? Response.ok(new NotFoundResponse()).build()
-                : Response.ok(dto).build();
+    public Response getSpecificTrack(@PathParam("trackId") Integer trackId) {
+        AbstractResponse response;
+        try {
+            return Response.ok(service.findById(trackId)).build();
+        } catch (InvalidRequestException e) {
+            return Response.ok(new ErrorResponse(e.getMessage())).build();
+        }
     }
 
     @POST
@@ -44,7 +50,7 @@ public class TrackRest {
         try {
             service.insert(new TrackDto(null, number, poolName));
             response = new SuccessfulResponse();
-        } catch (ObjectAlreadyExistsException | ReferenceNotFoundException e) {
+        } catch (ObjectAlreadyExistsException | InvalidRequestException e) {
             response = new ErrorResponse(e.getMessage());
         }
 
@@ -62,7 +68,7 @@ public class TrackRest {
             try {
                 service.update(new TrackDto(id, number, poolName));
                 response = new SuccessfulResponse();
-            } catch (UpdateObjectNotExistException | ReferenceNotFoundException | ObjectAlreadyExistsException e) {
+            } catch (UpdateObjectNotExistException | InvalidRequestException | ObjectAlreadyExistsException e) {
                 response = new ErrorResponse(e.getMessage());
             }
         } else {
@@ -76,11 +82,10 @@ public class TrackRest {
     @Path("/{id}")
     public Response deleteTrack(@PathParam("id") Integer id) {
         AbstractResponse response;
-        if (id != null){
+        try {
             response = (service.delete(id)) ? new SuccessfulResponse() : new NotFoundResponse();
-        }
-        else {
-            response = new CannotBeNullResponse("id");
+        } catch (InvalidRequestException e) {
+            response = new ErrorResponse(e.getMessage());
         }
 
         return Response.ok(response).build();

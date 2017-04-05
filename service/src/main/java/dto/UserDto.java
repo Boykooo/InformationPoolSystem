@@ -1,12 +1,18 @@
 package dto;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class UserDto implements IBaseDto {
+    @NotNull
     private String email;
+    @NotNull
     private String firstName;
+    @NotNull
     private String lastName;
+    @NotNull
     private String phoneNumber;
+    @NotNull
     private String password;
     private List<SessionDto> sessions;
 

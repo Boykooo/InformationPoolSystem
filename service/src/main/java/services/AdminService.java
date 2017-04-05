@@ -1,8 +1,6 @@
 package services;
 
 import Entities.Admin;
-import Exceptions.ObjectAlreadyExistsException;
-import Exceptions.UpdateObjectNotExistException;
 import dao.AdminDao;
 import dto.AdminDto;
 
@@ -35,23 +33,23 @@ public class AdminService implements IService<AdminDto, String> {
     }
 
     @Override
-    public void insert(AdminDto adminDto) throws ObjectAlreadyExistsException {
-        if (dao.findById(adminDto.getUsername()) == null){
-            dao.insert(convertToEntity(adminDto));
-        }
-        else {
-            throw new ObjectAlreadyExistsException();
-        }
+    public void insert(AdminDto adminDto)  {
+//        if (dao.findById(adminDto.getUsername()) == null){
+//            dao.insert(convertToEntity(adminDto));
+//        }
+//        else {
+//            throw new ObjectAlreadyExistsException();
+//        }
     }
 
     @Override
-    public void update(AdminDto adminDto) throws UpdateObjectNotExistException {
-        if (dao.findById(adminDto.getUsername()) != null){
-            dao.update(convertToEntity(adminDto));
-        }
-        else {
-            throw new UpdateObjectNotExistException();
-        }
+    public void update(AdminDto adminDto)  {
+//        if (dao.findById(adminDto.getUsername()) != null){
+//            dao.update(convertToEntity(adminDto));
+//        }
+//        else {
+//            throw new UpdateObjectNotExistException();
+//        }
     }
 
     @Override

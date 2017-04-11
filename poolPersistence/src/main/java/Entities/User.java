@@ -33,7 +33,7 @@ public class User implements IBaseEntity {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Session> sessionsList;
 
     //region getAndSet

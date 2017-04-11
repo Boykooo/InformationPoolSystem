@@ -16,9 +16,11 @@
         <h:panelGrid columns="2" id="loginForm">
             <p:outputLabel value="#{bundle.LoginPage_USERNAME}"/>
             <p:inputText id="username" value="#{loginBean.username}"/>
+
             <p:outputLabel value="#{bundle.LogionPage_PASSWORD}"/>
             <p:password id="password" value="#{loginBean.password}"/>
         </h:panelGrid>
+
         <p:message for="loginForm" display="text"/>
         <p:commandButton value="#{bundle.LoginPage_LOGINBUTTON}"
                          action="#{loginBean.login}"

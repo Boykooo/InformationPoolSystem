@@ -1,8 +1,14 @@
 package dto;
 
+import javax.annotation.ManagedBean;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+@Named(value = "userDto")
+@ManagedBean
+@RequestScoped
 public class UserDto implements IBaseDto {
     @NotNull
     private String email;

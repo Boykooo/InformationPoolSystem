@@ -1,14 +1,11 @@
 package dto;
 
-import javax.annotation.ManagedBean;
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Named;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-@Named(value = "userDto")
-@ManagedBean
-@RequestScoped
+//@Named(value = "userDto")
+//@ManagedBean
+//@RequestScoped
 public class UserDto implements IBaseDto {
     @NotNull
     private String email;
@@ -23,6 +20,12 @@ public class UserDto implements IBaseDto {
     private List<SessionDto> sessions;
 
     public UserDto() {
+//        email = "";
+//        firstName = "";
+//        lastName = "";
+//        phoneNumber = "";
+//        password = "";
+//        sessions = new ArrayList<>();
     }
 
     public UserDto(String email, String firstName, String lastName, String phoneNumber, String password) {

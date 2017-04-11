@@ -39,13 +39,14 @@ public class UserController {
         }
 
         if (service.findById(dto.getEmail()) == null) {
+            service.insert(dto);
         } else {
             throw new ObjectAlreadyExistsException();
         }
     }
 
     public void update(UserDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
-        if (validator.check(dto)) {
+        if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
 

@@ -6,9 +6,11 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Local
+@Transactional
 public abstract class GenericDaoImpl<Entity, PK> implements GenericDao<Entity, PK> {
 
     @PersistenceContext
@@ -38,25 +40,19 @@ public abstract class GenericDaoImpl<Entity, PK> implements GenericDao<Entity, P
 
     @Override
     public void insert(Entity entity) {
-        manager.getTransaction().begin();
         manager.persist(entity);
-        manager.getTransaction().commit();
     }
 
     @Override
     public void update(Entity entity) {
-        manager.getTransaction().begin();
         manager.merge(entity);
-        manager.getTransaction().commit();
     }
 
     @Override
     public boolean delete(PK key) {
         Entity entity = findById(key);
         if (entity != null) {
-            manager.getTransaction().begin();
             manager.remove(entity);
-            manager.getTransaction().commit();
             return true;
         }
 

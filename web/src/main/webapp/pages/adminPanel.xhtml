@@ -3,17 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Admin panel</title>
 </h:head>
 
 <h:body>
-    <h:form>
 
+
+    <h:form>
         <p:menubar>
             <p:submenu label="Tables">
                 <p:menuitem value="Users"/>
@@ -22,33 +21,120 @@
                 <p:menuitem value="Sessions"/>
             </p:submenu>
         </p:menubar>
+    </h:form>
 
-        <h:panelGrid columns="1">
-            <p:dataTable var="users" value="#{userTableBean.allUsers}"
-                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         paginator="true"
-                         rows="2"
-                                >
-                <p:column headerText="Email">
-                    <h:outputText value="#{users.email}"/>
-                </p:column>
-                <p:column headerText="First name">
-                    <h:outputText value="#{users.firstName}"/>
-                </p:column>
-                <p:column headerText="Last name">
-                    <h:outputText value="#{users.lastName}"/>
-                </p:column>
-                <p:column headerText="Phone number">
-                    <h:outputText value="#{users.phoneNumber}"/>
-                </p:column>
-            </p:dataTable>
-            <h:panelGrid columns="3">
-                <p:commandButton value="Add"/>
-                <p:commandButton value="Update"/>
-                <p:commandButton value="Delete"/>
-            </h:panelGrid>
+    <p:dataTable id="users" var="user" value="#{userTableBean.allUsers}"
+                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                 paginator="true"
+                 rows="10">
+
+
+        <p:column headerText="Email">
+            <h:outputText value="#{user.email}"/>
+        </p:column>
+        <p:column headerText="First name">
+            <h:outputText value="#{user.firstName}"/>
+        </p:column>
+        <p:column headerText="Last name">
+            <h:outputText value="#{user.lastName}"/>
+        </p:column>
+        <p:column headerText="Phone number">
+            <h:outputText value="#{user.phoneNumber}"/>
+        </p:column>
+    </p:dataTable>
+
+    <h:form>
+
+        <h:panelGrid columns="3" cellpadding="">
+            <p:commandButton value="Add" onclick="PF('addUserDialog').show()"/>
+            <p:commandButton value="Update" onclick="PF('updateUserDialog').show()"/>
+            <p:commandButton value="Delete" onclick="PF('deleteUserDialog').show()"/>
         </h:panelGrid>
 
     </h:form>
+
+    <p:growl id="growl" showDetail="true" life="3000"/>
+
+
+    <h:form>
+        <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
+
+            <p:ajax event="close" update="users"/>
+            <h:panelGrid columns="2" cellpadding="5">
+                <h:outputLabel value="Email: " for="email"/>
+                <p:inputText id="email" value="#{userBean.dto.email}"/>
+
+                <h:outputLabel value="First name: " for="firstName"/>
+                <p:inputText id="firstName" value="#{userBean.dto.firstName}"/>
+
+                <h:outputLabel value="Last name: " for="lastName"/>
+                <p:inputText id="lastName" value="#{userBean.dto.lastName}"/>
+
+                <h:outputLabel value="Phone number: " for="phoneNumber"/>
+                <p:inputText id="phoneNumber" value="#{userBean.dto.phoneNumber}"/>
+
+                <h:outputLabel value="Password: " for="password"/>
+                <p:inputText id="password" value="#{userBean.dto.password}"/>
+            </h:panelGrid>
+            <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
+
+        </p:dialog>
+
+    </h:form>
+
+    <h:form>
+        <p:dialog widgetVar="updateUserDialog" header="Update user" resizable="false">
+            <p:ajax event="close" update="users"/>
+
+            <h:panelGrid columns="2" cellpadding="5">
+                <h:outputLabel value="Email: " for="updateEmail"/>
+                <p:inputText id="updateEmail" value="#{userBean.dto.email}"/>
+
+                <h:outputLabel value="First name: " for="updateFirstName"/>
+                <p:inputText id="updateFirstName" value="#{userBean.dto.firstName}"/>
+
+                <h:outputLabel value="Last name: " for="updateLastName"/>
+                <p:inputText id="updateLastName" value="#{userBean.dto.lastName}"/>
+
+                <h:outputLabel value="Phone number: " for="updatePhoneNumber"/>
+                <p:inputText id="updatePhoneNumber" value="#{userBean.dto.phoneNumber}"/>
+
+                <h:outputLabel value="Password: " for="updatePassword"/>
+                <p:inputText id="updatePassword" value="#{userBean.dto.password}"/>
+            </h:panelGrid>
+
+            <p:commandButton value="Update" update="growl" actionListener="#{userBean.update}"/>
+        </p:dialog>
+    </h:form>
+
+    <h:form>
+        <p:dialog widgetVar="deleteUserDialog" header="Delete user" resizable="false">
+            <p:ajax event="close" update="users"/>
+
+            <h:panelGrid columns="2" cellpadding="5">
+                <h:outputLabel value="Email: " for="deleteEmail"/>
+                <p:inputText id="deleteEmail" value="#{userBean.dto.email}"/>
+            </h:panelGrid>
+
+            <p:commandButton value="Update" update="growl" actionListener="#{userBean.delete}"/>
+        </p:dialog>
+    </h:form>
+
+
 </h:body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

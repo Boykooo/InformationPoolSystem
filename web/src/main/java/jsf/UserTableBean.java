@@ -20,11 +20,12 @@ public class UserTableBean {
     private List<UserDto> users;
 
     @PostConstruct
-    private void init(){
+    private void init() {
         users = controller.findAll();
+
     }
 
-    public List<UserDto> getAllUsers(){
+    public List<UserDto> getAllUsers() {
         return users;
     }
 }

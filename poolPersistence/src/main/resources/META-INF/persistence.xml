@@ -13,14 +13,6 @@
         <class>Entities.User</class>
         <class>Entities.Admin</class>
         <properties>
-            <!--<property name="hibernate.connection.url" value="jdbc:postgresql://91.202.27.32:5432/mainDB"/>-->
-            <!--<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>-->
-            <!--<property name="hibernate.connection.username" value="user"/>-->
-            <!--<property name="hibernate.connection.password" value="123user123"/>-->
-            <!--<property name="hibernate.archive.autodetection" value="class"/>-->
-            <!--<property name="hibernate.show_sql" value="true"/>-->
-            <!--<property name="hibernate.format_sql" value="true"/>-->
-            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>-->
             <property name="hibernate.default_schema" value="ips"/>
         </properties>
     </persistence-unit>

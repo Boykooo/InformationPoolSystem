@@ -28,8 +28,8 @@
     </schema>
     <schema id="9" parent="2" name="ips">
       <ObjectId>33438</ObjectId>
-      <IntrospectionTimestamp>2017-04-01.12:06:21.693</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1031</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-04-16.13:52:33.527</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1103</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <sequence id="10" parent="9" name="track_id_seq">
@@ -55,7 +55,7 @@
     </table>
     <table id="15" parent="9" name="user">
       <ObjectId>33458</ObjectId>
-      <StateNumber>1001</StateNumber>
+      <StateNumber>1101</StateNumber>
     </table>
     <column id="16" parent="11" name="username">
       <Position>1</Position>
@@ -245,12 +245,19 @@ track_id</ColNames>
       <NotNull>1</NotNull>
       <StateNumber>1001</StateNumber>
     </column>
-    <index id="47" parent="15" name="user_pkey">
+    <column id="47" parent="15" name="role">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1103</StateNumber>
+      <DefaultExpression>&apos;user&apos;::character varying</DefaultExpression>
+    </column>
+    <index id="48" parent="15" name="user_pkey">
       <ObjectId>33464</ObjectId>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="48" parent="15" name="user_pkey">
+    <key id="49" parent="15" name="user_pkey">
       <ObjectId>33465</ObjectId>
       <ColNames>email</ColNames>
       <UnderlyingIndexName>user_pkey</UnderlyingIndexName>

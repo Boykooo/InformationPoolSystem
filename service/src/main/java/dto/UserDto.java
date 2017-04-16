@@ -24,6 +24,9 @@ public class UserDto implements IBaseDto {
     @NotNull
     @Size(min = 1)
     private String password;
+    @NotNull
+    @Size(min = 1)
+    private String role;
     private List<SessionDto> sessions;
 
     public UserDto() {
@@ -33,6 +36,7 @@ public class UserDto implements IBaseDto {
 //        phoneNumber = "";
 //        password = "";
 //        sessions = new ArrayList<>();
+        this.role = "user";
     }
 
     public UserDto(String email, String firstName, String lastName, String phoneNumber, String password) {
@@ -41,6 +45,7 @@ public class UserDto implements IBaseDto {
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.password = password;
+        this.role = "user";
     }
 
     //region GetSet
@@ -80,10 +85,17 @@ public class UserDto implements IBaseDto {
         this.password = password;
     }
 
-    public List<SessionDto> getSessionsList() {
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public List<SessionDto> getSessions() {
         return sessions;
     }
-    public void setSessionsList(List<SessionDto> sessions) {
+    public void setSessions(List<SessionDto> sessions) {
         this.sessions = sessions;
     }
 

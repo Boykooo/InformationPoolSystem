@@ -65,7 +65,8 @@ public class UserService implements IService<UserDto, String> {
                     (Session session) -> sessionDtoList.add(sessionService.convertToDto(session))
             );
 
-            userDto.setSessionsList(sessionDtoList);
+            userDto.setSessions(sessionDtoList);
+            userDto.setRole(entity.getRole());
 
             return userDto;
         }
@@ -80,6 +81,7 @@ public class UserService implements IService<UserDto, String> {
         user.setFirstName(dto.getFirstName());
         user.setPassword(dto.getPassword());
         user.setLastName(dto.getLastName());
+        user.setRole(dto.getRole());
         //user.setSessionsList(.....);
 
         return user;

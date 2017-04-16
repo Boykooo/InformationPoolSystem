@@ -58,7 +58,7 @@ public class UserBean {
         }
 
         RequestContext requestContext = RequestContext.getCurrentInstance();
-        requestContext.execute("PF('udapteUserDialog').hide()");
+        requestContext.execute("PF('updateUserDialog').hide()");
     }
 
     public void delete(){

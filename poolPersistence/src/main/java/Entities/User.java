@@ -33,6 +33,11 @@ public class User implements IBaseEntity {
     @Column(name = "password")
     private String password;
 
+    @Basic
+    @NotNull
+    @Column(name = "role")
+    private String role;
+
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Session> sessionsList;
 
@@ -74,6 +79,13 @@ public class User implements IBaseEntity {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public List<Session> getSessionsList() {

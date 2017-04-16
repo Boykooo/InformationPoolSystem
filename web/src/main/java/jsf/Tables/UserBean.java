@@ -1,4 +1,4 @@
-package jsf;
+package jsf.Tables;
 
 
 import Exceptions.InvalidRequestException;

@@ -1,6 +1,7 @@
 package dto;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 public class TrackDto implements IBaseDto {
@@ -9,6 +10,7 @@ public class TrackDto implements IBaseDto {
     @NotNull
     private Integer number;
     @NotNull
+    @Size(min = 1)
     private String poolName;
     private List<SessionDto> sessionsList;
 

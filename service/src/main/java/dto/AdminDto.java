@@ -1,11 +1,15 @@
 package dto;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class AdminDto implements IBaseDto {
+
     @NotNull
+    @Size(min = 1)
     private String username;
     @NotNull
+    @Size(min = 1)
     private String password;
 
     public AdminDto() {

@@ -1,21 +1,28 @@
 package dto;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 //@Named(value = "userDto")
 //@ManagedBean
 //@RequestScoped
 public class UserDto implements IBaseDto {
+
     @NotNull
+    @Size(min = 1)
     private String email;
     @NotNull
+    @Size(min = 1)
     private String firstName;
     @NotNull
+    @Size(min = 1)
     private String lastName;
     @NotNull
+    @Size(min = 1)
     private String phoneNumber;
     @NotNull
+    @Size(min = 1)
     private String password;
     private List<SessionDto> sessions;
 

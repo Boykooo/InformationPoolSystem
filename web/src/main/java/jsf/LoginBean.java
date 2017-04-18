@@ -62,7 +62,6 @@ public class LoginBean implements Serializable {
         ExternalContext externalContext = context.getExternalContext();
         HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
 
-
         try {
             request.login(username, password);
             externalContext.redirect(originalURL);

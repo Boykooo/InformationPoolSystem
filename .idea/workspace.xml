@@ -5,20 +5,46 @@
     <bookmark url="file://$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Added role column to user table, fixed entity, dto, service">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/adminPanel.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/admin/adminPanel.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/index.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/login.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/admin/login.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/startPage.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/users/startPage.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/success.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/users/success.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata.values.at" />
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_extensions_all_themes_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_afterdark_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_afternoon_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_afterwork_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_black_tie_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_blitzer_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_bluesky_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_bootstrap_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_casablanca_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_cruze_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_cupertino_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_dark_hive_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_dot_luv_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_eggplant_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_excite_bike_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_flick_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_glass_x_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_home_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_hot_sneaks_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_humanity_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_le_frog_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_midnight_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_mint_choc_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_overcast_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_pepper_grinder_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_redmond_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_rocket_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_sam_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_smoothness_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_south_street_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_start_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_sunny_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_swanky_purse_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_trontastic_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_ui_darkness_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_ui_lightness_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_vader_1_0_8.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" afterPath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java" afterPath="$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,10 +151,10 @@
       <file leaf-file-name="LoginBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="301">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <element signature="e#2932#2947#0" expanded="false" />
+                <element signature="e#2931#2946#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1300,14 +1326,7 @@
       <workItem from="1492336161537" duration="4210000" />
       <workItem from="1492342629781" duration="225000" />
       <workItem from="1492445847880" duration="58000" />
-      <workItem from="1492528243076" duration="11890000" />
-    </task>
-    <task id="LOCAL-00004" summary="fix persistence.xml">
-      <created>1488747976073</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1488747976073</updated>
+      <workItem from="1492528243076" duration="12027000" />
     </task>
     <task id="LOCAL-00005" summary="add service module">
       <created>1489863717111</created>
@@ -1645,7 +1664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492340343041</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="tried to do jaas, didn't work out...">
+      <created>1492558465381</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1492558465381</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1681,7 +1707,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355376000" />
+    <option name="totallyTimeSpent" value="355513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1785,7 +1811,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix Rest" />
     <MESSAGE value="Changed table &quot;Pool&quot; and fixed Entity" />
     <MESSAGE value="Created dto and services without impl" />
     <MESSAGE value="Impl DTO" />
@@ -1810,7 +1835,8 @@
     <MESSAGE value="Impl the admin panel for users table" />
     <MESSAGE value="Fixed dto" />
     <MESSAGE value="Added role column to user table, fixed entity, dto, service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added role column to user table, fixed entity, dto, service" />
+    <MESSAGE value="tried to do jaas, didn't work out..." />
+    <option name="LAST_COMMIT_MESSAGE" value="tried to do jaas, didn't work out..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2252,10 +2278,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="301">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="e#2932#2947#0" expanded="false" />
+            <element signature="e#2931#2946#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -12,18 +12,23 @@ public class UserDto implements IBaseDto {
     @NotNull
     @Size(min = 1)
     private String email;
+
     @NotNull
     @Size(min = 1)
     private String firstName;
+
     @NotNull
     @Size(min = 1)
     private String lastName;
+
     @NotNull
     @Size(min = 1)
     private String phoneNumber;
+
     @NotNull
     @Size(min = 1)
     private String password;
+
     @NotNull
     @Size(min = 1)
     private String role;

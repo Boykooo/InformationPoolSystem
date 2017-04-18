@@ -12,19 +12,19 @@
     </application>
 
     <navigation-rule>
-        <from-view-id>/pages/login.xhtml</from-view-id>
+        <from-view-id>/admin/login.xhtml</from-view-id>
         <navigation-case>
             <from-action>#{loginBean.login}</from-action>
             <from-outcome>SUCCESS</from-outcome>
-            <to-view-id>/pages/adminPanel.xhtml</to-view-id>
+            <to-view-id>/admin/adminPanel.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
-        <!--<navigation-case>-->
-            <!--<from-action>#{loginBean.login}</from-action>-->
-            <!--<from-outcome>FAIL</from-outcome>-->
-            <!--<to-view-id>/pages/startPage.xhtml</to-view-id>-->
-            <!--<redirect/>-->
-        <!--</navigation-case>-->
+        <navigation-case>
+            <from-action>#{loginBean.login}</from-action>
+            <from-outcome>FAIL</from-outcome>
+            <to-view-id>/admin/adminPanel.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
     </navigation-rule>
 
 </faces-config>

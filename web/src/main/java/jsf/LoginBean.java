@@ -10,7 +10,6 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -23,25 +22,14 @@ public class LoginBean implements Serializable {
 
     private String username;
     private String password;
-    private String originalURL;
+    private String redirectURL;
 
     @EJB
     private AdminDao dao;
 
     @PostConstruct
     protected void init() {
-        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        originalURL = (String) externalContext.getRequestMap().get(RequestDispatcher.FORWARD_REQUEST_URI);
-
-        if (originalURL == null) {
-            originalURL = externalContext.getRequestContextPath();
-        } else {
-            String originalQuery = (String) externalContext.getRequestMap().get(RequestDispatcher.FORWARD_QUERY_STRING);
-
-            if (originalQuery != null) {
-                originalURL += "?" + originalQuery;
-            }
-        }
+        redirectURL = "adminPanel.xhtml";
     }
 
     public boolean isLoggedOut() {
@@ -64,7 +52,7 @@ public class LoginBean implements Serializable {
 
         try {
             request.login(username, password);
-            externalContext.redirect(originalURL);
+            externalContext.redirect(redirectURL);
         } catch (ServletException | IOException e) {
             // Handle unknown username/password in request.login().
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Unknown login", "User or password is incorrect."));

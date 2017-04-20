@@ -23,6 +23,8 @@ public class LoginBean implements Serializable {
     private String username;
     private String password;
     private String redirectURL;
+    private boolean isLogin;
+
 
     @EJB
     private AdminDao dao;
@@ -39,6 +41,7 @@ public class LoginBean implements Serializable {
     }
 
     public void logout() throws IOException {
+        isLogin = false;
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         externalContext.invalidateSession();
         externalContext.redirect(externalContext.getRequestContextPath() + "/login.xhtml");
@@ -52,11 +55,19 @@ public class LoginBean implements Serializable {
 
         try {
             request.login(username, password);
+            if (request.isUserInRole("USER"))
+            {
+                externalContext.invalidateSession();
+            }
             externalContext.redirect(redirectURL);
+            isLogin = true;
         } catch (ServletException | IOException e) {
             // Handle unknown username/password in request.login().
+            externalContext.invalidateSession();
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Unknown login", "User or password is incorrect."));
         }
+
+        isLogin = false;
 
 //        Admin admin = dao.findById(username);
 //
@@ -81,6 +92,10 @@ public class LoginBean implements Serializable {
     }
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public boolean isLogin() {
+        return isLogin;
     }
 
     //endregion

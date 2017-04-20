@@ -46,12 +46,12 @@ public class UserBean {
         requestContext.execute("PF('addUserDialog').hide()");
     }
 
-    public void update(){
+    public void fullUpdate(){
 
         FacesContext context = FacesContext.getCurrentInstance();
 
         try {
-            controller.update(dto);
+            controller.fullUpdate(dto);
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully", "User updated successfully"));
         } catch (UpdateObjectNotExistException | InvalidRequestException e) {
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", e.getMessage()));

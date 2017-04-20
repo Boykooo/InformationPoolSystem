@@ -1,4 +1,4 @@
-package Servlets;
+package Servlets.old;
 
 import dto.UserDto;
 import services.UserService;

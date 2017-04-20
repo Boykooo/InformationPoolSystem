@@ -73,7 +73,7 @@ public class UserRest {
         AbstractResponse response;
 
         try {
-            service.update(new UserDto(email, firstName, lastName, phoneNumber, password));
+            service.fullUpdate(new UserDto(email, firstName, lastName, phoneNumber, password));
             response = new SuccessfulResponse();
         } catch (UpdateObjectNotExistException | InvalidRequestException e) {
             response = new ErrorResponse(e.getMessage());

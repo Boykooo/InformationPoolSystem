@@ -3,7 +3,8 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
     <title>Admin panel</title>
@@ -20,6 +21,10 @@
                 <p:menuitem value="Tracks"/>
                 <p:menuitem value="Sessions"/>
             </p:submenu>
+
+            <f:facet name="options">
+                <p:commandButton type="button" value="Logout" actionListener="#{loginBean.logout}"/>
+            </f:facet>
         </p:menubar>
     </h:form>
 
@@ -27,7 +32,6 @@
                  paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                  paginator="true"
                  rows="10">
-
 
         <p:column headerText="Email">
             <h:outputText value="#{user.email}"/>
@@ -40,6 +44,9 @@
         </p:column>
         <p:column headerText="Phone number">
             <h:outputText value="#{user.phoneNumber}"/>
+        </p:column>
+        <p:column headerText="Role">
+            <h:outputText value="#{user.role}"/>
         </p:column>
     </p:dataTable>
 
@@ -103,7 +110,7 @@
                 <p:inputText id="updatePassword" value="#{userBean.dto.password}"/>
             </h:panelGrid>
 
-            <p:commandButton value="Update" update="growl" actionListener="#{userBean.update}"/>
+            <p:commandButton value="Update" update="growl" actionListener="#{userBean.fullUpdate}"/>
         </p:dialog>
     </h:form>
 

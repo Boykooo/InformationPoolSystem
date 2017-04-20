@@ -37,7 +37,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>others</web-resource-name>
-            <url-pattern>/admin/*</url-pattern>
+            <url-pattern>/faces/admin/adminPanel.xhtml</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
             <!--<http-method>UPDATE</http-method>-->
@@ -51,7 +51,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>usersPage</web-resource-name>
-            <url-pattern>/users/*</url-pattern>
+            <url-pattern>/faces/users/*</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>

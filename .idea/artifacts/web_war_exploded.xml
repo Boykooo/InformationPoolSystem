@@ -32,6 +32,7 @@
           <element id="archive" name="service-1.0-SNAPSHOT.jar">
             <element id="module-output" name="service" />
           </element>
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.0" />

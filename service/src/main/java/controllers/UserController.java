@@ -6,6 +6,7 @@ import Exceptions.UpdateObjectNotExistException;
 import Validation.DataValidator;
 import dto.UserDto;
 import services.UserService;
+import util.DataEncoder;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
@@ -38,6 +39,8 @@ public class UserController {
             throw new InvalidRequestException();
         }
 
+        dto.setPassword(DataEncoder.encode(dto.getPassword()));
+
         if (service.findById(dto.getEmail()) == null) {
             service.insert(dto);
         } else {
@@ -45,10 +48,12 @@ public class UserController {
         }
     }
 
-    public void update(UserDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
+    public void fullUpdate(UserDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
         if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
+
+        dto.setPassword(DataEncoder.encode(dto.getPassword()));
 
         if (service.findById(dto.getEmail()) != null) {
             service.update(dto);

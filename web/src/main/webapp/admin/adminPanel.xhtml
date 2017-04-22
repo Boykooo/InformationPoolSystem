@@ -51,7 +51,6 @@
     </p:dataTable>
 
     <h:form>
-
         <h:panelGrid columns="3" cellpadding="">
             <p:commandButton value="Add" onclick="PF('addUserDialog').show()"/>
             <p:commandButton value="Update" onclick="PF('updateUserDialog').show()"/>
@@ -61,7 +60,6 @@
     </h:form>
 
     <p:growl id="growl" showDetail="true" life="3000"/>
-
 
     <h:form>
         <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
@@ -84,9 +82,7 @@
                 <p:inputText id="password" value="#{userBean.dto.password}"/>
             </h:panelGrid>
             <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
-
         </p:dialog>
-
     </h:form>
 
     <h:form>
@@ -126,7 +122,6 @@
             <p:commandButton value="Update" update="growl" actionListener="#{userBean.delete}"/>
         </p:dialog>
     </h:form>
-
 
 </h:body>
 </html>

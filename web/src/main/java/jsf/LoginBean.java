@@ -55,16 +55,16 @@ public class LoginBean implements Serializable {
 
         try {
             request.login(username, password);
-            if (request.isUserInRole("USER"))
-            {
-                externalContext.invalidateSession();
-            }
+//            if (request.isUserInRole("USER"))
+//            {
+//                externalContext.invalidateSession();
+//            }
             externalContext.redirect(redirectURL);
             isLogin = true;
         } catch (ServletException | IOException e) {
             // Handle unknown username/password in request.login().
             externalContext.invalidateSession();
-            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Unknown login", "User or password is incorrect."));
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", e.getMessage()));
         }
 
         isLogin = false;

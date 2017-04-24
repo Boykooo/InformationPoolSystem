@@ -8,7 +8,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:body>
-    <ui:composition template="admin/adminPanelTemplate.xhtml">
+    <ui:composition template="../adminPanelTemplate.xhtml">
         <ui:define name="table">
             <p:dataTable id="users" var="user" value="#{userTableBean.allUsers}"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
@@ -33,7 +33,10 @@
             </p:dataTable>
         </ui:define>
 
+
         <ui:define name="crud">
+            <p:growl id="growl" showDetail="true" life="3000"/>
+
             <h:form>
                 <h:panelGrid columns="3" cellpadding="">
                     <p:commandButton value="Add" onclick="PF('addUserDialog').show()"/>
@@ -44,7 +47,6 @@
 
             <h:form>
                 <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
-
                     <p:ajax event="close" update="users"/>
                     <ui:include src="userForm.xhtml"/>
                     <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
@@ -62,16 +64,13 @@
             <h:form>
                 <p:dialog widgetVar="deleteUserDialog" header="Delete user" resizable="false">
                     <p:ajax event="close" update="users"/>
-
                     <h:panelGrid columns="2" cellpadding="5">
                         <h:outputLabel value="Email: " for="deleteEmail"/>
                         <p:inputText id="deleteEmail" value="#{userBean.dto.email}"/>
                     </h:panelGrid>
-
                     <p:commandButton value="Update" update="growl" actionListener="#{userBean.delete}"/>
                 </p:dialog>
             </h:form>
-
         </ui:define>
 
     </ui:composition>

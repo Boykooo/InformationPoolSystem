@@ -47,18 +47,18 @@ public class LoginBean implements Serializable {
         externalContext.redirect(externalContext.getRequestContextPath() + "/login.xhtml");
     }
 
-    public String login() {
+    public void login() throws IOException {
 
         FacesContext context = FacesContext.getCurrentInstance();
         ExternalContext externalContext = context.getExternalContext();
         HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
 
+        if (externalContext.getRemoteUser() != null){
+           externalContext.invalidateSession();
+        }
+
         try {
             request.login(username, password);
-//            if (request.isUserInRole("USER"))
-//            {
-//                externalContext.invalidateSession();
-//            }
             externalContext.redirect(redirectURL);
             isLogin = true;
         } catch (ServletException | IOException e) {
@@ -69,13 +69,6 @@ public class LoginBean implements Serializable {
 
         isLogin = false;
 
-//        Admin admin = dao.findById(username);
-//
-//        if (admin != null && admin.getPassword().equals(password)) {
-//            return "SUCCESS";
-//        }
-        //FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Invalid data"));
-        return null;
     }
 
     //region GetSet

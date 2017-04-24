@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:body>
+    <ui:composition template="admin/adminPanelTemplate.xhtml">
+        <ui:define name="table">
+            <p:dataTable id="users" var="user" value="#{userTableBean.allUsers}"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginator="true"
+                         rows="10">
+
+                <p:column headerText="Email">
+                    <h:outputText value="#{user.email}"/>
+                </p:column>
+                <p:column headerText="First name">
+                    <h:outputText value="#{user.firstName}"/>
+                </p:column>
+                <p:column headerText="Last name">
+                    <h:outputText value="#{user.lastName}"/>
+                </p:column>
+                <p:column headerText="Phone number">
+                    <h:outputText value="#{user.phoneNumber}"/>
+                </p:column>
+                <p:column headerText="Role">
+                    <h:outputText value="#{user.role}"/>
+                </p:column>
+            </p:dataTable>
+        </ui:define>
+
+        <ui:define name="crud">
+            <h:form>
+                <h:panelGrid columns="3" cellpadding="">
+                    <p:commandButton value="Add" onclick="PF('addUserDialog').show()"/>
+                    <p:commandButton value="Update" onclick="PF('updateUserDialog').show()"/>
+                    <p:commandButton value="Delete" onclick="PF('deleteUserDialog').show()"/>
+                </h:panelGrid>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
+
+                    <p:ajax event="close" update="users"/>
+                    <ui:include src="userForm.xhtml"/>
+                    <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="updateUserDialog" header="Update user" resizable="false">
+                    <p:ajax event="close" update="users"/>
+                    <ui:include src="userForm.xhtml"/>
+                    <p:commandButton value="Update" update="growl" actionListener="#{userBean.fullUpdate}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="deleteUserDialog" header="Delete user" resizable="false">
+                    <p:ajax event="close" update="users"/>
+
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputLabel value="Email: " for="deleteEmail"/>
+                        <p:inputText id="deleteEmail" value="#{userBean.dto.email}"/>
+                    </h:panelGrid>
+
+                    <p:commandButton value="Update" update="growl" actionListener="#{userBean.delete}"/>
+                </p:dialog>
+            </h:form>
+
+        </ui:define>
+
+    </ui:composition>
+
+</h:body>
+</html>

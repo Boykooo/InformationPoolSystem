@@ -71,7 +71,7 @@ public class PoolRest {
                                @FormParam("isWorking") Boolean isWorking) {
         AbstractResponse response;
         try {
-            service.update(new PoolDto(name, length, width, depth, type, isWorking));
+            service.fullUpdate(new PoolDto(name, length, width, depth, type, isWorking));
             response = new SuccessfulResponse();
         } catch (InvalidRequestException | UpdateObjectNotExistException e) {
             response = new ErrorResponse(e.getMessage());

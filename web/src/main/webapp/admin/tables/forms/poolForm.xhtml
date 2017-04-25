@@ -8,19 +8,24 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:panelGrid columns="2" cellpadding="5">
-    <h:outputLabel value="Email: " for="email"/>
-    <p:inputText id="email" value="#{userCrudBean.dto.email}"/>
 
-    <h:outputLabel value="First name: " for="firstName"/>
-    <p:inputText id="firstName" value="#{userCrudBean.dto.firstName}"/>
+    <h:outputLabel value="Name: " for="name"/>
+    <p:inputText id="name" value="#{poolCrudBean.dto.name}"/>
 
-    <h:outputLabel value="Last name: " for="lastName"/>
-    <p:inputText id="lastName" value="#{userCrudBean.dto.lastName}"/>
+    <h:outputLabel value="Length: " for="length"/>
+    <p:inputText id="length" value="#{poolCrudBean.dto.length}"/>
 
-    <h:outputLabel value="Phone number: " for="phoneNumber"/>
-    <p:inputText id="phoneNumber" value="#{userCrudBean.dto.phoneNumber}"/>
+    <h:outputLabel value="Width: " for="width"/>
+    <p:inputText id="width" value="#{poolCrudBean.dto.width}"/>
 
-    <h:outputLabel value="Password: " for="password"/>
-    <p:inputText id="password" value="#{userCrudBean.dto.password}"/>
+    <h:outputLabel value="Depth: " for="depth"/>
+    <p:inputText id="depth" value="#{poolCrudBean.dto.depth}"/>
+
+    <h:outputLabel value="Type: " for="type"/>
+    <p:inputText id="type" value="#{poolCrudBean.dto.type}"/>
+
+    <h:outputLabel value="isWorking: " for="isWorking"/>
+    <p:selectBooleanCheckbox id="isWorking" value="#{poolCrudBean.dto.isWorking}"/>
+
 </h:panelGrid>
 </html>

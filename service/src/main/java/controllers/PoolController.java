@@ -46,7 +46,7 @@ public class PoolController {
         }
     }
 
-    public void update(PoolDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
+    public void fullUpdate(PoolDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
         if (!validator.check(dto)){
             throw new InvalidRequestException();
         }

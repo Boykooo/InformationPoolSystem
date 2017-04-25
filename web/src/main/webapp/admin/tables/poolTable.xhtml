@@ -40,38 +40,32 @@
         <ui:define name="crud">
             <p:growl id="growl" showDetail="true" life="3000"/>
 
-            <h:form>
-                <h:panelGrid columns="3" cellpadding="">
-                    <p:commandButton value="Add" onclick="PF('addDialog').show()"/>
-                    <p:commandButton value="Update" onclick="PF('updateDialog').show()"/>
-                    <p:commandButton value="Delete" onclick="PF('deleteDialog').show()"/>
-                </h:panelGrid>
-            </h:form>
+            <ui:include src="tableCrudMenu.xhtml"/>
 
             <h:form>
-                <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
-                    <p:ajax event="close" update="users"/>
-                    <ui:include src="forms/userForm.xhtml"/>
-                    <p:commandButton value="Add" update="growl" actionListener="#{userCrudBean.add}"/>
+                <p:dialog widgetVar="addDialog" header="Add new pool" resizable="false">
+                    <p:ajax event="close" update="pools"/>
+                    <ui:include src="forms/poolForm.xhtml"/>
+                    <p:commandButton value="Add" update="growl" actionListener="#{poolCrudBean.add}"/>
                 </p:dialog>
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="updateUserDialog" header="Update user" resizable="false">
-                    <p:ajax event="close" update="users"/>
-                    <ui:include src="forms/userForm.xhtml"/>
-                    <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.fullUpdate}"/>
+                <p:dialog widgetVar="updateDialog" header="Update pool" resizable="false">
+                    <p:ajax event="close" update="pools"/>
+                    <ui:include src="forms/poolForm.xhtml"/>
+                    <p:commandButton value="Update" update="growl" actionListener="#{poolCrudBean.fullUpdate}"/>
                 </p:dialog>
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="deleteUserDialog" header="Delete user" resizable="false">
-                    <p:ajax event="close" update="users"/>
+                <p:dialog widgetVar="deleteDialog" header="Delete pool" resizable="false">
+                    <p:ajax event="close" update="pools"/>
                     <h:panelGrid columns="2" cellpadding="5">
-                        <h:outputLabel value="Email: " for="deleteEmail"/>
-                        <p:inputText id="deleteEmail" value="#{userCrudBean.dto.email}"/>
+                        <h:outputLabel value="Name: " for="deleteName"/>
+                        <p:inputText id="deleteName" value="#{poolCrudBean.dto.name}"/>
                     </h:panelGrid>
-                    <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.delete}"/>
+                    <p:commandButton value="Update" update="growl" actionListener="#{poolCrudBean.delete}"/>
                 </p:dialog>
             </h:form>
         </ui:define>

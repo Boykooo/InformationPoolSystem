@@ -7,7 +7,6 @@ import Exceptions.UpdateObjectNotExistException;
 import controllers.UserController;
 import dto.UserDto;
 import org.primefaces.context.RequestContext;
-import org.primefaces.event.SelectEvent;
 
 import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
@@ -73,10 +72,6 @@ public class UserCrudBean {
 
         RequestContext requestContext = RequestContext.getCurrentInstance();
         requestContext.execute("PF('deleteDialog').hide()");
-    }
-
-    public void onRowSelect(SelectEvent event){
-        dto = (UserDto) event.getObject();
     }
 
     public UserDto getDto() {

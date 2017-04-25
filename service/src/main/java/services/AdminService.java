@@ -45,7 +45,7 @@ public class AdminService implements IService<AdminDto, String> {
     @Override
     public void update(AdminDto adminDto)  {
 //        if (dao.findById(adminDto.getUsername()) != null){
-//            dao.update(convertToEntity(adminDto));
+//            dao.fullUpdate(convertToEntity(adminDto));
 //        }
 //        else {
 //            throw new UpdateObjectNotExistException();

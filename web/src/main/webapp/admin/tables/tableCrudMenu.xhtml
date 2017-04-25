@@ -7,22 +7,11 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-<h:head>
-    <title>Admin panel</title>
-</h:head>
-
-<h:body>
-    <ui:insert name="navigation">
-        <ui:include src="navigationTemplate.xhtml"/>
-    </ui:insert>
-
-    <ui:insert name="table">
-
-    </ui:insert>
-
-    <ui:insert name="crud">
-
-    </ui:insert>
-
-</h:body>
+<h:form>
+    <h:panelGrid columns="3" cellpadding="">
+        <p:commandButton value="Add" onclick="PF('addDialog').show()"/>
+        <p:commandButton value="Update" onclick="PF('updateDialog').show()"/>
+        <p:commandButton value="Delete" onclick="PF('deleteDialog').show()"/>
+    </h:panelGrid>
+</h:form>
 </html>

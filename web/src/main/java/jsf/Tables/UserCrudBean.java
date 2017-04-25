@@ -17,10 +17,10 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
 
-@Named("userBean")
+@Named("userCrudBean")
 @ManagedBean
 @RequestScoped
-public class UserBean {
+public class UserCrudBean {
 
     @EJB
     private UserController controller;
@@ -43,7 +43,7 @@ public class UserBean {
         }
 
         RequestContext requestContext = RequestContext.getCurrentInstance();
-        requestContext.execute("PF('addUserDialog').hide()");
+        requestContext.execute("PF('addDialog').hide()");
     }
 
     public void fullUpdate(){
@@ -58,7 +58,7 @@ public class UserBean {
         }
 
         RequestContext requestContext = RequestContext.getCurrentInstance();
-        requestContext.execute("PF('updateUserDialog').hide()");
+        requestContext.execute("PF('updateDialog').hide()");
     }
 
     public void delete(){
@@ -72,7 +72,7 @@ public class UserBean {
         }
 
         RequestContext requestContext = RequestContext.getCurrentInstance();
-        requestContext.execute("PF('deleteUserDialog').hide()");
+        requestContext.execute("PF('deleteDialog').hide()");
     }
 
     public void onRowSelect(SelectEvent event){

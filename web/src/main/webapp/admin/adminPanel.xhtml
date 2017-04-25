@@ -67,21 +67,21 @@
             <p:ajax event="close" update="users"/>
             <h:panelGrid columns="2" cellpadding="5">
                 <h:outputLabel value="Email: " for="email"/>
-                <p:inputText id="email" value="#{userBean.dto.email}"/>
+                <p:inputText id="email" value="#{userCrudBean.dto.email}"/>
 
                 <h:outputLabel value="First name: " for="firstName"/>
-                <p:inputText id="firstName" value="#{userBean.dto.firstName}"/>
+                <p:inputText id="firstName" value="#{userCrudBean.dto.firstName}"/>
 
                 <h:outputLabel value="Last name: " for="lastName"/>
-                <p:inputText id="lastName" value="#{userBean.dto.lastName}"/>
+                <p:inputText id="lastName" value="#{userCrudBean.dto.lastName}"/>
 
                 <h:outputLabel value="Phone number: " for="phoneNumber"/>
-                <p:inputText id="phoneNumber" value="#{userBean.dto.phoneNumber}"/>
+                <p:inputText id="phoneNumber" value="#{userCrudBean.dto.phoneNumber}"/>
 
                 <h:outputLabel value="Password: " for="password"/>
-                <p:inputText id="password" value="#{userBean.dto.password}"/>
+                <p:inputText id="password" value="#{userCrudBean.dto.password}"/>
             </h:panelGrid>
-            <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
+            <p:commandButton value="Add" update="growl" actionListener="#{userCrudBean.add}"/>
         </p:dialog>
     </h:form>
 
@@ -91,22 +91,22 @@
 
             <h:panelGrid columns="2" cellpadding="5">
                 <h:outputLabel value="Email: " for="updateEmail"/>
-                <p:inputText id="updateEmail" value="#{userBean.dto.email}"/>
+                <p:inputText id="updateEmail" value="#{userCrudBean.dto.email}"/>
 
                 <h:outputLabel value="First name: " for="updateFirstName"/>
-                <p:inputText id="updateFirstName" value="#{userBean.dto.firstName}"/>
+                <p:inputText id="updateFirstName" value="#{userCrudBean.dto.firstName}"/>
 
                 <h:outputLabel value="Last name: " for="updateLastName"/>
-                <p:inputText id="updateLastName" value="#{userBean.dto.lastName}"/>
+                <p:inputText id="updateLastName" value="#{userCrudBean.dto.lastName}"/>
 
                 <h:outputLabel value="Phone number: " for="updatePhoneNumber"/>
-                <p:inputText id="updatePhoneNumber" value="#{userBean.dto.phoneNumber}"/>
+                <p:inputText id="updatePhoneNumber" value="#{userCrudBean.dto.phoneNumber}"/>
 
                 <h:outputLabel value="Password: " for="updatePassword"/>
-                <p:inputText id="updatePassword" value="#{userBean.dto.password}"/>
+                <p:inputText id="updatePassword" value="#{userCrudBean.dto.password}"/>
             </h:panelGrid>
 
-            <p:commandButton value="Update" update="growl" actionListener="#{userBean.fullUpdate}"/>
+            <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.fullUpdate}"/>
         </p:dialog>
     </h:form>
 
@@ -116,10 +116,10 @@
 
             <h:panelGrid columns="2" cellpadding="5">
                 <h:outputLabel value="Email: " for="deleteEmail"/>
-                <p:inputText id="deleteEmail" value="#{userBean.dto.email}"/>
+                <p:inputText id="deleteEmail" value="#{userCrudBean.dto.email}"/>
             </h:panelGrid>
 
-            <p:commandButton value="Update" update="growl" actionListener="#{userBean.delete}"/>
+            <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.delete}"/>
         </p:dialog>
     </h:form>
 

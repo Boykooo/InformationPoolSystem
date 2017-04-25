@@ -10,25 +10,28 @@
 <h:body>
     <ui:composition template="../adminPanelTemplate.xhtml">
         <ui:define name="table">
-            <p:dataTable id="users" var="user" value="#{userTableBean.allUsers}"
+            <p:dataTable id="pools" var="pool" value="#{poolTableBean.pools}"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          paginator="true"
                          rows="10">
 
-                <p:column headerText="Email">
-                    <h:outputText value="#{user.email}"/>
+                <p:column headerText="Name">
+                    <h:outputText value="#{pool.name}"/>
                 </p:column>
-                <p:column headerText="First name">
-                    <h:outputText value="#{user.firstName}"/>
+                <p:column headerText="Length">
+                    <h:outputText value="#{pool.length}"/>
                 </p:column>
-                <p:column headerText="Last name">
-                    <h:outputText value="#{user.lastName}"/>
+                <p:column headerText="Width">
+                    <h:outputText value="#{pool.width}"/>
                 </p:column>
-                <p:column headerText="Phone number">
-                    <h:outputText value="#{user.phoneNumber}"/>
+                <p:column headerText="Depth">
+                    <h:outputText value="#{pool.depth}"/>
                 </p:column>
-                <p:column headerText="Role">
-                    <h:outputText value="#{user.role}"/>
+                <p:column headerText="Type">
+                    <h:outputText value="#{pool.type}"/>
+                </p:column>
+                <p:column headerText="IsWorking">
+                    <h:outputText value="#{pool.isWorking}"/>
                 </p:column>
             </p:dataTable>
         </ui:define>
@@ -37,10 +40,16 @@
         <ui:define name="crud">
             <p:growl id="growl" showDetail="true" life="3000"/>
 
-            <ui:include src="tableCrudMenu.xhtml"/>
+            <h:form>
+                <h:panelGrid columns="3" cellpadding="">
+                    <p:commandButton value="Add" onclick="PF('addDialog').show()"/>
+                    <p:commandButton value="Update" onclick="PF('updateDialog').show()"/>
+                    <p:commandButton value="Delete" onclick="PF('deleteDialog').show()"/>
+                </h:panelGrid>
+            </h:form>
 
             <h:form>
-                <p:dialog widgetVar="addDialog" header="Add new user" resizable="false">
+                <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
                     <p:ajax event="close" update="users"/>
                     <ui:include src="forms/userForm.xhtml"/>
                     <p:commandButton value="Add" update="growl" actionListener="#{userCrudBean.add}"/>
@@ -48,7 +57,7 @@
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="updateDialog" header="Update user" resizable="false">
+                <p:dialog widgetVar="updateUserDialog" header="Update user" resizable="false">
                     <p:ajax event="close" update="users"/>
                     <ui:include src="forms/userForm.xhtml"/>
                     <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.fullUpdate}"/>
@@ -56,7 +65,7 @@
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="deleteDialog" header="Delete user" resizable="false">
+                <p:dialog widgetVar="deleteUserDialog" header="Delete user" resizable="false">
                     <p:ajax event="close" update="users"/>
                     <h:panelGrid columns="2" cellpadding="5">
                         <h:outputLabel value="Email: " for="deleteEmail"/>

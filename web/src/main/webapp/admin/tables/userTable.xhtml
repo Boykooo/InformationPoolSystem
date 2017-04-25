@@ -48,7 +48,7 @@
             <h:form>
                 <p:dialog widgetVar="addUserDialog" header="Add new user" resizable="false">
                     <p:ajax event="close" update="users"/>
-                    <ui:include src="userForm.xhtml"/>
+                    <ui:include src="forms/userForm.xhtml"/>
                     <p:commandButton value="Add" update="growl" actionListener="#{userBean.add}"/>
                 </p:dialog>
             </h:form>
@@ -56,7 +56,7 @@
             <h:form>
                 <p:dialog widgetVar="updateUserDialog" header="Update user" resizable="false">
                     <p:ajax event="close" update="users"/>
-                    <ui:include src="userForm.xhtml"/>
+                    <ui:include src="forms/userForm.xhtml"/>
                     <p:commandButton value="Update" update="growl" actionListener="#{userBean.fullUpdate}"/>
                 </p:dialog>
             </h:form>

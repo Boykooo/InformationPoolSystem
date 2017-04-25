@@ -23,15 +23,16 @@ public class LoginBean implements Serializable {
     private String username;
     private String password;
     private String redirectURL;
+    private String startURL;
     private boolean isLogin;
-
 
     @EJB
     private AdminDao dao;
 
     @PostConstruct
     protected void init() {
-        redirectURL = "adminPanel.xhtml";
+        redirectURL = "tables/userTable.xhtml";
+        startURL = "/faces/index.xhtml";
     }
 
     public boolean isLoggedOut() {
@@ -44,7 +45,7 @@ public class LoginBean implements Serializable {
         isLogin = false;
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         externalContext.invalidateSession();
-        externalContext.redirect(externalContext.getRequestContextPath() + "/login.xhtml");
+        externalContext.redirect(externalContext.getRequestContextPath() + startURL);
     }
 
     public void login() throws IOException {

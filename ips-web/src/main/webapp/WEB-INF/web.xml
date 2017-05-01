@@ -37,7 +37,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>others</web-resource-name>
-            <url-pattern>/faces/admin/adminPanel.xhtml</url-pattern>
+            <url-pattern>/faces/admin/</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>
@@ -63,8 +63,8 @@
         <auth-method>FORM</auth-method>
         <realm-name>ips-security-module</realm-name>
         <form-login-config>
-            <form-login-page>/admin/login.xhtml</form-login-page>
-            <form-error-page>/admin/login.xhtml</form-error-page>
+            <form-login-page>/loginToAdminPanel.xhtml</form-login-page>
+            <form-error-page>/index.xhtml</form-error-page>
         </form-login-config>
     </login-config>
 

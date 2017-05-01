@@ -31,7 +31,7 @@ public class LoginBean implements Serializable {
 
     @PostConstruct
     protected void init() {
-        redirectURL = "tables/userTable.xhtml";
+        redirectURL = "admin/tables/userTable.xhtml";
         startURL = "/faces/index.xhtml";
     }
 
@@ -49,14 +49,9 @@ public class LoginBean implements Serializable {
     }
 
     public void login() throws IOException {
-
         FacesContext context = FacesContext.getCurrentInstance();
         ExternalContext externalContext = context.getExternalContext();
         HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
-
-        if (externalContext.getRemoteUser() != null){
-           externalContext.invalidateSession();
-        }
 
         try {
             request.login(username, password);

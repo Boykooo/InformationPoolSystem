@@ -27,7 +27,7 @@ public class AdminPanelFilter implements Filter {
         }
         else {
             HttpServletResponse httpResponse = (HttpServletResponse) response;
-            httpResponse.sendRedirect("login.xhtml");
+            httpResponse.sendRedirect("loginToAdminPanel.xhtml");
         }
     }
 

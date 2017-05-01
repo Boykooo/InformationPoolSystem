@@ -63,9 +63,11 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         track.setId(dto.getTrackId());
         session.setTrack(track);
 
-        User user = new User();
-        user.setEmail(dto.getUserEmail());
-        session.setUser(user);
+        if (dto.getUserEmail() != null) {
+            User user = new User();
+            user.setEmail(dto.getUserEmail());
+            session.setUser(user);
+        }
 
         return session;
     }
@@ -76,7 +78,9 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
             dto.setCost(entity.getCost());
             dto.setSessionTime(entity.getSessionTime());
             dto.setTrackId(entity.getTrack().getId());
-            dto.setUserEmail(entity.getUser().getEmail());
+            if (entity.getUser() != null) {
+                dto.setUserEmail(entity.getUser().getEmail());
+            }
 
             return dto;
         }

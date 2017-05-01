@@ -57,7 +57,7 @@ public class SessionController {
         }
 
         if (service.findById(dto) != null){
-            if (userController.findById(dto.getUserEmail()) != null){
+            if (dto.getUserEmail() == null || (dto.getUserEmail() != null && userController.findById(dto.getUserEmail()) != null)){
                     service.update(dto);
             }
             else {

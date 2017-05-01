@@ -1,10 +1,10 @@
 package jsf.Tables;
 
+import controllers.SessionController;
+import dto.SessionDto;
 import exceptions.InvalidRequestException;
 import exceptions.ObjectAlreadyExistsException;
 import exceptions.UpdateObjectNotExistException;
-import controllers.SessionController;
-import dto.SessionDto;
 import org.primefaces.context.RequestContext;
 
 import javax.annotation.ManagedBean;
@@ -14,8 +14,8 @@ import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
-import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.Date;
 
 @Named("sessionCrudBean")
 @ManagedBean
@@ -35,7 +35,7 @@ public class SessionCrudBean {
     public void add(){
 
         FacesContext context = FacesContext.getCurrentInstance();
-
+        
         try {
             controller.insert(dto);
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully", "Session added successfully"));
@@ -90,7 +90,8 @@ public class SessionCrudBean {
     }
 
     public void setDate(Date date) {
-        this.dto.setSessionTime(new Timestamp(date.getTime()));
+        Timestamp time = new Timestamp(date.getTime());
+        this.dto.setSessionTime(time);
     }
 
     //endregion

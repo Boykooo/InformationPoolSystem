@@ -11,7 +11,7 @@
 
 
     <h:outputLabel value="TimeStamp: " for="calendar"/>
-    <p:calendar id="calendar" value="#{sessionCrudBean.dto.sessionTime}" pattern="dd.MM.yyyy HH:mm" showOn="button" />
+    <p:calendar id="calendar" value="#{sessionCrudBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button" />
 
     <h:outputLabel value="Track id: " for="trackId"/>
     <p:inputText id="trackId" value="#{sessionCrudBean.dto.trackId}"/>

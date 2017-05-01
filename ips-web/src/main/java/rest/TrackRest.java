@@ -66,7 +66,7 @@ public class TrackRest {
         AbstractResponse response;
         if (id != null) {
             try {
-                service.update(new TrackDto(id, number, poolName));
+                service.fullUpdate(new TrackDto(id, number, poolName));
                 response = new SuccessfulResponse();
             } catch (UpdateObjectNotExistException | InvalidRequestException | ObjectAlreadyExistsException e) {
                 response = new ErrorResponse(e.getMessage());

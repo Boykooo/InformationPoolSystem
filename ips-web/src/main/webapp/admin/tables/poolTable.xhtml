@@ -65,7 +65,7 @@
                         <h:outputLabel value="Name: " for="deleteName"/>
                         <p:inputText id="deleteName" value="#{poolCrudBean.dto.name}"/>
                     </h:panelGrid>
-                    <p:commandButton value="Update" update="growl" actionListener="#{poolCrudBean.delete}"/>
+                    <p:commandButton value="Delete" update="growl" actionListener="#{poolCrudBean.delete}"/>
                 </p:dialog>
             </h:form>
         </ui:define>

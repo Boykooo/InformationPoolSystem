@@ -60,7 +60,7 @@ public class TrackController {
         }
     }
 
-    public void update(TrackDto dto) throws UpdateObjectNotExistException, InvalidRequestException, ObjectAlreadyExistsException {
+    public void fullUpdate(TrackDto dto) throws UpdateObjectNotExistException, InvalidRequestException, ObjectAlreadyExistsException {
         if (!validator.check(dto) && dto.getId() != null) {
             throw new InvalidRequestException();
         }

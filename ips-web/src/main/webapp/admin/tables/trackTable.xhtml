@@ -4,8 +4,83 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+
+<h:body>
+    <ui:composition template="../adminPanelTemplate.xhtml">
+        <ui:define name="table">
+            <p:dataTable id="tracks" var="track" value="#{trackTableBean.tracks}"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginator="true"
+                         rows="10">
+
+                <p:column headerText="ID">
+                    <h:outputText value="#{track.id}"/>
+                </p:column>
+                <p:column headerText="Pool">
+                    <h:outputText value="#{track.poolName}"/>
+                </p:column>
+                <p:column headerText="Number">
+                    <h:outputText value="#{track.number}"/>
+                </p:column>
+            </p:dataTable>
+        </ui:define>
+
+
+        <ui:define name="crud">
+            <p:growl id="growl" showDetail="true" life="3000"/>
+
+            <ui:include src="tableCrudMenu.xhtml"/>
+
+            <h:form>
+                <p:dialog widgetVar="addDialog" header="Add new track" resizable="false">
+                    <p:ajax event="close" update="tracks"/>
+                    <h:panelGrid columns="2" cellpadding="5">
+
+                        <h:outputLabel value="Number: " for="number"/>
+                        <p:inputText id="number" value="#{trackCrudBean.dto.number}"/>
+
+                        <h:outputLabel value="Pool name: " for="poolName"/>
+                        <p:inputText id="poolName" value="#{trackCrudBean.dto.poolName}"/>
+
+                    </h:panelGrid>
+                    <p:commandButton value="Add" update="growl" actionListener="#{trackCrudBean.add}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="updateDialog" header="Update track" resizable="false">
+                    <p:ajax event="close" update="tracks"/>
+                    <h:panelGrid columns="2" cellpadding="5">
+
+                        <h:outputLabel value="ID: " for="updateID"/>
+                        <p:inputText id="updateID" value="#{trackCrudBean.dto.id}"/>
+
+                        <h:outputLabel value="Number: " for="updateNumber"/>
+                        <p:inputText id="updateNumber" value="#{trackCrudBean.dto.number}"/>
+
+                        <h:outputLabel value="Pool name: " for="updatePoolName"/>
+                        <p:inputText id="updatePoolName" value="#{trackCrudBean.dto.poolName}"/>
+
+                    </h:panelGrid>
+                    <p:commandButton value="Update" update="growl" actionListener="#{trackCrudBean.fullUpdate}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="deleteDialog" header="Delete track" resizable="false">
+                    <p:ajax event="close" update="tracks"/>
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputLabel value="ID: " for="deleteID"/>
+                        <p:inputText id="deleteID" value="#{trackCrudBean.dto.id}"/>
+                    </h:panelGrid>
+                    <p:commandButton value="Delete" update="growl" actionListener="#{trackCrudBean.delete}"/>
+                </p:dialog>
+            </h:form>
+        </ui:define>
+
+    </ui:composition>
+
+</h:body>
 </html>

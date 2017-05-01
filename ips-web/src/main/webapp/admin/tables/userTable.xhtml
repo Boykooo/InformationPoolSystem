@@ -62,7 +62,7 @@
                         <h:outputLabel value="Email: " for="deleteEmail"/>
                         <p:inputText id="deleteEmail" value="#{userCrudBean.dto.email}"/>
                     </h:panelGrid>
-                    <p:commandButton value="Update" update="growl" actionListener="#{userCrudBean.delete}"/>
+                    <p:commandButton value="Delete" update="growl" actionListener="#{userCrudBean.delete}"/>
                 </p:dialog>
             </h:form>
         </ui:define>

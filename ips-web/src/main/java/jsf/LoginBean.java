@@ -31,8 +31,8 @@ public class LoginBean implements Serializable {
 
     @PostConstruct
     protected void init() {
-        redirectURL = "admin/tables/userTable.xhtml";
-        startURL = "/faces/index.xhtml";
+        redirectURL = "../admin/tables/userTable.xhtml";
+        startURL = "/public/index.xhtml";
     }
 
     public boolean isLoggedOut() {

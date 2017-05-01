@@ -23,7 +23,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/faces/*</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
     <session-config>
@@ -37,7 +37,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>others</web-resource-name>
-            <url-pattern>/faces/admin/</url-pattern>
+            <url-pattern>/admin/</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>
@@ -63,8 +63,8 @@
         <auth-method>FORM</auth-method>
         <realm-name>ips-security-module</realm-name>
         <form-login-config>
-            <form-login-page>/loginToAdminPanel.xhtml</form-login-page>
-            <form-error-page>/index.xhtml</form-error-page>
+            <form-login-page>/public/loginToAdminPanel.xhtml</form-login-page>
+            <form-error-page>/public/index.xhtml</form-error-page>
         </form-login-config>
     </login-config>
 
@@ -76,6 +76,6 @@
     </security-role>
 
     <welcome-file-list>
-        <welcome-file>faces/index.xhtml</welcome-file>
+        <welcome-file>/public/index.xhtml</welcome-file>
     </welcome-file-list>
 </web-app>

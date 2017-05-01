@@ -4,11 +4,10 @@ import jsf.LoginBean;
 
 import javax.faces.bean.ManagedProperty;
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/admin/*")
+//@WebFilter(urlPatterns = "/admin/*")
 public class AdminPanelFilter implements Filter {
 
     @ManagedProperty(value = "#{loginBean}")

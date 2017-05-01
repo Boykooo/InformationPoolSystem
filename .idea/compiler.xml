@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ips-persistence" />
+        <module name="ips-services" />
+        <module name="ips-web" />
         <module name="persistence" />
         <module name="poolPersistence" />
         <module name="service" />
@@ -14,6 +17,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="InformationPoolSystem" target="1.8" />
+      <module name="ips-persistence" target="1.8" />
+      <module name="ips-services" target="1.8" />
+      <module name="ips-web" target="1.8" />
       <module name="poolPersistence" target="1.8" />
       <module name="service" target="1.8" />
       <module name="SoapServiceClient" target="1.8" />

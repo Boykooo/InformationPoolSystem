@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>poolPersistence</module>
-        <module>service</module>
-        <module>web</module>
+        <module>ips-persistence</module>
+        <module>ips-services</module>
+        <module>ips-web</module>
     </modules>
 
     <properties>

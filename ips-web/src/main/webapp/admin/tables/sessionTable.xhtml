@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:body>
+    <ui:composition template="../adminPanelTemplate.xhtml">
+        <ui:define name="table">
+            <p:dataTable id="sessions" var="varSession" value="#{sessionTableBean.sessions}"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginator="true"
+                         rows="10">
+
+                <p:column headerText="Time">
+                    <h:outputText value="#{varSession.sessionTime}"/>
+                </p:column>
+                <p:column headerText="Track id">
+                    <h:outputText value="#{varSession.trackId}"/>
+                </p:column>
+                <p:column headerText="User email">
+                    <h:outputText value="#{varSession.userEmail}"/>
+                </p:column>
+                <p:column headerText="Cost">
+                    <h:outputText value="#{varSession.cost}"/>
+                </p:column>
+            </p:dataTable>
+        </ui:define>
+
+
+        <ui:define name="crud">
+            <p:growl id="growl" showDetail="true" life="3000"/>
+
+            <ui:include src="tableCrudMenu.xhtml"/>
+
+            <h:form>
+                <p:dialog widgetVar="addDialog" header="Add new session" resizable="false">
+                    <p:ajax event="close" update="sessions"/>
+                    <ui:include src="forms/sessionForm.xhtml"/>
+                    <p:commandButton value="Add" update="growl" actionListener="#{sessionCrudBean.add}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="updateDialog" header="Update session" resizable="false">
+                    <p:ajax event="close" update="sessions"/>
+                    <ui:include src="forms/sessionForm.xhtml"/>
+                    <p:commandButton value="Update" update="growl" actionListener="#{sessionCrudBean.fullUpdate}"/>
+                </p:dialog>
+            </h:form>
+
+            <h:form>
+                <p:dialog widgetVar="deleteDialog" header="Delete session" resizable="false">
+                    <p:ajax event="close" update="sessions"/>
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputLabel value="TimeStamp: " for="calendar"/>
+                        <p:calendar id="calendar" value="#{sessionCrudBean.dto.sessionTime}" pattern="dd.MM.yyyy HH:mm" showOn="button" />
+                    </h:panelGrid>
+                    <p:commandButton value="Update" update="growl" actionListener="#{sessionCrudBean.fullUpdate}"/>
+                </p:dialog>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>

@@ -1,20 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web/src/main/java/Servlets/old/UserPageServlet.java" />
-    <bookmark url="file://$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" />
+    <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/UserPageServlet.java" />
+    <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Rename modules. Refactoring">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ips_services_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ips_web_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionCrudBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionTableBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackTableBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/sessionForm.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/sessionTable.xhtml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/service_ejb_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/tests/AdminTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ips_web_war_exploded.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/lib/javax.persistence.jar" afterPath="$PROJECT_DIR$/ips-persistence/lib/javax.persistence.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/pom.xml" afterPath="$PROJECT_DIR$/ips-persistence/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/poolPersistence.iml" afterPath="$PROJECT_DIR$/ips-persistence/ips-persistence.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Admin.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Admin.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/IBaseEntity.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/IBaseEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Pool.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Pool.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Session.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Session.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/SessionPK.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/SessionPK.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/Track.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Track.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/AdminDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/AdminDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/GenericDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/GenericDaoImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/PoolDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/PoolDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/SessionDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/SessionDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/TrackDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/TrackDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/java/dao/UserDao.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/dao/UserDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/persistence.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql" afterPath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/pom.xml" afterPath="$PROJECT_DIR$/ips-services/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/ips-services/ips-services.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/CannotBeNullException.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/exceptions/CannotBeNullException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/InvalidRequestException.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/exceptions/InvalidRequestException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/ObjectAlreadyExistsException.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/exceptions/ObjectAlreadyExistsException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/ReferenceNotFoundException.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/exceptions/ReferenceNotFoundException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/exceptions/UpdateObjectNotExistException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/Validation/DataValidator.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/Validation/DataValidator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/AdminController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/AdminController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/PoolController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/SessionController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/SessionController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/TrackController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/UserController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/UserController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/AdminDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/IBaseDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/SessionDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/SessionPkDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/TrackDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/UserDto.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/AdminService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/AdminService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/IService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/IService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/PoolService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/PoolService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/SessionService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/SessionService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/TrackService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/TrackService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/UserService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service/src/main/java/util/DataEncoder.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/util/DataEncoder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/pom.xml" afterPath="$PROJECT_DIR$/ips-web/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/AdminPanelFilter.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/Servlets/AdminPanelFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/AdminPanelServlet.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/Servlets/AdminPanelServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/old/MainServlet.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/MainServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/old/PoolPageServlet.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/PoolPageServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/Servlets/old/UserPageServlet.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/UserPageServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/LoginBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolCrudBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolCrudBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolTableBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserCrudBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserCrudBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserTableBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserTableBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/PoolRest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/AbstractResponse.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/Responses/AbstractResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/CannotBeNullResponse.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/Responses/CannotBeNullResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/ErrorResponse.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/Responses/ErrorResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/NotFoundResponse.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/Responses/NotFoundResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/Responses/SuccessfulResponse.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/Responses/SuccessfulResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/RestApp.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/RestApp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/TrackRest.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/TrackRest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/rest/UserRest.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/soap/UserSoap.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/soap/UserSoap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/resources/bundle.properties" afterPath="$PROJECT_DIR$/ips-web/src/main/resources/bundle.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/jboss-web.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/adminPanel.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanel.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/adminPanelTemplate.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanelTemplate.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/login.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/login.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/navigationTemplate.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/navigationTemplate.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/poolForm.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/userForm.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/userForm.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/sessionTable.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/trackForm.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/tableCrudMenu.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/tableCrudMenu.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/trackTable.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/trackTable.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/userTable.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/userTable.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/index.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/jsp/poolsPage.jsp" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/poolsPage.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/jsp/startPage.jsp" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/startPage.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/pages/jsp/usersPage.jsp" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/usersPage.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/users/startPage.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/users/startPage.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/webapp/users/success.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/users/success.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/ips-web/ips-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java" afterPath="$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java" afterPath="$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/services/AdminService.java" afterPath="$PROJECT_DIR$/service/src/main/java/services/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolCrudBean.java" afterPath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolCrudBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserCrudBean.java" afterPath="$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserCrudBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" afterPath="$PROJECT_DIR$/web/src/main/java/rest/PoolRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml" afterPath="$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,6 +121,9 @@
     <ignored path="$PROJECT_DIR$/poolPersistence/target/" />
     <ignored path="$PROJECT_DIR$/service/target/" />
     <ignored path="$PROJECT_DIR$/SoapServiceClient/target/" />
+    <ignored path="$PROJECT_DIR$/ips-web/target/" />
+    <ignored path="$PROJECT_DIR$/ips-services/target/" />
+    <ignored path="$PROJECT_DIR$/ips-persistence/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,99 +176,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoolTableBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolTableBean.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="poolTable.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="62" column="55" lean-forward="false" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            <state relative-caret-position="507">
+              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoolCrudBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolCrudBean.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoolController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state relative-caret-position="833">
+              <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateObjectNotExistException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/MainServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/usersPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTableBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserTableBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSoap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/soap/UserSoap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#557#558#0" expanded="false" />
+                <element signature="e#628#629#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faces-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding>
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserCrudBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserCrudBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="69" column="128" lean-forward="false" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="128" />
-              <folding>
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="poolForm.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoolDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -191,6 +297,12 @@
       <find>for</find>
       <find>carDeta</find>
       <find>growl</find>
+      <find>sse</find>
+      <find>date</find>
+      <find>service</find>
+      <find>services</find>
+      <find>ips</find>
+      <find>web</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,21 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/webapp/pages/login.xhtml" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/jsf/UserTableBean.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/jsf/Car.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/jsf/ContextMenuView.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/pages/temp.xhtml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/pages/adminPanel.xhtml" />
-        <option value="$PROJECT_DIR$/web/src/main/java/jsf/UserBean.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserTableBean.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java" />
-        <option value="$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/login.xhtml" />
@@ -243,7 +340,6 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForn.xhtml" />
         <option value="$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/trackTable.xhtml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/sessionTable.xhtml" />
         <option value="$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolTableBean.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/navigationTemplate.xhtml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/adminPanelTemplate.xhtml" />
@@ -255,6 +351,22 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml" />
         <option value="$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/jsf/Tables/SessionTableBean.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/controllers/SessionController.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/jsf/Tables/SessionCrudBean.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/sessionForm.xhtml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/sessionTable.xhtml" />
+        <option value="$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/trackForm.xhtml" />
+        <option value="$PROJECT_DIR$/ips-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/rest/PoolRest.java" />
+        <option value="$PROJECT_DIR$/ips-services/pom.xml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/rest/TrackRest.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/ips-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -272,7 +384,56 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ips-web" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ips-web" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="InformationPoolSystem" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="InformationPoolSystem" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -350,9 +511,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,7 +533,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="ips-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,7 +547,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="ips-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -415,7 +573,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="ips-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -431,7 +589,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,79 +603,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="ips-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -539,19 +625,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="ips-services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,23 +639,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsf" />
+              <option name="myItemId" value="ips-persistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,7 +653,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="ips-persistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -604,105 +662,26 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/security" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="725e66f0-6f25-4f8d-8340-8cb714f7cf99" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/poolPersistence/src/test/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34827587" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
@@ -1258,9 +1237,10 @@
       <method />
     </configuration>
     <configuration default="false" name="JBoss9" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 9.0.2.Final" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ips-web/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web:war">
+        <artifact name="ips-web:war">
           <settings />
         </artifact>
       </deployment>
@@ -1324,7 +1304,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war" />
+          <artifact name="ips-web:war" />
         </option>
       </method>
     </configuration>
@@ -1412,14 +1392,15 @@
       <workItem from="1492893932868" duration="600000" />
       <workItem from="1492946499514" duration="6238000" />
       <workItem from="1493058210936" duration="8181000" />
-      <workItem from="1493139704277" duration="7780000" />
-    </task>
-    <task id="LOCAL-00013" summary="usersPage.jsp and UserPageServlet implementation">
-      <created>1489879484895</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1489879484895</updated>
+      <workItem from="1493139704277" duration="8044000" />
+      <workItem from="1493154664601" duration="91000" />
+      <workItem from="1493186538427" duration="599000" />
+      <workItem from="1493285199909" duration="7930000" />
+      <workItem from="1493315309066" duration="3591000" />
+      <workItem from="1493401568033" duration="1608000" />
+      <workItem from="1493479886994" duration="610000" />
+      <workItem from="1493645248722" duration="5021000" />
+      <workItem from="1493650314137" duration="294000" />
     </task>
     <task id="LOCAL-00014" summary="Added buttons for to go to user/pool pages">
       <created>1489919136607</created>
@@ -1757,7 +1738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493153195237</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Impl poolForm, poolTable">
+      <created>1493154431741</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1493154431741</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1793,7 +1781,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396393000" />
+    <option name="totallyTimeSpent" value="416401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1806,7 +1794,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1817,26 +1805,25 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19376528" sideWeight="0.4959631" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14486553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="570" y="71" width="539" height="867" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30680507" sideWeight="0.48899755" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30103806" sideWeight="0.48899755" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2768166" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36793542" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2603912" sideWeight="0.2272203" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24755502" sideWeight="0.7727797" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25611246" sideWeight="0.6020761" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28178483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25305623" sideWeight="0.3979239" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23533008" sideWeight="0.3644752" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1846,7 +1833,9 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" x="92" y="92" width="1496" height="826" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20232274" sideWeight="0.5040369" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25305623" sideWeight="0.3979239" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35409456" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1898,8 +1887,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed EJBs errors" />
-    <MESSAGE value="Transition to jsf. Disabled old servlets" />
     <MESSAGE value="Created bundle.properties" />
     <MESSAGE value="Added bad authorization, without protect" />
     <MESSAGE value="Impl Admin entity, dao, dto, service" />
@@ -1923,11 +1910,13 @@
     <MESSAGE value="Impl userTable via template" />
     <MESSAGE value="Added logout" />
     <MESSAGE value="pulled crud panel from each tablePage to tableCrudMenu" />
-    <option name="LAST_COMMIT_MESSAGE" value="pulled crud panel from each tablePage to tableCrudMenu" />
+    <MESSAGE value="Impl poolForm, poolTable" />
+    <MESSAGE value="Rename modules. Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename modules. Refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="267" />
+      <option name="time" value="269" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1936,252 +1925,223 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/pages/temp.xhtml" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/Exceptions/InvalidRequestException.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/testTemplate.xhtml" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/commonTemplate.xhtml" />
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/login.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="561">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/TrackDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanel.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="35">
+          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/SessionPkDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-persistence/src/main/java/dao/GenericDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="510">
+          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/SessionDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/trackTable.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/IBaseDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="357">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/AdminDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/navigationTemplate.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/userTable.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/tableCrudMenu.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/postgreScript.pgsql">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanelTemplate.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/Entities/User.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserCrudBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="541">
+          <caret line="69" column="128" lean-forward="false" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml">
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/exceptions/UpdateObjectNotExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/PoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.track">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6931d7a0/725e66f0-6f25-4f8d-8340-8cb714f7cf99/mainDB.ips.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackTableBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/old/MainServlet.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionTableBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/old/PoolPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/old/UserPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/AdminPanelFilter.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/Servlets/AdminPanelServlet.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolCrudBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="80" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/dto/SessionPkDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/Timestamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#886#887#0" expanded="false" />
+            <element signature="e#926#927#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/poolForm.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/dto/SessionDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/sessionTable.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="50" lean-forward="false" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/UserDto.java">
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/dto/TrackDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#811#812#0" expanded="false" />
+            <element signature="e#846#847#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1161#1162#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="17">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/util/DataEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="50" column="102" lean-forward="false" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="102" />
-          <folding>
-            <element signature="e#372#382#0" expanded="false" />
-            <element signature="method#findById#0;class#UserController#0" expanded="false" />
-            <element signature="method#insert#0;class#UserController#0" expanded="false" />
-            <element signature="method#fullUpdate#0;class#UserController#0" expanded="false" />
-            <element signature="method#delete#0;class#UserController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/content.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/header.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/testTemplate.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/commonTemplate.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/adminPanel.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poolPersistence/src/main/java/dao/GenericDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/userForm.xhtml">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/userForm.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="40" />
@@ -2189,146 +2149,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/sessionTable.xhtml">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/sessionForm.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/trackTable.xhtml">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/trackForm.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/LoginBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserTableBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/navigationTemplate.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolTableBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/userTable.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/tableCrudMenu.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/adminPanelTemplate.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/UserCrudBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="69" column="128" lean-forward="false" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="128" />
-          <folding>
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/dto/PoolDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/forms/poolForm.xhtml">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/rest/PoolRest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/admin/tables/poolTable.xhtml">
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="62" column="55" lean-forward="false" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/Exceptions/UpdateObjectNotExistException.java">
+    <entry file="file://$PROJECT_DIR$/ips-persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionCrudBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="method#fullUpdate#0;class#SessionCrudBean#0" expanded="false" />
+            <element signature="method#delete#0;class#SessionCrudBean#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/ws/rs/FormParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/rest/TrackRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#800#801#0" expanded="false" />
+            <marker date="1493647841095" expanded="true" signature="1868:2417" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/ips-web.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/jboss-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/Servlets/old/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/usersPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/soap/UserSoap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#628#629#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/jsf/Tables/PoolCrudBean.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserTableBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/controllers/PoolController.java">
+    <entry file="file://$PROJECT_DIR$/ips-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        <state relative-caret-position="507">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-persistence/src/main/tests/AdminTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2339,7 +2342,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>web:war</last-edited>
+          <last-edited>ips-services:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2352,7 +2355,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (web)|Web</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2387,7 +2390,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>web</last-edited>
+          <last-edited>InformationPoolSystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

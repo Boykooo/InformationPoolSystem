@@ -5,26 +5,11 @@
     <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Added base page template">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/event3free.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolGirl.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolOldPerson.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/resources/bundle_ru.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/homePageContent.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ips-web/src/main/resources/bundle.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/basePage.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" afterPath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/ips-web.iml" afterPath="$PROJECT_DIR$/ips-web/ips-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,11 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -101,8 +86,18 @@
       <file leaf-file-name="panelGrid.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -111,8 +106,8 @@
       <file leaf-file-name="homePageContent.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/homePageContent.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -214,12 +209,12 @@
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" />
         <option value="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/homePageContent.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" />
       </list>
     </option>
   </component>
@@ -1501,14 +1496,7 @@
       <workItem from="1493761567381" duration="605000" />
       <workItem from="1493827318869" duration="11882000" />
       <workItem from="1493889888388" duration="20000" />
-      <workItem from="1493909789490" duration="18370000" />
-    </task>
-    <task id="LOCAL-00021" summary="Create postgreSQL script for create database. Change DB">
-      <created>1490476018071</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1490476018071</updated>
+      <workItem from="1493909789490" duration="19541000" />
     </task>
     <task id="LOCAL-00022" summary="Added password field to user. Change postgreSQL script">
       <created>1490479453814</created>
@@ -1846,7 +1834,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493914075231</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Added home page content template">
+      <created>1493937195538</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1493937195538</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1882,7 +1877,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466167000" />
+    <option name="totallyTimeSpent" value="467338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1912,7 +1907,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14486553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="570" y="71" width="539" height="867" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33910036" sideWeight="0.48899755" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33910036" sideWeight="0.48899755" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1989,7 +1984,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Impl UserSoap service" />
     <MESSAGE value="fixed LoginBean" />
     <MESSAGE value="Add DataValidator" />
     <MESSAGE value="The huge Refactoring" />
@@ -2014,7 +2008,8 @@
     <MESSAGE value="Fixed security module in web.xml" />
     <MESSAGE value="Added navigation bar for website" />
     <MESSAGE value="Added base page template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added base page template" />
+    <MESSAGE value="Added home page content template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added home page content template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2325,14 +2320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -2359,6 +2346,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -2369,24 +2364,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/homePageContent.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="306">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>

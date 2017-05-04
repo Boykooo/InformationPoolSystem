@@ -18,7 +18,7 @@ import java.io.Serializable;
 @Named("loginBean")
 @ManagedBean
 @SessionScoped
-public class LoginBean implements Serializable {
+public class AdminLoginBean implements Serializable {
 
     private String username;
     private String password;

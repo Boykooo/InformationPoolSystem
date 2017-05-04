@@ -63,7 +63,7 @@
         <auth-method>FORM</auth-method>
         <realm-name>ips-security-module</realm-name>
         <form-login-config>
-            <form-login-page>/public/loginToAdminPanel.xhtml</form-login-page>
+            <form-login-page>/public/loginToAdminPanel.adminLogin.xhtml</form-login-page>
             <form-error-page>/public/index.xhtml</form-error-page>
         </form-login-config>
     </login-config>

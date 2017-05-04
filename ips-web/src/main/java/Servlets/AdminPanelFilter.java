@@ -1,6 +1,6 @@
 package Servlets;
 
-import jsf.LoginBean;
+import jsf.AdminLoginBean;
 
 import javax.faces.bean.ManagedProperty;
 import javax.servlet.*;
@@ -11,7 +11,7 @@ import java.io.IOException;
 public class AdminPanelFilter implements Filter {
 
     @ManagedProperty(value = "#{loginBean}")
-    private LoginBean loginBean;
+    private AdminLoginBean adminLoginBean;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -21,12 +21,12 @@ public class AdminPanelFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        if (loginBean.isLogin()){
+        if (adminLoginBean.isLogin()){
             chain.doFilter(request, response);
         }
         else {
             HttpServletResponse httpResponse = (HttpServletResponse) response;
-            httpResponse.sendRedirect("loginToAdminPanel.xhtml");
+            httpResponse.sendRedirect("adminLogin.xhtml");
         }
     }
 

@@ -6,21 +6,18 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      >
+>
 
 <h:body>
-    <ui:composition>
-        <h:form>
-            <p:menubar>
-                <p:submenu label="menu">
-                    <p:menuitem value="Pools" outcome="pools.xhtml"/>
-                </p:submenu>
+    <h:form>
 
-            </p:menubar>
-        </h:form>
-    </ui:composition>
+        <p:menubar>
+            <p:menuitem value="Home" outcome="home.xhtml"/>
+            <p:menuitem value="Pools" outcome="pools.xhtml"/>
+            <p:menuitem value="About us" outcome="#"/>
+
+            <p:commandButton value="Login"/>
+        </p:menubar>
+    </h:form>
 </h:body>
-
-
-
 </html>

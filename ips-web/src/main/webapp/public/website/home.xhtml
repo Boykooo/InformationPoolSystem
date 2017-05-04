@@ -4,13 +4,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
+
 <h:head>
-    <title>Welcome page</title>
+    <title>Home</title>
+    <meta content="text/html; charset=utf-8"/>
 </h:head>
+
 <h:body>
-    <h2>
-        Not yet...
-    </h2>
+
+    <f:facet name="last">
+        <h:outputStylesheet library="css" name="panelGrid.css"/>
+    </f:facet>
+
+    <ui:include src="navigationBar.xhtml"/>
+    <p:panelGrid columns="2">
+        <p:panelGrid id="events" columns="1" style="child-align: center;">
+            <p:outputLabel for="events" value="События"/>
+            <p:graphicImage url="/resources/images/event3free.jpg" height="400px" width="320px"/>
+        </p:panelGrid>
+
+        <p:panelGrid>
+            <ui:include src="homePageContent.xhtml"/>
+        </p:panelGrid>
+    </p:panelGrid>
+
 </h:body>
 </html>

@@ -43,3 +43,21 @@ CREATE TABLE ips.admin(
   password VARCHAR(100) NOT NULL
 );
 
+CREATE SEQUENCE ips.events_id_seq
+START WITH 1
+INCREMENT BY 1;
+
+CREATE TABLE ips.events(
+  id INTEGER PRIMARY KEY DEFAULT nextval('ips.events_id_seq'),
+  description VARCHAR(1000) NOT NULL,
+  image oid NOT NULL,
+  startDate DATE NOT NULL,
+  endDate DATE NOT NULL
+);
+
+CREATE TABLE ips.article(
+  name VARCHAR(200) PRIMARY KEY,
+  content VARCHAR(10000) NOT NULL
+);
+
+

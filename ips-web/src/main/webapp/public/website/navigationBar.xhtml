@@ -8,16 +8,15 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
 >
 
-<h:body>
-    <h:form>
+<h:form>
+    <p:menubar style="vertical-align: top">
+        <p:menuitem value="Главная страница" outcome="home.xhtml"/>
+        <p:menuitem value="Бассейны" outcome="pools.xhtml"/>
+        <p:menuitem value="О нас" outcome="about.xhtml"/>
 
-        <p:menubar>
-            <p:menuitem value="Home" outcome="home.xhtml"/>
-            <p:menuitem value="Pools" outcome="pools.xhtml"/>
-            <p:menuitem value="About us" outcome="#"/>
-
-            <p:commandButton value="Login"/>
-        </p:menubar>
-    </h:form>
-</h:body>
+        <f:facet name="options">
+            <p:commandButton value="Войти"/>
+        </f:facet>
+    </p:menubar>
+</h:form>
 </html>

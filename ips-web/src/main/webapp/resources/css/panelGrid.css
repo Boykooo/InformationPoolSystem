@@ -1,0 +1,6 @@
+.ui-panelgrid>*>tr,
+.ui-panelgrid .ui-panelgrid-cell {
+    border: none;
+    text-align: center;
+    padding-top: 0px;
+}

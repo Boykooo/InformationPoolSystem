@@ -9,6 +9,7 @@
             <base-name>bundle</base-name>
             <var>bundle</var>
         </resource-bundle>
+
     </application>
 
 </faces-config>

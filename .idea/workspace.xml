@@ -5,11 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Impl home page">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/about.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1496,14 +1494,7 @@
       <workItem from="1493761567381" duration="605000" />
       <workItem from="1493827318869" duration="11882000" />
       <workItem from="1493889888388" duration="20000" />
-      <workItem from="1493909789490" duration="19541000" />
-    </task>
-    <task id="LOCAL-00022" summary="Added password field to user. Change postgreSQL script">
-      <created>1490479453814</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1490479453814</updated>
+      <workItem from="1493909789490" duration="19618000" />
     </task>
     <task id="LOCAL-00023" summary="Fix postgreSQL script">
       <created>1490480232763</created>
@@ -1841,7 +1832,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493937195538</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Impl home page">
+      <created>1493938353759</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1493938353759</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1877,7 +1875,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467338000" />
+    <option name="totallyTimeSpent" value="467415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1984,7 +1982,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed LoginBean" />
     <MESSAGE value="Add DataValidator" />
     <MESSAGE value="The huge Refactoring" />
     <MESSAGE value="Created data source. The move to jta" />
@@ -2009,7 +2006,8 @@
     <MESSAGE value="Added navigation bar for website" />
     <MESSAGE value="Added base page template" />
     <MESSAGE value="Added home page content template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added home page content template" />
+    <MESSAGE value="Impl home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

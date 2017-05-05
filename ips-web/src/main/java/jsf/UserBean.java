@@ -9,19 +9,20 @@ import org.primefaces.context.RequestContext;
 import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.io.Serializable;
 
 @Named("userBean")
 @ManagedBean
-@RequestScoped
-public class UserBean {
+@SessionScoped
+public class UserBean  implements Serializable {
 
     @EJB
     private UserController controller;
@@ -29,11 +30,11 @@ public class UserBean {
     private String redirectURL;
     private boolean isLogin;
 
-
     @PostConstruct
     private void init(){
         user = new UserDto();
         redirectURL = "home.xhtml";
+        isLogin = false;
     }
 
 

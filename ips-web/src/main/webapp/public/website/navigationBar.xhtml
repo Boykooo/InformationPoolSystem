@@ -17,13 +17,24 @@
 
         <ui:insert name="options">
             <f:facet name="options">
-                <c:if test="#{userBean.login eq 'false'}}">
-                    <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
-                    <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
-                </c:if>
-                <c:if test="#{userBean.login eq 'true'}">
 
-                </c:if>
+                <c:choose>
+                    <c:when test="#{userBean.login}">
+                        <p:commandButton value="Личный кабинет"/>
+                    </c:when>
+                    <c:otherwise>
+                        <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
+                        <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
+                    </c:otherwise>
+                </c:choose>
+
+                <!--<c:if test="#{userBean.login eq 'false'}}">-->
+                <!--<p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>-->
+                <!--<p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>-->
+                <!--</c:if>-->
+                <!--<c:if test="#{userBean.login eq 'true'}">-->
+                <!--<p:commandButton value="Личный кабинет"/>-->
+                <!--</c:if>-->
             </f:facet>
         </ui:insert>
     </p:menubar>
@@ -40,7 +51,6 @@
 
 <h:form>
     <p:dialog widgetVar="loginDialog" header="Войти в систему" resizable="false">
-
         <h:panelGrid columns="2" cellpadding="5">
             <h:outputLabel value="Email: " for="email"/>
             <p:inputText id="email" value="#{userBean.user.email}"/>
@@ -52,4 +62,25 @@
         <p:commandButton value="Войти" update="growl" actionListener="#{userBean.signIn}"/>
     </p:dialog>
 </h:form>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

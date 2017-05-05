@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jstl/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
 >
@@ -16,8 +17,13 @@
 
         <ui:insert name="options">
             <f:facet name="options">
-                <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
-                <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
+                <c:if test="#{userBean.login eq 'false'}}">
+                    <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
+                    <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
+                </c:if>
+                <c:if test="#{userBean.login eq 'true'}">
+
+                </c:if>
             </f:facet>
         </ui:insert>
     </p:menubar>

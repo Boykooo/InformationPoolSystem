@@ -1,16 +1,19 @@
 package controllers;
 
+import Validation.DataValidator;
+import dto.UserDto;
 import exceptions.InvalidRequestException;
 import exceptions.ObjectAlreadyExistsException;
 import exceptions.UpdateObjectNotExistException;
-import Validation.DataValidator;
-import dto.UserDto;
 import services.UserService;
 import util.DataEncoder;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 @Stateless

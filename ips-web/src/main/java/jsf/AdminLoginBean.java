@@ -61,10 +61,8 @@ public class AdminLoginBean implements Serializable {
             // Handle unknown username/password in request.login().
             externalContext.invalidateSession();
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", e.getMessage()));
+            isLogin = false;
         }
-
-        isLogin = false;
-
     }
 
     //region GetSet

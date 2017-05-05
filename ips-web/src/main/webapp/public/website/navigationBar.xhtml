@@ -20,21 +20,13 @@
 
                 <c:choose>
                     <c:when test="#{userBean.login}">
-                        <p:commandButton value="Личный кабинет"/>
+                        <p:commandButton value="Личный кабинет" actionListener="#{userBean.toPrivateArea}"/>
                     </c:when>
                     <c:otherwise>
                         <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
                         <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
                     </c:otherwise>
                 </c:choose>
-
-                <!--<c:if test="#{userBean.login eq 'false'}}">-->
-                <!--<p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>-->
-                <!--<p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>-->
-                <!--</c:if>-->
-                <!--<c:if test="#{userBean.login eq 'true'}">-->
-                <!--<p:commandButton value="Личный кабинет"/>-->
-                <!--</c:if>-->
             </f:facet>
         </ui:insert>
     </p:menubar>

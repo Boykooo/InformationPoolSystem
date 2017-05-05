@@ -22,23 +22,33 @@ import java.io.Serializable;
 @Named("userBean")
 @ManagedBean
 @SessionScoped
-public class UserBean  implements Serializable {
+public class UserBean implements Serializable {
 
     @EJB
     private UserController controller;
     private UserDto user;
     private String redirectURL;
+    private String homeURL;
     private boolean isLogin;
+    private String privateArea;
 
     @PostConstruct
-    private void init(){
+    private void init() {
         user = new UserDto();
         redirectURL = "home.xhtml";
+        homeURL = "/public/website/home.xhtml";
+        privateArea = "user/privateArea.xhtml";
         isLogin = false;
     }
 
+    public void logout() throws IOException {
+        isLogin = false;
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        externalContext.invalidateSession();
+        externalContext.redirect(externalContext.getRequestContextPath() + homeURL);
+    }
 
-    public void signUp(){
+    public void signUp() {
         FacesContext context = FacesContext.getCurrentInstance();
 
         try {
@@ -51,7 +61,7 @@ public class UserBean  implements Serializable {
         RequestContext.getCurrentInstance().execute("PF('registrationDialog').hide()");
     }
 
-    public void signIn(){
+    public void signIn() {
         FacesContext context = FacesContext.getCurrentInstance();
         ExternalContext externalContext = context.getExternalContext();
         HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
@@ -60,7 +70,8 @@ public class UserBean  implements Serializable {
             request.login(user.getEmail(), user.getPassword());
             externalContext.redirect(redirectURL);
             isLogin = true;
-        } catch (ServletException | IOException e) {
+            user = controller.findById(user.getEmail());
+        } catch (ServletException | InvalidRequestException | IOException e) {
             // Handle unknown username/password in request.login().
             externalContext.invalidateSession();
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", e.getMessage()));
@@ -68,11 +79,23 @@ public class UserBean  implements Serializable {
         }
     }
 
+    public void toPrivateArea() throws IOException {
+        FacesContext context = FacesContext.getCurrentInstance();
+        ExternalContext externalContext = context.getExternalContext();
+        HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
+        externalContext.redirect(privateArea);
+    }
+
+    public String getFullName() {
+        return user.getFirstName() + " " + user.getLastName();
+    }
+
     //region GetSet
 
     public UserDto getUser() {
         return user;
     }
+
     public void setUser(UserDto user) {
         this.user = user;
     }

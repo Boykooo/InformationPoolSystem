@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:panelGrid columns="2" cellpadding="5">
+    <h:outputLabel value="Email: " for="email"/>
+    <p:inputText id="email" value="#{userBean.user.email}"/>
+
+    <h:outputLabel value="Имя: " for="firstName"/>
+    <p:inputText id="firstName" value="#{userBean.user.firstName}"/>
+
+    <h:outputLabel value="Фамилия: " for="lastName"/>
+    <p:inputText id="lastName" value="#{userBean.user.lastName}"/>
+
+    <h:outputLabel value="Номер телефона: " for="phoneNumber"/>
+    <p:inputText id="phoneNumber" value="#{userBean.user.phoneNumber}"/>
+
+    <h:outputLabel value="Пароль: " for="password"/>
+    <p:inputText id="password" value="#{userBean.user.password}"/>
+</h:panelGrid>
+</html>

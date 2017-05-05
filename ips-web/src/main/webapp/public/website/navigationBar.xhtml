@@ -14,9 +14,36 @@
         <p:menuitem value="Бассейны" outcome="pools.xhtml"/>
         <p:menuitem value="О нас" outcome="about.xhtml"/>
 
-        <f:facet name="options">
-            <p:commandButton value="Войти"/>
-        </f:facet>
+        <ui:insert name="options">
+            <f:facet name="options">
+                <p:commandButton value="Регистрация" onclick="PF('registrationDialog').show()"/>
+                <p:commandButton value="Войти" onclick="PF('loginDialog').show()"/>
+            </f:facet>
+        </ui:insert>
     </p:menubar>
+</h:form>
+
+<p:growl id="growl" showDetail="true" life="3000"/>
+
+<h:form>
+    <p:dialog widgetVar="registrationDialog" header="Регистрация нового пользователя" resizable="false">
+        <ui:include src="forms/registration.xhtml"/>
+        <p:commandButton value="Зарегестрироваться" update="growl" actionListener="#{userBean.signUp}"/>
+    </p:dialog>
+</h:form>
+
+<h:form>
+    <p:dialog widgetVar="loginDialog" header="Войти в систему" resizable="false">
+
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel value="Email: " for="email"/>
+            <p:inputText id="email" value="#{userBean.user.email}"/>
+
+            <h:outputLabel value="Пароль: " for="password"/>
+            <p:inputText id="password" value="#{userBean.user.password}"/>
+
+        </h:panelGrid>
+        <p:commandButton value="Войти" update="growl" actionListener="#{userBean.signIn}"/>
+    </p:dialog>
 </h:form>
 </html>

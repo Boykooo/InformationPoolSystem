@@ -34,6 +34,23 @@ public class TrackController {
         throw new InvalidRequestException();
     }
 
+    public TrackDto findById(Integer number, String poolName) throws InvalidRequestException {
+        if (number != null && poolName != null) {
+
+            List<TrackDto> traks = trackService.findAll();
+            for (TrackDto trackDto : traks) {
+                if (trackDto.getPoolName().equals(poolName) && trackDto.getNumber().equals(number)){
+                    return trackDto;
+                }
+            }
+
+        } else {
+            throw new InvalidRequestException();
+        }
+
+        return null;
+    }
+
     public List<TrackDto> findAll() {
         return trackService.findAll();
     }
@@ -87,7 +104,7 @@ public class TrackController {
     }
 
     public boolean delete(Integer key) throws InvalidRequestException {
-        if (key != null){
+        if (key != null) {
             return trackService.delete(key);
         }
 

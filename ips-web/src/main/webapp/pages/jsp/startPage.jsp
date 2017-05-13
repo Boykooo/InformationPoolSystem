@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
-<h2>This is information pool system!</h2>
+<h2>This is information poolName system!</h2>
 <p>
 <form method="post" action="MainServlet">
     <h3>

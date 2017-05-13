@@ -74,6 +74,10 @@ public class PoolService implements IService<PoolDto, String> {
             dto.setName(entity.getName());
             dto.setType(entity.getType());
             dto.setIsWorking(entity.getIsWorking());
+            if (entity.getPicture() != null)
+            {
+                dto.setPathToPicture(entity.getPicture());
+            }
 
             List<TrackDto> trackDtoList = new ArrayList<>();
             entity.getTrackList().forEach(

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Заказ дорожки</title>
+</h:head>
+
+<h:body>
+    <p:growl id="growl" showDetail="true" life="3000"/>
+
+    <h:form>
+        <p:menubar style="vertical-align: top">
+            <p:menuitem value="Главная страница" url="../home.xhtml"/>
+            <p:menuitem value="Бассейны" url="../pools.xhtml"/>
+            <p:menuitem value="О нас" url="../about.xhtml"/>
+
+            <p:submenu label="#{userBean.fullName}">
+                <p:menuitem value="Личный кабинет" url="privateArea.xhtml"/>
+                <p:menuitem value="Выйти" actionListener="#{userBean.logout}"/>
+            </p:submenu>
+        </p:menubar>
+    </h:form>
+
+
+    <h:form>
+        <h:panelGrid columns="2" style="padding-top: 30px;">
+
+            <p:outputLabel value="Название бассейна: "/>
+            <p:selectOneMenu value="#{orderBean.poolName}">
+                <f:selectItems value="#{poolTableBean.pools}"
+                               var="poolName"
+                               itemLabel="#{poolName.name}"
+                               itemValue="#{poolName.name}">
+                </f:selectItems>
+            </p:selectOneMenu>
+
+            <p:outputLabel value="Номер дорожки: "/>
+            <p:inputText value="#{orderBean.trackNumber}" required="true"/>
+
+            <p:outputLabel value="Дата и время сеанса: "/>
+            <p:calendar id="calendar" value="#{orderBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button" required="true"/>
+
+            <p:commandButton value="Забронировать дорожку" update="growl" actionListener="#{orderBean.order}"/>
+
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

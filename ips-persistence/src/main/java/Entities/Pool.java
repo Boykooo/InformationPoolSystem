@@ -39,6 +39,9 @@ public class Pool implements IBaseEntity {
     @Column(name = "isworking")
     private boolean isWorking;
 
+    @Column(name = "picture")
+    private byte[] picture;
+
     @OneToMany(mappedBy = "pool")
     private List<Track> trackList;
 
@@ -91,6 +94,13 @@ public class Pool implements IBaseEntity {
     }
     public void setIsWorking(boolean working) {
         isWorking = working;
+    }
+
+    public byte[] getPicture() {
+        return picture;
+    }
+    public void setPicture(byte[] picture) {
+        this.picture = picture;
     }
 
     //endregion

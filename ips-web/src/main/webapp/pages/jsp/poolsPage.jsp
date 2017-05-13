@@ -20,15 +20,15 @@
         <th>isWorking</th>
     </tr>
 
-    <c:forEach var="pool" items="${pools}">
+    <c:forEach var="poolName" items="${pools}">
         <tr>
-            <td>${pool.getId()}</td>
-            <td>${pool.getName()}</td>
-            <td>${pool.getLength()}</td>
-            <td>${pool.getWidth()}</td>
-            <td>${pool.getDepth()}</td>
-            <td>${pool.getType()}</td>
-            <td>${pool.getIsWorking()}</td>
+            <td>${poolName.getId()}</td>
+            <td>${poolName.getName()}</td>
+            <td>${poolName.getLength()}</td>
+            <td>${poolName.getWidth()}</td>
+            <td>${poolName.getDepth()}</td>
+            <td>${poolName.getType()}</td>
+            <td>${poolName.getIsWorking()}</td>
         </tr>
     </c:forEach>
 </table>

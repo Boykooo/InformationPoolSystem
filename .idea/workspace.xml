@@ -5,12 +5,34 @@
     <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/privateArea.xhtml" />
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Added order session">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/baby.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/base.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/mini.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/OrderBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/converters/PoolConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/orderTrack.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/privateArea.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/725e66f0-6f25-4f8d-8340-8cb714f7cf99.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Pool.java" afterPath="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Pool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" afterPath="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-services/ips-services.iml" afterPath="$PROJECT_DIR$/ips-services/ips-services.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-services/pom.xml" afterPath="$PROJECT_DIR$/ips-services/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-services/src/main/java/services/PoolService.java" afterPath="$PROJECT_DIR$/ips-services/src/main/java/services/PoolService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/ips-web.iml" afterPath="$PROJECT_DIR$/ips-web/ips-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/poolsPage.jsp" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/poolsPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/startPage.jsp" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/pages/jsp/startPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,29 +113,42 @@
       <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigationBar.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml">
+      <file leaf-file-name="pools.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="459">
+              <caret line="27" column="101" lean-forward="false" selection-start-line="27" selection-start-column="101" selection-end-line="27" selection-end-column="101" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="privateArea.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/privateArea.xhtml">
+      <file leaf-file-name="orderTrack.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/orderTrack.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="388">
+              <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/OrderBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2715#2730#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,25 +156,31 @@
       <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3262#3263#0" expanded="true" />
-                <element signature="e#3331#3332#0" expanded="true" />
-                <element signature="e#3338#3353#0" expanded="false" />
-                <element signature="e#3516#3517#0" expanded="true" />
-                <element signature="e#3546#3547#0" expanded="true" />
+                <element signature="e#4007#4022#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+            <state relative-caret-position="422">
+              <caret line="63" column="52" lean-forward="true" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -154,8 +195,8 @@
         <option value="XSLT Stylesheet" />
         <option value="Jsp File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -189,15 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ips-services/src/main/java/controllers/SessionController.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/sessionForm.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/sessionTable.xhtml" />
-        <option value="$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackTableBean.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/trackForm.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/trackTable.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/loginToAdminPanel.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/java/Servlets/AdminPanelFilter.java" />
@@ -205,7 +237,6 @@
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/templates/temp.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanelTemplate.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/templates/navigationBar.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/templates/pools.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/css/menu.css" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/menuStyle.css" />
@@ -213,7 +244,6 @@
         <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/adminLoginBean.java" />
         <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/LoginBean.java" />
         <option value="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/PoolEvents.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql" />
         <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/PoolEventBean.java" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/basePage.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml" />
@@ -222,7 +252,6 @@
         <option value="$PROJECT_DIR$/ips-web/src/main/resources/bundle.properties" />
         <option value="$PROJECT_DIR$/ips-web/src/main/resources/bundle_ru.properties" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" />
         <option value="$PROJECT_DIR$/ips-persistence/src/main/resources/META-INF/postgreScript.pgsql" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/homePageContent.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css" />
@@ -235,11 +264,23 @@
         <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/AdminLoginBean.java" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/adminLogin.xhtml" />
         <option value="$PROJECT_DIR$/ips-services/src/main/java/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/privateArea.xhtml" />
-        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/rest/PoolRest.java" />
+        <option value="$PROJECT_DIR$/ips-services/src/main/java/services/PoolService.java" />
+        <option value="$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Pool.java" />
+        <option value="$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/converters/PoolConverter.java" />
         <option value="$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java" />
+        <option value="$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/orderTrack.xhtml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java" />
+        <option value="$PROJECT_DIR$/ips-web/src/main/java/jsf/OrderBean.java" />
       </list>
     </option>
   </component>
@@ -384,8 +425,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -559,6 +598,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ips-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -584,6 +661,82 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ips-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationPoolSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ips-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -671,82 +824,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ips-services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ips-services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationPoolSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ips-services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="converters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -778,11 +863,11 @@
       <recent name="Entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\resources\poolImages" />
       <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\webapp\resources\css" />
       <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\webapp" />
       <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\webapp\public\website" />
       <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\webapp\public\website\templates" />
-      <recent name="C:\Users\Andrey\IdeaProjects\InformationPoolSystem\ips-web\src\main\webapp\public" />
     </key>
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss9">
@@ -1492,14 +1577,14 @@
       <workItem from="1493827318869" duration="11882000" />
       <workItem from="1493889888388" duration="20000" />
       <workItem from="1493909789490" duration="19683000" />
-      <workItem from="1493974812147" duration="9956000" />
-    </task>
-    <task id="LOCAL-00027" summary="Impl doPut and doDelete for usersPage.jsp">
-      <created>1490652728907</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1490652728907</updated>
+      <workItem from="1493974812147" duration="20784000" />
+      <workItem from="1494060782867" duration="624000" />
+      <workItem from="1494158626695" duration="1208000" />
+      <workItem from="1494586474596" duration="6408000" />
+      <workItem from="1494607463867" duration="3268000" />
+      <workItem from="1494628260668" duration="3948000" />
+      <workItem from="1494671823679" duration="10293000" />
+      <workItem from="1494691022051" duration="12358000" />
     </task>
     <task id="LOCAL-00028" summary="fix Rest">
       <created>1490653500681</created>
@@ -1837,7 +1922,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493981158481</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Added personal area to the security module">
+      <created>1493996678329</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1493996678329</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1873,7 +1965,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477436000" />
+    <option name="totallyTimeSpent" value="526371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1886,11 +1978,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36793542" sideWeight="0.5079462" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2768166" sideWeight="0.51161367" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19254279" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1898,12 +1990,12 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19362745" sideWeight="0.4959631" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19315404" sideWeight="0.4959631" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14486553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="570" y="71" width="539" height="867" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33794695" sideWeight="0.48899755" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24106114" sideWeight="0.4883863" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1914,10 +2006,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36793542" sideWeight="0.49205378" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23227383" sideWeight="0.38391504" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2295271" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26589242" sideWeight="0.616085" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30103806" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22860636" sideWeight="0.616085" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28178483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25305623" sideWeight="0.3979239" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23227383" sideWeight="0.38292965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1928,7 +2021,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20232274" sideWeight="0.5040369" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1980,7 +2072,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added role column to user table, fixed entity, dto, service" />
     <MESSAGE value="tried to do jaas, didn't work out..." />
     <MESSAGE value="magic commit" />
     <MESSAGE value="fixed JAAS" />
@@ -2005,11 +2096,20 @@
     <MESSAGE value="Registration new users" />
     <MESSAGE value="Login to the system" />
     <MESSAGE value="Change navigation bar  according to login state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change navigation bar  according to login state" />
+    <MESSAGE value="Added personal area to the security module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added personal area to the security module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="318" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ips-web/src/main/java/jsf/converters/PoolConverter.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="384" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2018,150 +2118,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/services/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackTableBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/poolForm.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/trackTable.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="69" column="12" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/trackForm.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionCrudBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanel.xhtml" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/jboss-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/success.xhtml" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/templates/temp.xhtml" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/menuStyle.css" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pageTemplate.xhtml" />
-    <entry file="file://$PROJECT_DIR$/ips-persistence/src/main/java/Entities/PoolEvents.java" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/poolTable.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/PoolEventBean.java" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/basePage.xhtml" />
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/event3free.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/Servlets/AdminPanelServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/Servlets/AdminPanelFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/resources/bundle_ru.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/event3free.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolGirl.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2178,7 +2134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2186,31 +2141,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/forms.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/forms.xhtml" />
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/adminPanelTemplate.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2218,7 +2156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2226,7 +2163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2234,23 +2170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2258,10 +2177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#145#146#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2269,7 +2184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="694">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2277,23 +2191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/userTable.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2301,7 +2198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2309,23 +2205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/privateArea.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2333,31 +2212,328 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="47" column="76" lean-forward="true" selection-start-line="47" selection-start-column="76" selection-end-line="47" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/css/panelGrid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/UserTableBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/userTable.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolCrudBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/rest/PoolRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="73" column="86" lean-forward="false" selection-start-line="73" selection-start-column="86" selection-end-line="73" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/ByteArrayInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/6.0/primefaces-6.0-sources.jar!/org/primefaces/model/StreamedContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-persistence/src/main/java/Entities/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="1345" column="32" lean-forward="false" selection-start-line="1345" selection-start-column="32" selection-end-line="1345" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/baby.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/base.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/resources/images/poolImages/mini.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/services/PoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/dto/PoolDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="method#PoolDto#0;class#PoolDto#0" expanded="false" />
+            <element signature="e#871#872#0" expanded="false" />
+            <element signature="e#898#899#0" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+            <element signature="e#970#971#0" expanded="false" />
+            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="e#1032#1033#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1112#1113#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1248#1249#0" expanded="false" />
+            <element signature="e#1280#1281#0" expanded="false" />
+            <element signature="e#1308#1309#0" expanded="false" />
+            <element signature="e#1350#1351#0" expanded="false" />
+            <element signature="e#1384#1385#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1442#1443#0" expanded="false" />
+            <element signature="e#1482#1483#0" expanded="false" />
+            <element signature="e#1514#1515#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1583#1584#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1801#1802#0" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="method#setPathToPicture#0;class#PoolDto#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
+            <element signature="e#2217#2218#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2293#2294#0" expanded="false" />
+            <element signature="method#getImage#0;class#PoolDto#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java">
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/PoolController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3262#3263#0" expanded="true" />
-            <element signature="e#3331#3332#0" expanded="true" />
-            <element signature="e#3338#3353#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#728#729#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/navigationBar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/faces/validator/BeanValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/filters/CharsetFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/PoolTableBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#getWorkingPools#0;class#PoolTableBean#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/SessionCrudBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2933#2934#0" expanded="false" />
+            <element signature="e#2960#2961#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/converters/PoolConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/sessionTable.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/admin/tables/forms/sessionForm.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/TrackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-services/src/main/java/controllers/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/pools.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="101" lean-forward="false" selection-start-line="27" selection-start-column="101" selection-end-line="27" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/jboss-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        <state relative-caret-position="422">
+          <caret line="63" column="52" lean-forward="true" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/orderTrack.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4007#4022#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ips-web/src/main/java/jsf/OrderBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2715#2730#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/725e66f0-6f25-4f8d-8340-8cb714f7cf99/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>

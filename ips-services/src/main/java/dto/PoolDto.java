@@ -19,7 +19,11 @@ public class PoolDto implements IBaseDto {
     private String type;
     @NotNull
     private Boolean isWorking;
+
+    private String pathToPicture;
+
     private List<TrackDto> trackList;
+
 
     public PoolDto() {
     }
@@ -38,6 +42,7 @@ public class PoolDto implements IBaseDto {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -45,6 +50,7 @@ public class PoolDto implements IBaseDto {
     public Double getLength() {
         return length;
     }
+
     public void setLength(Double length) {
         this.length = length;
     }
@@ -52,6 +58,7 @@ public class PoolDto implements IBaseDto {
     public Double getWidth() {
         return width;
     }
+
     public void setWidth(Double width) {
         this.width = width;
     }
@@ -59,6 +66,7 @@ public class PoolDto implements IBaseDto {
     public Double getDepth() {
         return depth;
     }
+
     public void setDepth(Double depth) {
         this.depth = depth;
     }
@@ -66,6 +74,7 @@ public class PoolDto implements IBaseDto {
     public String getType() {
         return type;
     }
+
     public void setType(String type) {
         this.type = type;
     }
@@ -73,6 +82,7 @@ public class PoolDto implements IBaseDto {
     public Boolean getIsWorking() {
         return isWorking;
     }
+
     public void setIsWorking(Boolean working) {
         isWorking = working;
     }
@@ -80,9 +90,52 @@ public class PoolDto implements IBaseDto {
     public List<TrackDto> getTrackList() {
         return trackList;
     }
+
     public void setTrackList(List<TrackDto> trackList) {
         this.trackList = trackList;
     }
 
-    //endregion
+    public void setPathToPicture(byte[] pathToPicture) {
+        // Вызывается из сервисов
+
+//        try {
+//            this.pathToPicture = ImageIO.read(new ByteArrayInputStream(pathToPicture));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    public void setPicture(String image) {
+        this.pathToPicture = image;
+    }
+
+    public String getPathToPicture() {
+        return pathToPicture;
+    }
+
+    public String getImage() {
+
+        return pathToPicture;
+
+//        if (pathToPicture != null) {
+//
+//            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+//            int w = pathToPicture.getWidth(null);
+//            int h = pathToPicture.getHeight(null);
+//
+//            int scale = 1;
+//            BufferedImage bufferedImage = new BufferedImage(w * scale, h * scale,
+//                    BufferedImage.TYPE_INT_ARGB);
+//            Graphics g = bufferedImage.getGraphics();
+//
+//            g.drawImage(pathToPicture, 0, 0, w * scale, h * scale, null);
+//
+//            ImageIO.write(pathToPicture, "jpg", bos);
+//
+//            StreamedContent content = new DefaultStreamedContent(new ByteArrayInputStream(
+//                    bos.toByteArray()), "image/jpg");
+//
+//            return  content;
+//        }
+    }
 }

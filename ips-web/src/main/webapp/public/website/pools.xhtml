@@ -12,6 +12,23 @@
 </h:head>
 
 <h:body>
-   <ui:include src="navigationBar.xhtml"/>
+    <ui:include src="navigationBar.xhtml"/>
+
+
+    <h:form>
+        <h:panelGrid columns="1" style="width: 100%; text-align: center; ">
+            <h2>Наши бассейны</h2>
+            <p:dataGrid columns="1" value="#{poolTableBean.workingPools}" var="poolName">
+                <p:panel header="#{poolName.name}" style="vertical-align: top">
+                    <p:graphicImage url="#{poolName.image}"/> <br/> <br/>
+                    <p:outputLabel value="Глубина: #{poolName.depth}"/> <br/>
+                    <p:outputLabel value="Длина:  #{poolName.length}"/> <br/>
+                    <p:outputLabel value="Ширина: #{poolName.width}"/> <br/>
+                    <p:outputLabel value="Тип: #{poolName.type}"/> <br/>
+                    <p:commandButton value="Заказать дорожку" actionListener="#{userBean.toOrderTrack}"/>
+                </p:panel>
+            </p:dataGrid>
+        </h:panelGrid>
+    </h:form>
 </h:body>
 </html>

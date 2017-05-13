@@ -10,28 +10,28 @@
 <h:body>
     <ui:composition template="../adminPanelTemplate.xhtml">
         <ui:define name="table">
-            <p:dataTable id="pools" var="pool" value="#{poolTableBean.pools}"
+            <p:dataTable id="pools" var="poolName" value="#{poolTableBean.pools}"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          paginator="true"
                          rows="10">
 
                 <p:column headerText="Name">
-                    <h:outputText value="#{pool.name}"/>
+                    <h:outputText value="#{poolName.name}"/>
                 </p:column>
                 <p:column headerText="Length">
-                    <h:outputText value="#{pool.length}"/>
+                    <h:outputText value="#{poolName.length}"/>
                 </p:column>
                 <p:column headerText="Width">
-                    <h:outputText value="#{pool.width}"/>
+                    <h:outputText value="#{poolName.width}"/>
                 </p:column>
                 <p:column headerText="Depth">
-                    <h:outputText value="#{pool.depth}"/>
+                    <h:outputText value="#{poolName.depth}"/>
                 </p:column>
                 <p:column headerText="Type">
-                    <h:outputText value="#{pool.type}"/>
+                    <h:outputText value="#{poolName.type}"/>
                 </p:column>
                 <p:column headerText="IsWorking">
-                    <h:outputText value="#{pool.isWorking}"/>
+                    <h:outputText value="#{poolName.isWorking}"/>
                 </p:column>
             </p:dataTable>
         </ui:define>
@@ -43,7 +43,7 @@
             <ui:include src="tableCrudMenu.xhtml"/>
 
             <h:form>
-                <p:dialog widgetVar="addDialog" header="Add new pool" resizable="false">
+                <p:dialog widgetVar="addDialog" header="Add new poolName" resizable="false">
                     <p:ajax event="close" update="pools"/>
                     <ui:include src="forms/poolForm.xhtml"/>
                     <p:commandButton value="Add" update="growl" actionListener="#{poolCrudBean.add}"/>
@@ -51,7 +51,7 @@
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="updateDialog" header="Update pool" resizable="false">
+                <p:dialog widgetVar="updateDialog" header="Update poolName" resizable="false">
                     <p:ajax event="close" update="pools"/>
                     <ui:include src="forms/poolForm.xhtml"/>
                     <p:commandButton value="Update" update="growl" actionListener="#{poolCrudBean.fullUpdate}"/>
@@ -59,7 +59,7 @@
             </h:form>
 
             <h:form>
-                <p:dialog widgetVar="deleteDialog" header="Delete pool" resizable="false">
+                <p:dialog widgetVar="deleteDialog" header="Delete poolName" resizable="false">
                     <p:ajax event="close" update="pools"/>
                     <h:panelGrid columns="2" cellpadding="5">
                         <h:outputLabel value="Name: " for="deleteName"/>

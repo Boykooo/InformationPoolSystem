@@ -6,11 +6,11 @@ import exceptions.InvalidRequestException;
 import exceptions.ObjectAlreadyExistsException;
 import org.primefaces.context.RequestContext;
 
-import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.faces.application.FacesMessage;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.io.Serializable;
 
 @Named("userBean")
-@ManagedBean
+@ManagedBean(name = "userBeanFaces")
 @SessionScoped
 public class UserBean implements Serializable {
 
@@ -30,14 +30,16 @@ public class UserBean implements Serializable {
     private String redirectURL;
     private String homeURL;
     private boolean isLogin;
-    private String privateArea;
+    private String personalAreaURL;
+    private String orderTrackURL;
 
     @PostConstruct
     private void init() {
         user = new UserDto();
         redirectURL = "home.xhtml";
         homeURL = "/public/website/home.xhtml";
-        privateArea = "user/privateArea.xhtml";
+        personalAreaURL = "user/personalArea.xhtml";
+        orderTrackURL = "user/orderTrack.xhtml";
         isLogin = false;
     }
 
@@ -68,7 +70,7 @@ public class UserBean implements Serializable {
 
         try {
             request.login(user.getEmail(), user.getPassword());
-            externalContext.redirect(redirectURL);
+            externalContext.redirect(externalContext.getRequestContextPath() + homeURL);
             isLogin = true;
             user = controller.findById(user.getEmail());
         } catch (ServletException | InvalidRequestException | IOException e) {
@@ -83,7 +85,20 @@ public class UserBean implements Serializable {
         FacesContext context = FacesContext.getCurrentInstance();
         ExternalContext externalContext = context.getExternalContext();
         HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
-        externalContext.redirect(privateArea);
+        externalContext.redirect(personalAreaURL);
+    }
+
+    public void toOrderTrack() throws IOException {
+        FacesContext context = FacesContext.getCurrentInstance();
+        ExternalContext externalContext = context.getExternalContext();
+        HttpServletRequest request = (HttpServletRequest) externalContext.getRequest();
+
+        if (isLogin){
+            externalContext.redirect(orderTrackURL);
+        }
+        else {
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Войдите в систему"));
+        }
     }
 
     public String getFullName() {

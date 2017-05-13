@@ -1,6 +1,6 @@
 CREATE SCHEMA ips;
 
-CREATE TABLE ips.pool(
+CREATE TABLE ips.poolName(
   name VARCHAR(100) PRIMARY KEY ,
   length VARCHAR(100) NOT NULL,
   width VARCHAR(100) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE ips.track(
   id INTEGER PRIMARY KEY DEFAULT nextval('ips.track_id_seq'),
   pool_name VARCHAR(100) NOT NULL,
   number INTEGER NOT NULL,
-  CONSTRAINT fk_pool_id FOREIGN KEY (pool_name) REFERENCES ips.pool(name) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT fk_pool_id FOREIGN KEY (pool_name) REFERENCES ips.poolName(name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE ips.user(

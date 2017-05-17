@@ -1,10 +1,8 @@
 package jsf;
 
-import dao.AdminDao;
 
 import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.ExternalContext;
@@ -26,8 +24,6 @@ public class AdminLoginBean implements Serializable {
     private String startURL;
     private boolean isLogin;
 
-    @EJB
-    private AdminDao dao;
 
     @PostConstruct
     protected void init() {

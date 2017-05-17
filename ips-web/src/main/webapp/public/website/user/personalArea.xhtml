@@ -26,7 +26,34 @@
         </p:menubar>
     </h:form>
 
-    Not yet...
 
+    <h:panelGrid columns="1" style="padding-top: 30px; padding-left: 20px;">
+        <p:outputLabel value="Персональные данные:" style="font-size: 28px !important;"/>
+        <br/>
+
+        <p:outputLabel value="Email :"/>
+        <p:outputLabel value="#{userBean.user.email}"/><br/>
+
+        <p:outputLabel value="Имя :"/>
+        <p:outputLabel value="#{userBean.user.firstName}"/><br/>
+
+        <p:outputLabel value="Фамилия :"/>
+        <p:outputLabel value="#{userBean.user.lastName}"/><br/>
+
+        <p:outputLabel value="Номер телефона :"/>
+        <p:outputLabel value="#{userBean.user.phoneNumber}"/><br/>
+
+        <br/>
+        <p:outputLabel value="Ваши сеансы :" style="font-size: 28px !important;"/>
+
+        <p:dataGrid value="#{userBean.user.sessions}" var="varSession">
+            <p:panelGrid>
+                <p:outputLabel value="Время : #{varSession.sessionTime}"/> <br/>
+                <p:outputLabel value="Бассейн : #{trackCrudBean.findById(varSession.trackId).poolName}"/> <br/>
+                <p:outputLabel value="Номер дорожки : #{trackCrudBean.findById(varSession.trackId).number}"/> <br/>
+                <p:outputLabel value="Стоимость : #{varSession.sessionTime}"/>
+            </p:panelGrid>
+        </p:dataGrid>
+    </h:panelGrid>
 </h:body>
 </html>

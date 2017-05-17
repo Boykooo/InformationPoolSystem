@@ -73,6 +73,10 @@ public class TrackCrudBean {
         requestContext.execute("PF('deleteDialog').hide()");
     }
 
+    public TrackDto findById(Integer id) throws InvalidRequestException {
+        return controller.findById(id);
+    }
+
     //region GetSet
 
     public TrackDto getDto() {

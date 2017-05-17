@@ -20,8 +20,8 @@
             <p:menuitem value="Бассейны" url="../pools.xhtml"/>
             <p:menuitem value="О нас" url="../about.xhtml"/>
 
-            <p:submenu label="#{userBean.fullName}">
-                <p:menuitem value="Личный кабинет" url="privateArea.xhtml"/>
+            <p:submenu label="#{userBean.fullName}" style="float: right;">
+                <p:menuitem value="Личный кабинет" url="personalArea.xhtml"/>
                 <p:menuitem value="Выйти" actionListener="#{userBean.logout}"/>
             </p:submenu>
         </p:menubar>
@@ -29,9 +29,9 @@
 
 
     <h:form>
-        <h:panelGrid columns="2" style="padding-top: 30px;">
 
-            <p:outputLabel value="Название бассейна: "/>
+        <h:panelGrid columns="3" style="padding-top: 30px">
+            <p:outputLabel value="Бассейн: "/>
             <p:selectOneMenu value="#{orderBean.poolName}">
                 <f:selectItems value="#{poolTableBean.pools}"
                                var="poolName"
@@ -39,16 +39,22 @@
                                itemValue="#{poolName.name}">
                 </f:selectItems>
             </p:selectOneMenu>
+            <p:commandButton value="Свободные сеансы" actionListener="#{userBean.logout}"/>
+        </h:panelGrid>
+        <br/>
 
+        <h:panelGrid columns="2">
             <p:outputLabel value="Номер дорожки: "/>
             <p:inputText value="#{orderBean.trackNumber}" required="true"/>
 
             <p:outputLabel value="Дата и время сеанса: "/>
-            <p:calendar id="calendar" value="#{orderBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button" required="true"/>
-
-            <p:commandButton value="Забронировать дорожку" update="growl" actionListener="#{orderBean.order}"/>
+            <p:calendar id="calendar" value="#{orderBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button"
+                        required="true"/>
 
         </h:panelGrid>
+
+        <p:commandButton value="Забронировать дорожку" update="growl" actionListener="#{orderBean.order}"/>
+
     </h:form>
 </h:body>
 </html>

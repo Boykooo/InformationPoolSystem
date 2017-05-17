@@ -41,7 +41,7 @@ public class UserDto implements IBaseDto {
 //        phoneNumber = "";
 //        password = "";
 //        sessions = new ArrayList<>();
-        this.role = "user";
+        this.role = "USER";
     }
 
     public UserDto(String email, String firstName, String lastName, String phoneNumber, String password) {
@@ -50,7 +50,7 @@ public class UserDto implements IBaseDto {
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.password = password;
-        this.role = "user";
+        this.role = "USER";
     }
 
     //region GetSet

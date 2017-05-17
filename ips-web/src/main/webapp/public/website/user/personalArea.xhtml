@@ -19,7 +19,7 @@
             <p:menuitem value="Бассейны" url="../pools.xhtml"/>
             <p:menuitem value="О нас" url="../about.xhtml"/>
 
-            <p:submenu label="#{userBean.fullName}">
+            <p:submenu label="#{userBean.fullName}" style="float: right">
                 <p:menuitem value="Личный кабинет" url="privateArea.xhtml"/>
                 <p:menuitem value="Выйти" actionListener="#{userBean.logout}"/>
             </p:submenu>

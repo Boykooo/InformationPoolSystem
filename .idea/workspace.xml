@@ -5,9 +5,8 @@
     <bookmark url="file://$PROJECT_DIR$/ips-web/src/main/java/rest/UserRest.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="Refactoring">
+    <list default="true" id="986a914b-2c74-42fb-99ca-28d09bc734a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java" afterPath="$PROJECT_DIR$/ips-web/src/main/java/jsf/Tables/TrackCrudBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml" afterPath="$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,8 +88,8 @@
       <file leaf-file-name="personalArea.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -1450,14 +1449,7 @@
       <workItem from="1494770226866" duration="599000" />
       <workItem from="1495010329223" duration="599000" />
       <workItem from="1495022563485" duration="81000" />
-      <workItem from="1495022664252" duration="4587000" />
-    </task>
-    <task id="LOCAL-00030" summary="Created dto and services without impl">
-      <created>1490871407809</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1490871407809</updated>
+      <workItem from="1495022664252" duration="4835000" />
     </task>
     <task id="LOCAL-00031" summary="Impl DTO">
       <created>1490872004352</created>
@@ -1795,7 +1787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494703915078</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Impl personal area">
+      <created>1495030970503</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1495030970503</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1831,7 +1830,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="533776000" />
+    <option name="totallyTimeSpent" value="534024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1938,7 +1937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed JAAS" />
     <MESSAGE value="Fixed authorization" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Create adminPanelTemplate" />
@@ -1963,7 +1961,8 @@
     <MESSAGE value="Added personal area to the security module" />
     <MESSAGE value="order a session through a personal area" />
     <MESSAGE value="fixed web.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed web.xml" />
+    <MESSAGE value="Impl personal area" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl personal area" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2348,8 +2347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ips-web/src/main/webapp/public/website/user/personalArea.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="204">
+          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
           <folding />
         </state>
       </provider>

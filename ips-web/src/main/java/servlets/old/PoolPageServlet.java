@@ -1,4 +1,4 @@
-package Servlets.old;
+package servlets.old;
 
 import dto.PoolDto;
 import services.PoolService;

@@ -66,7 +66,7 @@ public class SessionCrudBean {
         FacesContext context = FacesContext.getCurrentInstance();
 
         try {
-            controller.delete(dto.getSessionTime(), dto.getTrackId());
+            controller.delete(dto.getSessionTime(), dto.getTrack());
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully", "Session deleted successfully"));
         } catch (InvalidRequestException e) {
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Required fields date and track id cannot be null"));

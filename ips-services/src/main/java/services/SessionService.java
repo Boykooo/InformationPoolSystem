@@ -7,6 +7,7 @@ import Entities.User;
 import dao.SessionDao;
 import dto.SessionDto;
 import dto.SessionPkDto;
+import dto.TrackDto;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
@@ -60,7 +61,7 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         session.setSessionTime(dto.getSessionTime());
 
         Track track = new Track();
-        track.setId(dto.getTrackId());
+        track.setId(dto.getTrack().getId());
         session.setTrack(track);
 
         if (dto.getUserEmail() != null) {
@@ -77,7 +78,12 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
             SessionDto dto = new SessionDto();
             dto.setCost(entity.getCost());
             dto.setSessionTime(entity.getSessionTime());
-            dto.setTrackId(entity.getTrack().getId());
+
+            //TODO: Придумать, как сделать лучше
+            Track track = entity.getTrack();
+            TrackDto trackDto = new TrackDto(track.getId(), track.getNumber(), track.getPool().getName());
+
+            dto.setTrack(trackDto);
             if (entity.getUser() != null) {
                 dto.setUserEmail(entity.getUser().getEmail());
             }
@@ -100,7 +106,7 @@ public class SessionService implements IService<SessionDto, SessionPkDto> {
         SessionPK pk = new SessionPK();
         pk.setSessionTime(dto.getSessionTime());
         Track track = new Track();
-        track.setId(dto.getTrackId());
+        track.setId(dto.getTrack().getId());
         pk.setTrack(track);
 
         return pk;

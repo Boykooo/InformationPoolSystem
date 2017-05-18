@@ -1,4 +1,4 @@
-package Servlets.old;
+package servlets.old;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

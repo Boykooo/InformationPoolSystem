@@ -8,7 +8,7 @@ public class SessionDto implements IBaseDto {
     @NotNull
     private Timestamp sessionTime;
     @NotNull
-    private Integer trackId;
+    private TrackDto track;
 
     private String userEmail;
     @NotNull
@@ -17,9 +17,9 @@ public class SessionDto implements IBaseDto {
     public SessionDto() {
     }
 
-    public SessionDto(Timestamp sessionTime, Integer trackId, String userEmail, Integer cost) {
+    public SessionDto(Timestamp sessionTime, TrackDto track, String userEmail, Integer cost) {
         this.sessionTime = sessionTime;
-        this.trackId = trackId;
+        this.track = track;
         this.userEmail = userEmail;
         this.cost = cost;
     }
@@ -36,11 +36,11 @@ public class SessionDto implements IBaseDto {
         this.sessionTime = new Timestamp(sessionTime.getTime());
     }
 
-    public Integer getTrackId() {
-        return trackId;
+    public TrackDto getTrack() {
+        return track;
     }
-    public void setTrackId(Integer trackId) {
-        this.trackId = trackId;
+    public void setTrack(TrackDto track) {
+        this.track = track;
     }
 
     public String getUserEmail() {

@@ -69,9 +69,7 @@ public class SessionController {
         }
     }
 
-    public boolean delete(Timestamp time, Integer trackId) throws InvalidRequestException {
-        TrackDto trackDto = new TrackDto();
-        trackDto.setId(trackId);
+    public boolean delete(Timestamp time, TrackDto trackDto) throws InvalidRequestException {
         SessionPkDto sessionPkDto = new SessionPkDto(time, trackDto);
         if (!validator.check(sessionPkDto)){
             throw new InvalidRequestException();

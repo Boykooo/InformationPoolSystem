@@ -1,5 +1,6 @@
 package controllers;
 
+import dto.PoolDto;
 import exceptions.InvalidRequestException;
 import exceptions.ObjectAlreadyExistsException;
 import exceptions.UpdateObjectNotExistException;
@@ -13,6 +14,7 @@ import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
@@ -27,54 +29,84 @@ public class SessionController {
     private UserController userController;
 
     public SessionDto findById(SessionPkDto key) throws InvalidRequestException {
-        if (!validator.check(key)){
+        if (!validator.check(key)) {
             throw new InvalidRequestException();
         }
 
         return service.findById(key);
     }
 
-    public List<SessionDto> findAll(){
+    public List<SessionDto> findAll() {
         return service.findAll();
     }
 
     public void insert(SessionDto dto) throws ObjectAlreadyExistsException, InvalidRequestException {
-        if (!validator.check(dto)){
+        if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
 
-        if (service.findById(dto) == null){
+        if (service.findById(dto) == null) {
             service.insert(dto);
-        }
-        else {
+        } else {
             throw new ObjectAlreadyExistsException();
         }
     }
 
     public void fullUpdate(SessionDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
-        if (!validator.check(dto)){
+        if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
 
-        if (service.findById(dto) != null){
-            if (dto.getUserEmail() == null || (dto.getUserEmail() != null && userController.findById(dto.getUserEmail()) != null)){
-                    service.update(dto);
-            }
-            else {
+        if (service.findById(dto) != null) {
+            if (dto.getUserEmail() == null || (dto.getUserEmail() != null && userController.findById(dto.getUserEmail()) != null)) {
+                service.update(dto);
+            } else {
                 throw new InvalidRequestException();
             }
-        }
-        else {
+        } else {
             throw new UpdateObjectNotExistException();
         }
     }
 
     public boolean delete(Timestamp time, TrackDto trackDto) throws InvalidRequestException {
         SessionPkDto sessionPkDto = new SessionPkDto(time, trackDto);
-        if (!validator.check(sessionPkDto)){
+        if (!validator.check(sessionPkDto)) {
             throw new InvalidRequestException();
         }
 
         return service.delete(sessionPkDto);
     }
+
+    public List<SessionDto> getFreeSessions() {
+        List<SessionDto> sessions = findAll();
+        List<SessionDto> freeSessions = new ArrayList<>();
+
+        for (SessionDto sessionDto : sessions) {
+            if (sessionDto.getUserEmail() == null){
+                freeSessions.add(sessionDto);
+            }
+        }
+
+        return freeSessions;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

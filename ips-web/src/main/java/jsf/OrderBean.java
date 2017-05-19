@@ -1,5 +1,6 @@
 package jsf;
 
+import controllers.PoolController;
 import controllers.SessionController;
 import controllers.TrackController;
 import dto.SessionDto;
@@ -7,6 +8,7 @@ import dto.SessionPkDto;
 import dto.TrackDto;
 import exceptions.InvalidRequestException;
 import exceptions.UpdateObjectNotExistException;
+import org.primefaces.context.RequestContext;
 
 import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
@@ -16,7 +18,11 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Named("orderBean")
 @ManagedBean
@@ -27,16 +33,17 @@ public class OrderBean {
     private TrackController trackController;
     @EJB
     private SessionController sessionController;
-
-//    @ManagedProperty(value = "userBeanFaces")
-//    private UserBean userBean;
+    @EJB
+    private PoolController poolController;
 
     private String poolName;
     private Integer trackNumber;
     private Date date;
+    private List<SessionDto> freeSessions;
 
     @PostConstruct
     private void init() {
+        freeSessions = new ArrayList<>();
     }
 
     public void order() {
@@ -50,7 +57,7 @@ public class OrderBean {
                 SessionDto sessionDto = sessionController.findById(pkDto);
                 if (sessionDto != null) {
                     if (sessionDto.getUserEmail() == null) {
-                        UserBean userBean = context.getApplication().evaluateExpressionGet(context,"#{userBean}", UserBean.class);
+                        UserBean userBean = context.getApplication().evaluateExpressionGet(context, "#{userBean}", UserBean.class);
                         sessionDto.setUserEmail(userBean.getUser().getEmail());
                         sessionController.fullUpdate(sessionDto);
                         context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Успех", "Бронирование прошло успешно"));
@@ -68,6 +75,43 @@ public class OrderBean {
         } catch (UpdateObjectNotExistException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<SessionDto> getFreeSessions() throws InvalidRequestException {
+        if (poolName != null) {
+
+            List<SessionDto> freeSession = poolController.getFreeSession(poolName);
+
+            DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+            Date currDate = new Date();
+
+            freeSessions.clear();
+            for (SessionDto session : freeSession){
+                if (dateFormat.format(session.getSessionTime()).equals(dateFormat.format(currDate)))
+                {
+                    freeSessions.add(session);
+                }
+            }
+
+            return freeSessions;
+        }
+
+        return null;
+    }
+
+    public void openFreeSessionDialog()  {
+        try {
+            getFreeSessions();
+        } catch (InvalidRequestException e) {
+            e.printStackTrace();
+        }
+
+        RequestContext requestContext = RequestContext.getCurrentInstance();
+        requestContext.execute("PF('freeSessionDialog').show()");
+    }
+
+    public List<SessionDto> getFreeSessionsList() {
+        return freeSessions;
     }
 
     //region GetSet

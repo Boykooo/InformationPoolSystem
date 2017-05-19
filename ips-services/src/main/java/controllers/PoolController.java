@@ -1,5 +1,7 @@
 package controllers;
 
+import dto.SessionDto;
+import dto.TrackDto;
 import exceptions.InvalidRequestException;
 import exceptions.ObjectAlreadyExistsException;
 import exceptions.UpdateObjectNotExistException;
@@ -10,6 +12,7 @@ import services.PoolService;
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -23,19 +26,19 @@ public class PoolController {
     private DataValidator validator;
 
     public PoolDto findById(String key) throws InvalidRequestException {
-        if (key != null){
+        if (key != null) {
             return service.findById(key);
         }
 
         throw new InvalidRequestException();
     }
 
-    public List<PoolDto> findAll(){
+    public List<PoolDto> findAll() {
         return service.findAll();
     }
 
     public void insert(PoolDto dto) throws ObjectAlreadyExistsException, InvalidRequestException {
-        if (!validator.check(dto)){
+        if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
 
@@ -47,7 +50,7 @@ public class PoolController {
     }
 
     public void fullUpdate(PoolDto dto) throws UpdateObjectNotExistException, InvalidRequestException {
-        if (!validator.check(dto)){
+        if (!validator.check(dto)) {
             throw new InvalidRequestException();
         }
 
@@ -59,10 +62,47 @@ public class PoolController {
     }
 
     public boolean delete(String key) throws InvalidRequestException {
-        if (key != null){
+        if (key != null) {
             return service.delete(key);
         }
 
         throw new InvalidRequestException();
     }
+
+    public List<SessionDto> getFreeSession(String poolName) throws InvalidRequestException {
+        List<TrackDto> tracks = findById(poolName).getTrackList();
+        List<SessionDto> freeSession = new ArrayList<>();
+
+        for (TrackDto track : tracks) {
+            for (SessionDto session : track.getSessionsList()) {
+                if (session.getUserEmail() == null){
+                    freeSession.add(session);
+                }
+            }
+        }
+
+        return freeSession;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

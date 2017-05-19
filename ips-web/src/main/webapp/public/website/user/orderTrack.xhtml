@@ -27,10 +27,10 @@
         </p:menubar>
     </h:form>
 
-
     <h:form>
+        <p:commandButton value="Свободные сеансы" update="freeSessions" actionListener="#{orderBean.openFreeSessionDialog}"/>
 
-        <h:panelGrid columns="3" style="padding-top: 30px">
+        <h:panelGrid columns="2">
             <p:outputLabel value="Бассейн: "/>
             <p:selectOneMenu value="#{orderBean.poolName}">
                 <f:selectItems value="#{poolTableBean.pools}"
@@ -39,45 +39,27 @@
                                itemValue="#{poolName.name}">
                 </f:selectItems>
             </p:selectOneMenu>
-            <p:commandButton value="Свободные сеансы" actionListener="#{userBean.logout}"/>
-        </h:panelGrid>
-        <br/>
 
-        <h:panelGrid columns="2">
             <p:outputLabel value="Номер дорожки: "/>
-            <p:inputText value="#{orderBean.trackNumber}" required="true"/>
+                <p:inputText value="#{orderBean.trackNumber}"/>
 
             <p:outputLabel value="Дата и время сеанса: "/>
-            <p:calendar id="calendar" value="#{orderBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button"
-                        required="true"/>
+                <p:calendar id="calendar" value="#{orderBean.date}" pattern="dd.MM.yyyy HH:mm" showOn="button"/>
 
         </h:panelGrid>
 
         <p:commandButton value="Забронировать дорожку" update="growl" actionListener="#{orderBean.order}"/>
 
+        <p:dialog widgetVar="freeSessionDialog" header="Свободные сеансы" resizable="false">
+            <p:dataGrid id="freeSessions" value="#{orderBean.freeSessionsList}" var="freeSession" columns="1">
+                <p:panelGrid columns="3">
+                    <p:outputLabel value="Дата : #{freeSession.sessionTime}"/>
+                    <p:outputLabel value="Номер дорожки : #{freeSession.track.number}"/>
+                    <p:outputLabel value="Стоимость : #{freeSession.cost}"/>
+                </p:panelGrid>
+            </p:dataGrid>
+        </p:dialog>
     </h:form>
-
-
-
 
 </h:body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -19,6 +19,13 @@
     </properties>
 
     <dependencies>
+
+        <!--<dependency>-->
+            <!--<groupId>org.richfaces.ui</groupId>-->
+            <!--<artifactId>richfaces-ui</artifactId>-->
+            <!--<version>3.3.4.Final</version>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>

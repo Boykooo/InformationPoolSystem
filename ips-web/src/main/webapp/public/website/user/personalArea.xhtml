@@ -46,20 +46,19 @@
         <br/>
         <p:outputLabel value="Ваши сеансы :" style="font-size: 28px !important;"/>
 
-        <p:dataGrid value="#{userBean.user.sessions}" var="varSession">
-            <p:panelGrid>
-                <p:outputLabel value="Время : #{varSession.sessionTime}"/> <br/>
-                <p:outputLabel value="Бассейн : #{trackCrudBean.findById(varSession.track.id).poolName}"/> <br/>
-                <p:outputLabel value="Номер дорожки : #{trackCrudBean.findById(varSession.track.id).number}"/> <br/>
-                <p:outputLabel value="Стоимость : #{varSession.sessionTime}"/>
-            </p:panelGrid>
-        </p:dataGrid>
-        <br/>
-
         <h:form>
             <p:commandButton value="Забронировать дорожку" action="orderTrack.xhtml"/>
         </h:form>
 
+        <p:dataGrid value="#{userBean.user.sessions}" var="varSession" columns="1" style="margin-top: 30px">
+            <p:panelGrid>
+                <p:outputLabel value="Время : #{varSession.sessionTime}"/> <br/>
+                <p:outputLabel value="Бассейн : #{trackCrudBean.findById(varSession.track.id).poolName}"/> <br/>
+                <p:outputLabel value="Номер дорожки : #{trackCrudBean.findById(varSession.track.id).number}"/> <br/>
+                <p:outputLabel value="Стоимость : #{varSession.cost}"/>
+            </p:panelGrid>
+        </p:dataGrid>
+        <br/>
     </h:panelGrid>
 </h:body>
 </html>

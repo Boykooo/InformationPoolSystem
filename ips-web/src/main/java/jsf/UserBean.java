@@ -105,9 +105,13 @@ public class UserBean implements Serializable {
         return user.getFirstName() + " " + user.getLastName();
     }
 
+    public void updateUser() throws InvalidRequestException {
+        user = controller.findById(user.getEmail());
+    }
+
     //region GetSet
 
-    public UserDto getUser() {
+    public UserDto getUser() throws InvalidRequestException {
         return user;
     }
 

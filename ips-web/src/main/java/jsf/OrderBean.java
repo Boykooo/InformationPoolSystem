@@ -60,6 +60,8 @@ public class OrderBean {
                         UserBean userBean = context.getApplication().evaluateExpressionGet(context, "#{userBean}", UserBean.class);
                         sessionDto.setUserEmail(userBean.getUser().getEmail());
                         sessionController.fullUpdate(sessionDto);
+                        userBean.updateUser();
+
                         context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Успех", "Бронирование прошло успешно"));
                     } else {
                         context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Ошибка", "Данный сеанс уже занят"));

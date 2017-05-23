@@ -39,6 +39,9 @@ public class OrderBean {
     private String poolName;
     private Integer trackNumber;
     private Date date;
+
+
+    private Date selectDate;
     private List<SessionDto> freeSessions;
 
     @PostConstruct
@@ -52,7 +55,7 @@ public class OrderBean {
         try {
             TrackDto trackDto = trackController.findById(trackNumber, poolName);
             if (trackDto != null) {
-                Timestamp timestamp = new Timestamp(date.getTime());
+                Timestamp timestamp = new Timestamp(selectDate.getTime());
                 SessionPkDto pkDto = new SessionPkDto(timestamp, trackDto);
                 SessionDto sessionDto = sessionController.findById(pkDto);
                 if (sessionDto != null) {
@@ -85,11 +88,14 @@ public class OrderBean {
             List<SessionDto> freeSession = poolController.getFreeSession(poolName);
 
             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-            Date currDate = new Date();
+
+            if (date == null){
+                date = new Date();
+            }
 
             freeSessions.clear();
             for (SessionDto session : freeSession){
-                if (dateFormat.format(session.getSessionTime()).equals(dateFormat.format(currDate)))
+                if (dateFormat.format(session.getSessionTime()).equals(dateFormat.format(date)))
                 {
                     freeSessions.add(session);
                 }
@@ -100,6 +106,8 @@ public class OrderBean {
 
         return null;
     }
+
+
 
     public void openFreeSessionDialog()  {
         try {
@@ -117,6 +125,14 @@ public class OrderBean {
     }
 
     //region GetSet
+
+    public Date getSelectDate() {
+        return selectDate;
+    }
+
+    public void setSelectDate(Date selectDate) {
+        this.selectDate = selectDate;
+    }
 
     public String getPoolName() {
         return poolName;

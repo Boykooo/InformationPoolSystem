@@ -24,7 +24,7 @@ public class PoolTableBean {
 
     @PostConstruct
     private void init(){
-        pools = controller.findAll();
+        pools = controller.getWorkingPools();
         selectedPool = new PoolDto();
 
         // ВРЕМЕННО!

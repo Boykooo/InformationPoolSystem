@@ -83,6 +83,19 @@ public class PoolController {
 
         return freeSession;
     }
+
+    public List<PoolDto> getWorkingPools(){
+        List<PoolDto> all = findAll();
+        ArrayList<PoolDto> workingPools = new ArrayList<>();
+
+        for (PoolDto dto : all){
+            if (dto.getIsWorking()){
+                workingPools.add(dto);
+            }
+        }
+
+        return workingPools;
+    }
 }
 
 

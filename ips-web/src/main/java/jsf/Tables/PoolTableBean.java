@@ -29,7 +29,7 @@ public class PoolTableBean {
 
         // ВРЕМЕННО!
         List<String> images = new ArrayList<>();
-        images.add("/resources/images/poolImages/baby.jpg");
+        //images.add("/resources/images/poolImages/baby.jpg");
         images.add("/resources/images/poolImages/base.jpg");
         images.add("/resources/images/poolImages/mini.jpg");
 
